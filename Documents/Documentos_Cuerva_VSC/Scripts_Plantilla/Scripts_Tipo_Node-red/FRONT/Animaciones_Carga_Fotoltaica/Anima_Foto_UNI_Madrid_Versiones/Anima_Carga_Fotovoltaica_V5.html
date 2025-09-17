@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Línea con Barras de Potencia e Iconos v2 (movido 70px)</title>
+  <style>
+    /* Estilos CSS actualizados para líneas iguales y iconos equidistantes */
+    body {
+      margin: 0;
+      position: relative;
+      font-family: sans-serif;
+    }
+
+    .line-bg {
+      stroke: #cccccc;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .bar {
+      fill: currentColor;
+    }
+
+    .icono-panel,
+    .icono-inversor,
+    .icono-edificio,
+    .icono-grid {
+      position: absolute;
+      top: 0px;
+      width: 80px;
+      height: 80px;
+      z-index: 10;
+      fill: currentColor;
+      color: #cccccc;
+    }
+
+    .icono-panel {
+      /* Centrado en el inicio de la primera línea */
+      left: 220px; /* 150 + 70 */
+      transform: translateX(-50%);
+    }
+
+    .icono-inversor {
+      /* Si sigues necesitando el inversor fuera de vista, déjalo así */
+      left: -330px; /* -400 + 70 */
+    }
+
+    .icono-edificio {
+      /* Centrado en el punto medio entre líneas */
+      left: 1120px; /* 1050 + 70 */
+      transform: translateX(-50%);
+      font-size: 60px;
+    }
+
+    .icono-grid {
+      /* Centrado en el final de la segunda línea */
+      left: 2020px; /* 1950 + 70 */
+      transform: translateX(-50%);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <svg id="svg" width="2220" height="100"><!-- 2150 + 70 -->
+    <!-- Primera línea (900px) -->
+    <line id="lineBg1" class="line-bg" x1="220" y1="40" x2="1120" y2="40"></line>
+    <rect id="bar1" class="bar" x="220" y="37" width="100" height="6"></rect>
+
+    <!-- Segunda línea (900px también) -->
+    <line id="lineBg2" class="line-bg" x1="1120" y1="40" x2="2020" y2="40"></line>
+    <rect id="bar2" class="bar" x="1120" y="37" width="100" height="6"></rect>
+  </svg>
+
+  <!-- Icono de panel solar -->
+  <svg class="icono-panel" viewBox="0 0 96 64">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#4a90e2" />
+        <stop offset="100%" stop-color="#005f9e" />
+      </linearGradient>
+      <linearGradient id="shade1" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="rgba(0,0,0,0.2)" />
+        <stop offset="100%" stop-color="transparent" />
+      </linearGradient>
+    </defs>
+    <rect x="0" y="8" width="96" height="48" rx="4" ry="4" fill="#333" />
+    <g fill="url(#grad1)">
+      <rect x="4" y="12" width="28" height="40" />
+      <rect x="34" y="12" width="28" height="40" />
+      <rect x="64" y="12" width="28" height="40" />
+    </g>
+    <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+      <line x1="4" y1="24" x2="32" y2="24" />
+      <line x1="4" y1="36" x2="32" y2="36" />
+      <line x1="34" y1="24" x2="62" y2="24" />
+      <line x1="34" y1="36" x2="62" y2="36" />
+      <line x1="64" y1="24" x2="92" y2="24" />
+      <line x1="64" y1="36" x2="92" y2="36" />
+      <line x1="16" y1="12" x2="16" y2="52" />
+      <line x1="48" y1="12" x2="48" y2="52" />
+      <line x1="80" y1="12" x2="80" y2="52" />
+    </g>
+    <rect x="4" y="12" width="28" height="40" fill="url(#shade1)" />
+    <rect x="34" y="12" width="28" height="40" fill="url(#shade1)" />
+    <rect x="64" y="12" width="28" height="40" fill="url(#shade1)" />
+  </svg>
+
+  <!-- Icono de inversor -->
+  <svg class="icono-inversor" viewBox="0 0 48 48">
+    <path d="M24 4l-8 14h16l-8-14zm0 40l8-14h-16l8 14zM4 24h14l-8-16 8-16zm40 0h-14l8-16-8-16z" />
+  </svg>
+
+  <!-- Icono de edificio -->
+  <i class="fa fa-building icono-edificio"></i>
+
+  <!-- Icono de red eléctrica -->
+  <svg class="icono-grid" viewBox="0 0 64 64">
+    <defs>
+      <linearGradient id="gradGrid" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#A0A0A0" />
+        <stop offset="100%" stop-color="#606060" />
+      </linearGradient>
+    </defs>
+    <path d="M32 2 L32 12 M22 12 L42 12 M32 12 L32 22" stroke="currentColor" stroke-width="4" fill="none" />
+    <rect x="10" y="22" width="44" height="30" rx="5" ry="5" fill="url(#gradGrid)" stroke="black" stroke-width="1" />
+    <path d="M20 30 L20 44 M32 30 L32 44 M44 30 L44 44 M26 37 L38 37" stroke="#E0E0E0" stroke-width="3" fill="none" />
+    <path d="M32 52 L32 62 M22 62 L42 62" stroke="currentColor" stroke-width="4" fill="none" />
+  </svg>
+
+  <script>
+    (function (scope) {
+      // Dummy scope y $watch para pruebas
+      if (typeof scope === 'undefined') {
+        scope = {};
+        scope.$watch = function (prop, callback) {
+          let radiationValue = 0;
+          let temperatureValue = 0;
+          setInterval(() => {
+            radiationValue = (radiationValue + 150) % 2050;
+            temperatureValue = (temperatureValue + 180) % 2050;
+            const dummyMsg = {
+              payload: [{
+                series: ["Radiacion_Solar", "Temperatura"],
+                data: [[radiationValue], [temperatureValue]],
+                labels: ["Now"]
+              }],
+              consumo: radiationValue > 100 ? 500 : 0,
+              grid_power: temperatureValue > 1500 ? -200 : 0
+            };
+            callback(dummyMsg);
+          }, 1000);
+        };
+      }
+
+      const MAX_RAD = 2000, MAX_TEMP = 2000;
+      const MIN_DURATION_MS = 1000, MAX_DURATION_MS = 10000;
+
+      let animationId1 = null, animationStartTime1 = null, currentAnimationDuration1 = MAX_DURATION_MS;
+      let animationId2 = null, animationStartTime2 = null, currentAnimationDuration2 = MAX_DURATION_MS;
+
+      const bar1 = document.getElementById('bar1');
+      const lineBg1 = document.getElementById('lineBg1');
+      const bar2 = document.getElementById('bar2');
+      const lineBg2 = document.getElementById('lineBg2');
+      const iconoPanel = document.querySelector('.icono-panel');
+      const iconoEdificio = document.querySelector('.icono-edificio');
+      const iconoGrid = document.querySelector('.icono-grid');
+
+      const barLen1 = parseFloat(bar1.getAttribute('width'));
+      const x1_line1 = parseFloat(lineBg1.getAttribute('x1'));
+      const x2_line1 = parseFloat(lineBg1.getAttribute('x2'));
+      const travelDistance1 = (x2_line1 - x1_line1) - barLen1;
+
+      const barLen2 = parseFloat(bar2.getAttribute('width'));
+      const x1_line2 = parseFloat(lineBg2.getAttribute('x1'));
+      const x2_line2 = parseFloat(lineBg2.getAttribute('x2'));
+      const travelDistance2 = (x2_line2 - x1_line2) - barLen2;
+
+      function step1(timestamp) {
+        if (!animationStartTime1) animationStartTime1 = timestamp;
+        const elapsed = timestamp - animationStartTime1;
+        const progress = (elapsed % currentAnimationDuration1) / currentAnimationDuration1;
+        const x_bar1 = x1_line1 + travelDistance1 * progress;
+        bar1.setAttribute('x', x_bar1);
+        if (animationId1) animationId1 = requestAnimationFrame(step1);
+      }
+
+      function step2(timestamp) {
+        if (!animationStartTime2) animationStartTime2 = timestamp;
+        const elapsed = timestamp - animationStartTime2;
+        const progress = (elapsed % currentAnimationDuration2) / currentAnimationDuration2;
+        const startX2 = x2_line2 - barLen2;
+        const x_bar2 = startX2 - travelDistance2 * progress;
+        bar2.setAttribute('x', x_bar2);
+        if (animationId2) animationId2 = requestAnimationFrame(step2);
+      }
+
+      scope.$watch('msg', function (msg) {
+        if (!msg || !msg.payload || !msg.payload[0]) {
+          if (animationId1) cancelAnimationFrame(animationId1);
+          if (animationId2) cancelAnimationFrame(animationId2);
+          bar1.style.color = bar2.style.color = 'transparent';
+          iconoPanel.style.color = iconoEdificio.style.color = iconoGrid.style.color = '#cccccc';
+          return;
+        }
+
+        const series = msg.payload[0].series;
+        const data = msg.payload[0].data;
+        const latestRadiation = data[series.indexOf("Radiacion_Solar")].slice(-1)[0] || 0;
+        const latestTemperature = data[series.indexOf("Temperatura")].slice(-1)[0] || 0;
+        const consumo = msg.consumo || 0;
+        const gridPower = msg.grid_power || 0;
+
+        const scaledRad = Math.min(Math.max(latestRadiation, 0), MAX_RAD);
+        const scaledTemp = Math.min(Math.max(latestTemperature, 0), MAX_TEMP);
+
+        let newDur1 = scaledRad > 0
+          ? MAX_DURATION_MS - (scaledRad / MAX_RAD) * (MAX_DURATION_MS - MIN_DURATION_MS)
+          : Infinity;
+        newDur1 = Math.max(MIN_DURATION_MS, newDur1);
+
+        let newDur2 = scaledTemp > 0
+          ? MAX_DURATION_MS - (scaledTemp / MAX_TEMP) * (MAX_DURATION_MS - MIN_DURATION_MS)
+          : Infinity;
+        newDur2 = Math.max(MIN_DURATION_MS, newDur2);
+
+        const animate1 = latestRadiation > 0 && newDur1 < Infinity;
+        const animate2 = latestTemperature > 0 && newDur2 < Infinity;
+
+        if (animate1) {
+          if (!animationId1 || Math.abs(newDur1 - currentAnimationDuration1) > 50) {
+            if (animationId1) cancelAnimationFrame(animationId1);
+            currentAnimationDuration1 = newDur1;
+            animationStartTime1 = null;
+            animationId1 = requestAnimationFrame(step1);
+          }
+        } else if (animationId1) {
+          cancelAnimationFrame(animationId1);
+          animationId1 = null;
+          bar1.style.color = 'transparent';
+        }
+
+        if (animate2) {
+          if (!animationId2 || Math.abs(newDur2 - currentAnimationDuration2) > 50) {
+            if (animationId2) cancelAnimationFrame(animationId2);
+            currentAnimationDuration2 = newDur2;
+            animationStartTime2 = null;
+            animationId2 = requestAnimationFrame(step2);
+          }
+        } else if (animationId2) {
+          cancelAnimationFrame(animationId2);
+          animationId2 = null;
+          bar2.style.color = 'transparent';
+        }
+
+        // Colores de barras
+        if (animate1) {
+          const p = scaledRad / MAX_RAD;
+          bar1.style.color = `rgb(255, ${Math.round(255 - 255 * p)}, ${Math.round(150 - 150 * p)})`;
+        }
+        if (animate2) {
+          const p = scaledTemp / MAX_TEMP;
+          bar2.style.color = `rgb(${Math.round(255 * (1 - p))}, ${Math.round(255 * (1 - p))}, 255)`;
+        }
+
+        // Colores de iconos
+        iconoPanel.style.color = latestRadiation > 0 ? '#ffff00' : '#cccccc';
+        iconoEdificio.style.color = consumo > 0 ? 'orange' : '#cccccc';
+        let gridColor = '#cccccc';
+        if (gridPower > 0) gridColor = '#4dabf7';
+        else if (gridPower < 0) gridColor = '#ff7f0e';
+        iconoGrid.style.color = gridColor;
+      });
+    })(typeof scope !== 'undefined' ? scope : undefined);
+  </script>
+</body>
+
+</html>

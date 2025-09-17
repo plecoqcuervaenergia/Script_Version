@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Línea con Barras de Potencia e Iconos</title>
+  <style>
+    body {
+      margin: 0;
+      position: relative;
+      font-family: sans-serif;
+      /* Added for potential text */
+    }
+
+    /* Líneas grises de fondo */
+    .line-bg {
+      stroke: #cccccc;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    /* Barras móviles encima de las líneas */
+    .bar {
+      /* El color de la barra se establecerá dinámicamente */
+      fill: currentColor;
+    }
+
+    /* Iconos 3D a 80x80px colocados debajo de la línea */
+    .icono-panel,
+    .icono-inversor,
+    /* Aunque no se usa visiblemente, mantenemos el estilo */
+    .icono-edificio,
+    .icono-grid {
+      position: absolute;
+      top: 0px;
+      /* Alineados verticalmente con la barra */
+      width: 80px;
+      height: 80px;
+      z-index: 10;
+      fill: currentColor;
+      /* Default fill, JS might override */
+      color: #cccccc;
+      /* Default color, JS might override */
+    }
+
+    /* Posicionamiento Horizontal de Iconos */
+    .icono-panel {
+      left: 110px;
+      /* Inicio de la primera línea */
+    }
+
+    .icono-inversor {
+      left: -500px;
+      /* Fuera de pantalla */
+    }
+
+    .icono-edificio {
+      left: 1050px;
+      /* Final de la primera línea / Inicio de la segunda */
+      font-size: 60px;
+      /* Mantenemos tamaño original si era diferente */
+      /* Centrado aproximado bajo la unión de líneas */
+      transform: translateX(-50%);
+    }
+
+    .icono-grid {
+      left: 2050px;
+      /* Final de la segunda línea */
+      /* Centrado aproximado bajo el final de la segunda línea */
+      transform: translateX(-50%);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <svg id="svg" width="2150" height="100">
+    <line id="lineBg1" class="line-bg" x1="150" y1="40" x2="1050" y2="40"></line>
+    <rect id="bar1" class="bar" x="150" y="37" width="100" height="6"></rect>
+
+    <line id="lineBg2" class="line-bg" x1="1050" y1="40" x2="2000" y2="40"></line>
+    <rect id="bar2" class="bar" x="1050" y="37" width="100" height="6"></rect>
+  </svg>
+
+  <svg class="icono-panel" viewBox="0 0 96 64">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#4a90e2" />
+        <stop offset="100%" stop-color="#005f9e" />
+      </linearGradient>
+      <linearGradient id="shade1" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="rgba(0,0,0,0.2)" />
+        <stop offset="100%" stop-color="transparent" />
+      </linearGradient>
+    </defs>
+    <rect x="0" y="8" width="96" height="48" rx="4" ry="4" fill="#333" />
+    <g fill="url(#grad1)">
+      <rect x="4" y="12" width="28" height="40" />
+      <rect x="34" y="12" width="28" height="40" />
+      <rect x="64" y="12" width="28" height="40" />
+    </g>
+    <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+      <line x1="4" y1="24" x2="32" y2="24" />
+      <line x1="4" y1="36" x2="32" y2="36" />
+      <line x1="34" y1="24" x2="62" y2="24" />
+      <line x1="34" y1="36" x2="62" y2="36" />
+      <line x1="64" y1="24" x2="92" y2="24" />
+      <line x1="64" y1="36" x2="92" y2="36" />
+      <line x1="16" y1="12" x2="16" y2="52" />
+      <line x1="48" y1="12" x2="48" y2="52" />
+      <line x1="80" y1="12" x2="80" y2="52" />
+    </g>
+    <rect x="4" y="12" width="28" height="40" fill="url(#shade1)" />
+    <rect x="34" y="12" width="28" height="40" fill="url(#shade1)" />
+    <rect x="64" y="12" width="28" height="40" fill="url(#shade1)" />
+  </svg>
+
+  <svg class="icono-inversor" viewBox="0 0 48 48">
+    <path d="M24 4l-8 14h16l-8-14zm0 40l8-14h-16l8 14zM4 24h14l-8-16 8-16zm40 0h-14l8-16-8-16z" />
+  </svg>
+
+  <i class="fa fa-building icono-edificio"></i>
+
+  <svg class="icono-grid" viewBox="0 0 64 64">
+    <defs>
+      <linearGradient id="gradGrid" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#A0A0A0" />
+        <stop offset="100%" stop-color="#606060" />
+      </linearGradient>
+    </defs>
+    <path d="M32 2 L32 12 M22 12 L42 12 M32 12 L32 22" stroke="currentColor" stroke-width="4" fill="none" />
+    <rect x="10" y="22" width="44" height="30" rx="5" ry="5" fill="url(#gradGrid)" stroke="black" stroke-width="1" />
+    <path d="M20 30 L20 44 M32 30 L32 44 M44 30 L44 44 M26 37 L38 37" stroke="#E0E0E0" stroke-width="3" fill="none" />
+    <path d="M32 52 L32 62 M22 62 L42 62" stroke="currentColor" stroke-width="4" fill="none" />
+  </svg>
+
+  <script>
+    (function(scope) {
+      // Dummy scope and $watch for standalone testing
+      if (typeof scope === 'undefined') {
+        scope = {};
+        scope.$watch = function(prop, callback) {
+          console.log('Dummy $watch called for', prop);
+          let radiationValue = 50;
+          let gridPowerValue = 0; // Dummy value for grid power
+          setInterval(() => {
+            radiationValue = (radiationValue + 50) % 1050; // Cycle radiation
+            gridPowerValue = (gridPowerValue + 100) % 1100; // Cycle grid power
+            const dummyMsg = {
+              payload: [{
+                series: ["Radiacion_Solar", "Temperatura"],
+                data: [
+                  [10, 20, 30, radiationValue], // Radiacion_Solar data
+                  [20, 22, 21, 23] // Temperatura data
+                ],
+                labels: ["Time1", "Time2", "Time3", "Time4"]
+              }],
+              consumo: radiationValue > 0 ? 300 : 0, // Example consumo
+              grid_power: gridPowerValue // Example grid power
+            };
+            console.log("Simulating message:", dummyMsg);
+            callback(dummyMsg);
+          }, 2000);
+        };
+      }
+
+      let animationId = null;
+      let animationStartTime = null;
+      let currentAnimationDuration = 10000; // Default duration (10 seconds) for bar1
+
+      // Get references to ALL relevant elements
+      const bar1 = document.getElementById('bar1');
+      const lineBg1 = document.getElementById('lineBg1');
+      const bar2 = document.getElementById('bar2');
+      const lineBg2 = document.getElementById('lineBg2');
+      const iconoPanel = document.querySelector('.icono-panel');
+      const iconoInversor = document.querySelector('.icono-inversor');
+      const iconoEdificio = document.querySelector('.icono-edificio');
+      const iconoGrid = document.querySelector('.icono-grid');
+
+
+      // Check if all essential elements exist
+      if (!bar1 || !lineBg1 || !bar2 || !lineBg2 || !iconoPanel || !iconoEdificio || !iconoGrid) {
+          console.error("Error: Uno o más elementos SVG/Icono no fueron encontrados! Verifica los IDs y clases.");
+          return; // Stop script execution if elements are missing
+      }
+
+       // Get bar lengths (assuming they are fixed)
+       const barLen1 = parseFloat(bar1.getAttribute('width'));
+       const barLen2 = parseFloat(bar2.getAttribute('width'));
+
+       // Get line coordinates (assuming they are fixed)
+       const x1_line1 = parseFloat(lineBg1.getAttribute('x1'));
+       const x2_line1 = parseFloat(lineBg1.getAttribute('x2'));
+       const L1 = x2_line1 - x1_line1;
+
+       const x1_line2 = parseFloat(lineBg2.getAttribute('x1'));
+       const x2_line2 = parseFloat(lineBg2.getAttribute('x2'));
+       const L2 = x2_line2 - x1_line2;
+
+
+      scope.$watch('msg', function(msg) {
+        if (!msg) {
+             console.log("No message received.");
+             // Optionally set default states (e.g., gray icons, static bars)
+             if(iconoPanel) iconoPanel.style.setProperty('color', '#cccccc');
+             if(iconoEdificio) iconoEdificio.style.setProperty('color', '#cccccc');
+             if(iconoGrid) iconoGrid.style.setProperty('color', '#cccccc');
+             if(bar1) bar1.style.setProperty('color', 'transparent'); // Hide bars
+             if(bar2) bar2.style.setProperty('color', 'transparent');
+             // Stop animation if running
+             if (animationId) {
+                cancelAnimationFrame(animationId);
+                animationId = null;
+                animationStartTime = null;
+             }
+             return;
+        }
+
+        // --- Get Radiation data ---
+        let latestRadiation = 0;
+        if (msg.payload && Array.isArray(msg.payload) && msg.payload.length > 0 &&
+            msg.payload[0] && msg.payload[0].data && Array.isArray(msg.payload[0].data) &&
+            msg.payload[0].data.length > 0 && Array.isArray(msg.payload[0].data[0]) &&
+            msg.payload[0].data[0].length > 0) {
+              const radiationDataArray = msg.payload[0].data[0];
+              latestRadiation = radiationDataArray[radiationDataArray.length - 1];
+        } else {
+             console.log("Could not find radiation data in the expected payload structure.");
+        }
+
+        // --- Get Consumption data ---
+        const consumo = msg.consumo || (msg.payload && msg.payload.consumo) || 0;
+
+        // --- Get Grid Power data (NEW) ---
+        // Adjust 'grid_power' if the actual property name in msg is different
+        const gridPower = msg.grid_power || 0;
+        const maxGridPower = 1000; // Define max expected grid power for color scaling
+        const scaledGridPower = Math.min(Math.max(gridPower, 0), maxGridPower);
+        console.log(`Grid Power: ${gridPower}, Scaled: ${scaledGridPower}`);
+
+        // --- Animation Speed Calculation (Based on Radiation) ---
+        const maxRad = 1000;
+        const minDur = 1;
+        const maxDur = 10;
+        const scaledRadiation = Math.min(Math.max(latestRadiation, 0), maxRad);
+        let newDur = maxDur - (scaledRadiation / maxRad) * (maxDur - minDur);
+        newDur = Math.max(minDur, Math.min(maxDur, newDur));
+        newDur = newDur * 1000; // Convert to ms
+
+        // Restart animation ONLY if duration changes significantly
+        if (Math.abs(newDur - currentAnimationDuration) > 50) {
+          currentAnimationDuration = newDur;
+          if (animationId) {
+            cancelAnimationFrame(animationId);
+          }
+          animationStartTime = null; // Reset start time for new duration
+          animationId = requestAnimationFrame(step);
+          console.log("Animation duration updated:", currentAnimationDuration);
+        } else if (!animationId && (latestRadiation > 0 || gridPower > 0)) {
+            // Start animation if stopped and there's power flow
+            animationId = requestAnimationFrame(step);
+            console.log("Animation (re)started.");
+        }
+
+
+        // --- Bar 1 Color Calculation (Yellow to Red based on Radiation) ---
+        const g1 = Math.round(255 - (scaledRadiation / maxRad) * 255);
+        const color1 = `rgb(255, ${g1}, 0)`;
+        bar1.style.setProperty('color', latestRadiation > 0 ? color1 : 'transparent'); // Hide if no radiation
+        console.log(`Bar 1 Color: ${color1}`);
+
+
+        // --- Bar 2 Color Calculation (White to Blue based on Grid Power) ---
+        // Intense blue: rgb(0, 0, 255)
+        // White: rgb(255, 255, 255)
+        const r2 = Math.round(255 - (scaledGridPower / maxGridPower) * 255);
+        const g2 = Math.round(255 - (scaledGridPower / maxGridPower) * 255);
+        // b2 remains 255
+        const color2 = `rgb(${r2}, ${g2}, 255)`;
+        bar2.style.setProperty('color', gridPower !== 0 ? color2 : 'transparent'); // Hide if no grid power (adjust logic if 0 power has meaning)
+        console.log(`Bar 2 Color: ${color2}`);
+
+
+        // Animation function - moves BOTH bars
+        function step(timestamp) {
+          if (!animationStartTime) {
+            animationStartTime = timestamp;
+          }
+          const elapsed = timestamp - animationStartTime;
+          const p = (elapsed % currentAnimationDuration) / currentAnimationDuration; // Progress [0, 1]
+
+          // Move bar 1
+          const x_bar1 = x1_line1 + (L1 - barLen1) * p;
+          bar1.setAttribute('x', x_bar1);
+
+          // Move bar 2 (using same progress p, but on line 2)
+          const x_bar2 = x1_line2 + (L2 - barLen2) * p;
+          bar2.setAttribute('x', x_bar2);
+
+          // Continue the loop only if needed
+          if (latestRadiation > 0 || gridPower !== 0) { // Keep animating if there's flow
+             animationId = requestAnimationFrame(step);
+          } else {
+              // Stop animation if no power flow anywhere
+              cancelAnimationFrame(animationId);
+              animationId = null;
+              animationStartTime = null;
+              console.log("Animation stopped due to no power flow.");
+          }
+        }
+
+        // If animation is not running but should be (because of new msg with power), start it.
+        // This check complements the duration change check.
+        if (!animationId && (latestRadiation > 0 || gridPower !== 0)) {
+             animationStartTime = null; // Reset start time before starting
+             animationId = requestAnimationFrame(step);
+             console.log("Animation started on message receipt.");
+         } else if (animationId && latestRadiation <= 0 && gridPower === 0) {
+            // If animation is running but power dropped to zero, stop it (handled in step, but belt-and-suspenders)
+             cancelAnimationFrame(animationId);
+             animationId = null;
+             animationStartTime = null;
+             console.log("Animation stopped as power is zero.");
+             // Set bars to transparent when stopped explicitly here too
+             bar1.style.setProperty('color', 'transparent');
+             bar2.style.setProperty('color', 'transparent');
+         }
+
+
+        // --- Update Icon Colors ---
+        iconoPanel.style.setProperty('color', latestRadiation > 0 ? '#ffff00' : '#cccccc'); // Yellow if radiating
+        // iconoInversor?.style.setProperty('color', latestRadiation > 0 ? '#00ff00':'#aaaaaa'); // If you use it
+        iconoEdificio.style.setProperty('color', consumo > 0 ? 'orange' : '#cccccc'); // Orange if consuming
+        iconoGrid.style.setProperty('color', gridPower !== 0 ? '#4dabf7' : '#cccccc'); // Light Blue if grid interaction (adjust color as needed)
+
+      });
+
+    })(typeof scope !== 'undefined' ? scope : {}); // Pass scope if defined, otherwise empty object
+  </script>
+</body>
+
+</html>

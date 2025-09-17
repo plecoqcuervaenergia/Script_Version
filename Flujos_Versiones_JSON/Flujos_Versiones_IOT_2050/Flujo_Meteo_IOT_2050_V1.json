@@ -1,0 +1,896 @@
+[
+    {
+        "id": "f140694556a352f4",
+        "type": "tab",
+        "label": "Flujo_Meteo_IOT_2050",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e78828e3cd5af4a1",
+        "type": "catch",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "95b951e97b97047a"
+        ],
+        "uncaught": false,
+        "x": 200,
+        "y": 40,
+        "wires": [
+            [
+                "7478782b2bc563e0"
+            ]
+        ]
+    },
+    {
+        "id": "966a9f379aebb75b",
+        "type": "status",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "95b951e97b97047a"
+        ],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "7478782b2bc563e0"
+            ]
+        ]
+    },
+    {
+        "id": "7478782b2bc563e0",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Estado/Errores_Modbus_Piranómetro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "95b951e97b97047a",
+        "type": "modbus-read",
+        "z": "f140694556a352f4",
+        "name": "Lectura_Piranómetro",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "",
+        "quantity": "",
+        "rate": "",
+        "rateUnit": "",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "1c84645905c29228",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 240,
+        "y": 120,
+        "wires": [
+            [
+                "6766edf12baec947",
+                "a26a2bee5189de5a",
+                "eb4d68cb651db54f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6766edf12baec947",
+        "type": "mqtt out",
+        "z": "f140694556a352f4",
+        "name": "Envío_Datos_Piranómetro_PC_Cuerva",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 560,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a26a2bee5189de5a",
+        "type": "function",
+        "z": "f140694556a352f4",
+        "name": "Guardar_Datos_Piranómetro_MySQL_Iot_2050",
+        "func": "// Extraer la Radición Solar del payload del mensaje MQTT\nvar piranometro = msg.payload.piranometro;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Radiacion_Solar) VALUES (\" + piranometro + \")\";\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 200,
+        "wires": [
+            [
+                "4509dad30bf0b7d7"
+            ]
+        ]
+    },
+    {
+        "id": "eb4d68cb651db54f",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Datos_Primómetro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d043fe66beb12f63",
+        "type": "catch",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "bbb990af48ee39b9"
+        ],
+        "uncaught": false,
+        "x": 200,
+        "y": 340,
+        "wires": [
+            [
+                "88224c67d0039087"
+            ]
+        ]
+    },
+    {
+        "id": "8ecdacb415a3eede",
+        "type": "status",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "bbb990af48ee39b9"
+        ],
+        "x": 200,
+        "y": 380,
+        "wires": [
+            [
+                "88224c67d0039087"
+            ]
+        ]
+    },
+    {
+        "id": "88224c67d0039087",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Estado/Errores_Modbus_Termómetro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "bbb990af48ee39b9",
+        "type": "modbus-read",
+        "z": "f140694556a352f4",
+        "name": "Lectura_Termometro",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "",
+        "quantity": "",
+        "rate": "",
+        "rateUnit": "",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "1c84645905c29228",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 230,
+        "y": 420,
+        "wires": [
+            [
+                "e5b38dbd29b33605",
+                "ef48c2476bac492f",
+                "d6f622725cfcb948"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e5b38dbd29b33605",
+        "type": "mqtt out",
+        "z": "f140694556a352f4",
+        "name": "Envío_Datos_Termómetro_PC_Cuerva",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 550,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ef48c2476bac492f",
+        "type": "function",
+        "z": "f140694556a352f4",
+        "name": "Guardar_Datos_Termómetro_MySQL_Iot_2050",
+        "func": "// Extraer la temperatura del payload del mensaje MQTT\nvar temperatura = msg.payload.temperatura;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Temperatura) VALUES (\" + temperatura + \")\";\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 500,
+        "wires": [
+            [
+                "4509dad30bf0b7d7"
+            ]
+        ]
+    },
+    {
+        "id": "d6f622725cfcb948",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Datos_Termómetro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ed12ccefa219c8f2",
+        "type": "catch",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "6a8b90d4961ca305"
+        ],
+        "uncaught": false,
+        "x": 200,
+        "y": 640,
+        "wires": [
+            [
+                "2128534765f76ac8"
+            ]
+        ]
+    },
+    {
+        "id": "60a42c95e98a778b",
+        "type": "status",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "6a8b90d4961ca305"
+        ],
+        "x": 200,
+        "y": 680,
+        "wires": [
+            [
+                "2128534765f76ac8"
+            ]
+        ]
+    },
+    {
+        "id": "2128534765f76ac8",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Estado/Errores_Modbus_Anemómetro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "6a8b90d4961ca305",
+        "type": "modbus-read",
+        "z": "f140694556a352f4",
+        "name": "Lectura_Anemómetro",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "",
+        "quantity": "",
+        "rate": "",
+        "rateUnit": "",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "1c84645905c29228",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 240,
+        "y": 720,
+        "wires": [
+            [
+                "218648a80bc0ee0e",
+                "5767f547a58cfed9",
+                "133f8a152ea45da7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "218648a80bc0ee0e",
+        "type": "mqtt out",
+        "z": "f140694556a352f4",
+        "name": "Envío_Datos_Termómetro_PC_Cuerva",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 550,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "5767f547a58cfed9",
+        "type": "function",
+        "z": "f140694556a352f4",
+        "name": "Guardar_Datos_Anemómetro_MySQL_Iot_2050",
+        "func": "// Extraer la Velocidad del viento del payload del mensaje MQTT\nvar anemometro = msg.payload.anemometro;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Temperatura) VALUES (\" + anemometro + \")\";\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 800,
+        "wires": [
+            [
+                "4509dad30bf0b7d7"
+            ]
+        ]
+    },
+    {
+        "id": "133f8a152ea45da7",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Datos_Anemómetro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "eca6974f53f96598",
+        "type": "catch",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "b183f5c2b590172d"
+        ],
+        "uncaught": false,
+        "x": 200,
+        "y": 940,
+        "wires": [
+            [
+                "9f4ffe6c43a5776f"
+            ]
+        ]
+    },
+    {
+        "id": "05e19cc021dd9304",
+        "type": "status",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "b183f5c2b590172d"
+        ],
+        "x": 200,
+        "y": 980,
+        "wires": [
+            [
+                "9f4ffe6c43a5776f"
+            ]
+        ]
+    },
+    {
+        "id": "9f4ffe6c43a5776f",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Estado/Errores_Modbus_Barómetro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "b183f5c2b590172d",
+        "type": "modbus-read",
+        "z": "f140694556a352f4",
+        "name": "Lectura_Barómetro",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "",
+        "quantity": "",
+        "rate": "",
+        "rateUnit": "",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "1c84645905c29228",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 230,
+        "y": 1020,
+        "wires": [
+            [
+                "be7d3505955d63d2",
+                "0a158544de49ef95",
+                "9a7e9668a4befe5b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "be7d3505955d63d2",
+        "type": "mqtt out",
+        "z": "f140694556a352f4",
+        "name": "Envío_Datos_Barómetro_PC_Cuerva",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 550,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "0a158544de49ef95",
+        "type": "function",
+        "z": "f140694556a352f4",
+        "name": "Guardar_Datos_Barometro_MySQL_Iot_2050",
+        "func": "// Extraer la Presión Atmosférica del payload del mensaje MQTT\nvar barometro = msg.payload.barometro;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Presion_Atmosférica) VALUES (\" + barometro + \")\";\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1100,
+        "wires": [
+            [
+                "4509dad30bf0b7d7"
+            ]
+        ]
+    },
+    {
+        "id": "9a7e9668a4befe5b",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Datos_Barómetro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "420815f83955b94f",
+        "type": "catch",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "bf7a367e267b677b"
+        ],
+        "uncaught": false,
+        "x": 200,
+        "y": 1240,
+        "wires": [
+            [
+                "449998c9902c4309"
+            ]
+        ]
+    },
+    {
+        "id": "dc64414fa0ee9581",
+        "type": "status",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "bf7a367e267b677b"
+        ],
+        "x": 200,
+        "y": 1280,
+        "wires": [
+            [
+                "449998c9902c4309"
+            ]
+        ]
+    },
+    {
+        "id": "449998c9902c4309",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Estado/Errores_Modbus_Higrómetro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "bf7a367e267b677b",
+        "type": "modbus-read",
+        "z": "f140694556a352f4",
+        "name": "Lectura_Higrómetro",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "",
+        "quantity": "",
+        "rate": "",
+        "rateUnit": "",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "1c84645905c29228",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 230,
+        "y": 1320,
+        "wires": [
+            [
+                "546df34602d8453e",
+                "c24ebadddb9d4e31",
+                "c05d6370ea8a549a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "546df34602d8453e",
+        "type": "mqtt out",
+        "z": "f140694556a352f4",
+        "name": "Envío_Datos_Higrómetro_PC_Cuerva",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 550,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "c24ebadddb9d4e31",
+        "type": "function",
+        "z": "f140694556a352f4",
+        "name": "Guardar_Datos_Higrómetro_MySQL_Iot_2050",
+        "func": "// Extraer la Humedad del payload del mensaje MQTT\nvar higrometro = msg.payload.higrometro;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Humedad) VALUES (\" + higrometro + \")\";\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1400,
+        "wires": [
+            [
+                "4509dad30bf0b7d7"
+            ]
+        ]
+    },
+    {
+        "id": "c05d6370ea8a549a",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Datos_Higrómetro",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "7bc4dd5686afb49d",
+        "type": "catch",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "0c03d0e4fd362af8"
+        ],
+        "uncaught": false,
+        "x": 200,
+        "y": 1540,
+        "wires": [
+            [
+                "8e2603d165d709d4"
+            ]
+        ]
+    },
+    {
+        "id": "46506fc71688b844",
+        "type": "status",
+        "z": "f140694556a352f4",
+        "name": "",
+        "scope": [
+            "0c03d0e4fd362af8"
+        ],
+        "x": 200,
+        "y": 1580,
+        "wires": [
+            [
+                "8e2603d165d709d4"
+            ]
+        ]
+    },
+    {
+        "id": "8e2603d165d709d4",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Estado/Errores_Modbus_Veleta",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "0c03d0e4fd362af8",
+        "type": "modbus-read",
+        "z": "f140694556a352f4",
+        "name": "Lectura_Veleta",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "",
+        "quantity": "",
+        "rate": "",
+        "rateUnit": "",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "1c84645905c29228",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 220,
+        "y": 1620,
+        "wires": [
+            [
+                "4471dbebf6fe2a19",
+                "235560545f41ebeb",
+                "3eda96399bf7e08b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4471dbebf6fe2a19",
+        "type": "mqtt out",
+        "z": "f140694556a352f4",
+        "name": "Envío_Datos_Veleta_PC_Cuerva",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 540,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "235560545f41ebeb",
+        "type": "function",
+        "z": "f140694556a352f4",
+        "name": "Guardar_Datos_Veleta_MySQL_Iot_2050",
+        "func": "// Extraer la direccion de la veleta del payload del mensaje MQTT\nvar veleta = msg.payload.veleta;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Direccion_Viento) VALUES (\" + veleta + \")\";\n\n//Consultar como se envían los datos de la veleta \n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1700,
+        "wires": [
+            [
+                "4509dad30bf0b7d7"
+            ]
+        ]
+    },
+    {
+        "id": "3eda96399bf7e08b",
+        "type": "debug",
+        "z": "f140694556a352f4",
+        "name": "Datos_Veleta",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "4509dad30bf0b7d7",
+        "type": "mysql",
+        "z": "f140694556a352f4",
+        "mydb": "4eb04659e417eb31",
+        "name": "Mediciones_Meteo_Cuerva_iot2050",
+        "x": 1210,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c84645905c29228",
+        "type": "modbus-client",
+        "name": "",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "4eb04659e417eb31",
+        "type": "MySQLdatabase",
+        "name": "Mediciones_Meteo_Cuerva_iot2050",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "Mediciones_Meteo_Cuerva_iot2050_db",
+        "tz": "",
+        "charset": "UTF8"
+    }
+]

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Selector de Fecha</title>
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+  <h2>Selecciona una fecha:</h2>
+  <input type="text" id="datepicker" placeholder="Haz clic para elegir fecha">
+
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("#datepicker", {
+      dateFormat: "Y-m-d",
+      locale: "es"
+    });
+  </script>
+</body>
+</html>

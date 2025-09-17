@@ -1,0 +1,838 @@
+[
+    {
+        "id": "babb09d49f994252",
+        "type": "tab",
+        "label": "Fotovoltaica_UNIV_MADRID",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "11f9d9361a5c8597",
+        "type": "group",
+        "z": "babb09d49f994252",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "6326ab4c14c1cd3e",
+            "cf36e3f80e5d983d",
+            "ae05c8f3ca3e2527",
+            "3dc76bde15bf83ec",
+            "7a9f89a0074e937b",
+            "22d670562cfbdfc4",
+            "62e69a71a6948019",
+            "9e5083eb519f6ffc",
+            "62315b32e91fa5f6",
+            "f86d9b311fdf30d7",
+            "c5b8830690bc9917",
+            "4ba29ef45816af9c",
+            "d1333a743b55d041",
+            "49c6bb81de85fe38",
+            "e963b893223d1e22",
+            "f34e785714cac7aa",
+            "781e87e7ffe2c1ba",
+            "8d96f5af2508a43f",
+            "5c9b3af7661e8ca6"
+        ],
+        "x": 894,
+        "y": 539,
+        "w": 1892,
+        "h": 602
+    },
+    {
+        "id": "6841818ba1237e59",
+        "type": "group",
+        "z": "babb09d49f994252",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "1dab2248a5304f44",
+            "7d8a7db6f87bc1af",
+            "f8962cc31efed9b9",
+            "4dee70fee06ce3fa",
+            "d14b2403bfaae166",
+            "e91f58a1579a432c",
+            "717cef9ec9f1fe87",
+            "d895d0c07592efa7",
+            "d8ad7c507e717d5b",
+            "functionMonth",
+            "monthPicker"
+        ],
+        "x": 894,
+        "y": 239,
+        "w": 1732,
+        "h": 222
+    },
+    {
+        "id": "d2d3cb0e150c9910",
+        "type": "group",
+        "z": "babb09d49f994252",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "7d1ed20de7c9d1fc",
+            "af795101aae55b0e",
+            "0a9e39a02f4154ae",
+            "ac389ea806520616"
+        ],
+        "x": 894,
+        "y": 19,
+        "w": 472,
+        "h": 162
+    },
+    {
+        "id": "1dab2248a5304f44",
+        "type": "mysql",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "mydb": "aaaab5d307fbd5c9",
+        "name": "Escritura_Graf_Pira",
+        "x": 1930,
+        "y": 360,
+        "wires": [
+            [
+                "7d8a7db6f87bc1af"
+            ]
+        ]
+    },
+    {
+        "id": "7d8a7db6f87bc1af",
+        "type": "function",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "name": "Conversión",
+        "func": "/*// Obtener los datos del payload, que es el resultado de la consulta a la base de datos\nconst inp = msg.payload;\n\n\n// Inicializar la estructura de los datos para el gráfico (chartData)\nvar chardatos_Rad_Solar = [{\n    // La propiedad \"series\" define el nombre de la serie para el gráfico\n    series: [\"Radiacion_Solar\"],\n    // La propiedad \"data\" es un array de arrays\n    // En este caso está inicializado con un array vacío dentro\n    data: [[]],\n    // La propiedad \"labels\" contendrá las etiquetas para el eje X del gráfico \n    labels: [\"\"]\n}]\n\n// Iterar sobre cada elemento en el array \"inp\" que contiene los datos de la consulta\nfor (let item of inp) {\n    // Agregar un punto de datos a la serie \"Radiacion_Solar\" en el gráfico\n    // Se empuja un objeto que contiene \"x\" (fecha) y \"y\" (valor de la radiación solar)\n    chardatos_Rad_Solar[0].data[0].push({\n        // La propiedad \"x\" representa la fecha (se supone que \"item.fecha\" es una cadena de texto con la fecha)\n        x: item.fecha,\n        // La propiedad \"y\" representa el valor de la radiación solar\n        y: item.Radiacion_Solar\n    })\n}\n\n// Asignar el gráfico procesado al payload para que pueda ser usado por el siguiente nodo\nmsg.payload = chardatos_Rad_Solar;\n\n// Retornar el mensaje con los datos del gráfico\nreturn msg;\n\n\n*/\n\n\n\n\n/*// Obtener los datos de la consulta\nconst inp = msg.payload;\n\n// Inicializar la estructura para Chart v2 JSON\nlet chartData = [{\n    series: [\"Radiacion_Solar\"],\n    data: [[]],\n    labels: []\n}];\n\nfor (let item of inp) {\n    // Asegurarnos de tener un objeto Date\n    let dateObj = item.fecha instanceof Date\n        ? item.fecha\n        : new Date(item.fecha);\n\n    // Meter el valor numérico\n    chartData[0].data[0].push(item.Radiacion_Solar);\n    // Meter la etiqueta (Date directamente)\n    chartData[0].labels.push(dateObj);\n}\n\nmsg.payload = chartData;\nreturn msg;*/\n\n/*\n// Obtener los datos de la consulta\nconst inp = msg.payload;\n\n// Inicializar la estructura para Chart v2 JSON con DOS series\nlet chartData = [{\n    series: [\"Radiacion_Solar\", \"Temperatura\"],\n    data: [[], []],   // data[0] para Radiacion_Solar, data[1] para Temperatura\n    labels: []          // mismísimas etiquetas para ambas series\n}];\n\n// Recorrer cada fila\nfor (let item of inp) {\n    // Convertir a Date si viene string ISO\n    let dateObj = item.fecha instanceof Date\n        ? item.fecha\n        : new Date(item.fecha);\n\n    // Meter el dato de radiación en la serie 0\n    chartData[0].data[0].push(item.Radiacion_Solar);\n    // Meter el dato de temperatura en la serie 1\n    chartData[0].data[1].push(item.Temperatura);\n    // Meter la etiqueta (fecha) una sola vez\n    chartData[0].labels.push(dateObj);\n}\n\n// Devolver el payload ya combinado\nmsg.payload = chartData;\nreturn msg;\n*/\n\n\nconst inp = msg.payload;\nlet chartData = [{\n    series: [\"Radiacion_Solar\", \"Temperatura\"],\n    data: [[], []],     // dos arrays, uno por cada serie\n    labels: []              // mismo array de fechas\n}];\n\nfor (let item of inp) {\n    let dateObj = item.fecha instanceof Date\n        ? item.fecha\n        : new Date(item.fecha);\n\n    chartData[0].data[0].push(item.Radiacion_Solar);\n    chartData[0].data[1].push(item.Temperatura);\n    chartData[0].labels.push(dateObj);\n}\n\nmsg.payload = chartData;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2170,
+        "y": 360,
+        "wires": [
+            [
+                "e91f58a1579a432c",
+                "717cef9ec9f1fe87",
+                "d895d0c07592efa7"
+            ]
+        ]
+    },
+    {
+        "id": "f8962cc31efed9b9",
+        "type": "function",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "name": "ui_control",
+        "func": "msg.ui_control = {\n    options: {\n        scales: {\n            xAxes: [\n                {\n                    stacked: true,\n                    ticks: {\n                        fontColor: '#FFFFFF'\n                    },\n                    gridLines: {\n                        // Configuración para OCULTAR líneas verticales del eje X\n                        zeroLineColor: '#FFFFFF',\n                        color: '#FFFFFF',\n                        lineWidth: 0.0,\n                        display: false           // Mantenemos esto si solo quieres líneas horizontales\n                    },\n                }\n            ],\n            yAxes: [{\n                stacked: true,\n                ticks: {\n                    fontColor: '#FFFFFF'\n                },\n                gridLines: {\n                    // >>>>>>>>>> CONFIGURACIÓN PARA MOSTRAR LÍNEAS HORIZONTALES DEL EJE Y <<<<<<<<<<<\n                    zeroLineColor: '#FFFFFF', // Color de la línea en el valor 0\n                    color: '#FFFFFF',         // Color de las otras líneas de la cuadrícula\n                    lineWidth: 0.5,           // Grosor de las líneas (mayor que 0 para que se vean)\n                    // display: false        // ¡COMENTA O ELIMINA esta línea para que sean visibles!\n                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n                },\n                // Puedes añadir aquí min/max si quieres definir el rango\n                // min: 0,\n                // max: 100\n            }]\n        }\n    }\n}\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 300,
+        "wires": [
+            [
+                "d895d0c07592efa7"
+            ]
+        ]
+    },
+    {
+        "id": "4dee70fee06ce3fa",
+        "type": "delay",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "40",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1330,
+        "y": 360,
+        "wires": [
+            [
+                "functionMonth"
+            ]
+        ]
+    },
+    {
+        "id": "d14b2403bfaae166",
+        "type": "inject",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1040,
+        "y": 360,
+        "wires": [
+            [
+                "f8962cc31efed9b9",
+                "4dee70fee06ce3fa"
+            ]
+        ]
+    },
+    {
+        "id": "e91f58a1579a432c",
+        "type": "ui_template",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "group": "0a6525c364ecabac",
+        "name": "Animaciones",
+        "order": 2,
+        "width": 42,
+        "height": "2",
+        "format": "<!DOCTYPE html>\n<html lang=\"es\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Línea con Barras de Potencia e Iconos v2 (placas y edificio intercambiados)</title>\n  <style>\n    /* Estilos CSS actualizados para líneas iguales y iconos equidistantes */\n    body {\n      margin: 0;\n      position: relative;\n      font-family: sans-serif;\n    }\n\n    .line-bg {\n      stroke: #cccccc;\n      stroke-width: 2;\n      fill: none;\n    }\n\n    .bar {\n      fill: currentColor;\n    }\n\n    .icono-panel,\n    .icono-inversor,\n    .icono-edificio,\n    .icono-grid {\n      position: absolute;\n      top: 0px;\n      width: 80px;\n      height: 80px;\n      z-index: 10;\n      fill: currentColor;\n      color: #cccccc;\n    }\n\n    .icono-panel {\n      /* Ahora en el punto medio (antes edificio) */\n      left: 1120px;\n      transform: translateX(-50%);\n    }\n\n    .icono-inversor {\n      /* Se mantiene fuera de vista si lo deseas */\n      left: -330px;\n    }\n\n    .icono-edificio {\n      /* Ahora en el inicio de la primera línea (antes placas) */\n      left: 220px;\n      transform: translateX(-50%);\n      font-size: 60px;\n    }\n\n    .icono-grid {\n      /* Centrado en el final de la segunda línea */\n      left: 2020px;\n      transform: translateX(-50%);\n    }\n  </style>\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n</head>\n\n<body>\n  <svg id=\"svg\" width=\"2220\" height=\"100\">\n    <!-- Primera línea (900px) -->\n    <line id=\"lineBg1\" class=\"line-bg\" x1=\"220\" y1=\"40\" x2=\"1120\" y2=\"40\"></line>\n    <rect id=\"bar1\" class=\"bar\" x=\"220\" y=\"37\" width=\"100\" height=\"6\"></rect>\n\n    <!-- Segunda línea (900px también) -->\n    <line id=\"lineBg2\" class=\"line-bg\" x1=\"1120\" y1=\"40\" x2=\"2020\" y2=\"40\"></line>\n    <rect id=\"bar2\" class=\"bar\" x=\"1120\" y=\"37\" width=\"100\" height=\"6\"></rect>\n  </svg>\n\n  <!-- Icono de panel solar (ahora en centro) -->\n  <svg class=\"icono-panel\" viewBox=\"0 0 96 64\">\n    <defs>\n      <linearGradient id=\"grad1\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#4a90e2\" />\n        <stop offset=\"100%\" stop-color=\"#005f9e\" />\n      </linearGradient>\n      <linearGradient id=\"shade1\" x1=\"0%\" y1=\"100%\" x2=\"100%\" y2=\"0%\">\n        <stop offset=\"0%\" stop-color=\"rgba(0,0,0,0.2)\" />\n        <stop offset=\"100%\" stop-color=\"transparent\" />\n      </linearGradient>\n    </defs>\n    <rect x=\"0\" y=\"8\" width=\"96\" height=\"48\" rx=\"4\" ry=\"4\" fill=\"#333\" />\n    <g fill=\"url(#grad1)\">\n      <rect x=\"4\" y=\"12\" width=\"28\" height=\"40\" />\n      <rect x=\"34\" y=\"12\" width=\"28\" height=\"40\" />\n      <rect x=\"64\" y=\"12\" width=\"28\" height=\"40\" />\n    </g>\n    <g stroke=\"rgba(255,255,255,0.3)\" stroke-width=\"1\">\n      <line x1=\"4\" y1=\"24\" x2=\"32\" y2=\"24\" />\n      <line x1=\"4\" y1=\"36\" x2=\"32\" y2=\"36\" />\n      <line x1=\"34\" y1=\"24\" x2=\"62\" y2=\"24\" />\n      <line x1=\"34\" y1=\"36\" x2=\"62\" y2=\"36\" />\n      <line x1=\"64\" y1=\"24\" x2=\"92\" y2=\"24\" />\n      <line x1=\"64\" y1=\"36\" x2=\"92\" y2=\"36\" />\n      <line x1=\"16\" y1=\"12\" x2=\"16\" y2=\"52\" />\n      <line x1=\"48\" y1=\"12\" x2=\"48\" y2=\"52\" />\n      <line x1=\"80\" y1=\"12\" x2=\"80\" y2=\"52\" />\n    </g>\n    <rect x=\"4\" y=\"12\" width=\"28\" height=\"40\" fill=\"url(#shade1)\" />\n    <rect x=\"34\" y=\"12\" width=\"28\" height=\"40\" fill=\"url(#shade1)\" />\n    <rect x=\"64\" y=\"12\" width=\"28\" height=\"40\" fill=\"url(#shade1)\" />\n  </svg>\n\n  <!-- Icono de inversor -->\n  <svg class=\"icono-inversor\" viewBox=\"0 0 48 48\">\n    <path d=\"M24 4l-8 14h16l-8-14zm0 40l8-14h-16l8 14zM4 24h14l-8-16 8-16zm40 0h-14l8-16-8-16z\" />\n  </svg>\n\n  <!-- Icono de edificio (ahora en inicio) -->\n  <i class=\"fa fa-building icono-edificio\"></i>\n\n  <!-- Icono de red eléctrica -->\n  <svg class=\"icono-grid\" viewBox=\"0 0 64 64\">\n    <defs>\n      <linearGradient id=\"gradGrid\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n        <stop offset=\"0%\" stop-color=\"#A0A0A0\" />\n        <stop offset=\"100%\" stop-color=\"#606060\" />\n      </linearGradient>\n    </defs>\n    <path d=\"M32 2 L32 12 M22 12 L42 12 M32 12 L32 22\" stroke=\"currentColor\" stroke-width=\"4\" fill=\"none\" />\n    <rect x=\"10\" y=\"22\" width=\"44\" height=\"30\" rx=\"5\" ry=\"5\" fill=\"url(#gradGrid)\" stroke=\"black\" stroke-width=\"1\" />\n    <path d=\"M20 30 L20 44 M32 30 L32 44 M44 30 L44 44 M26 37 L38 37\" stroke=\"#E0E0E0\" stroke-width=\"3\" fill=\"none\" />\n    <path d=\"M32 52 L32 62 M22 62 L42 62\" stroke=\"currentColor\" stroke-width=\"4\" fill=\"none\" />\n  </svg>\n\n  <script>\n    (function (scope) {\n      // Dummy scope y $watch para pruebas\n      if (typeof scope === 'undefined') {\n        scope = {};\n        scope.$watch = function (prop, callback) {\n          let radiationValue = 0;\n          let temperatureValue = 0;\n          setInterval(() => {\n            radiationValue = (radiationValue + 150) % 2050;\n            temperatureValue = (temperatureValue + 180) % 2050;\n            const dummyMsg = {\n              payload: [{\n                series: [\"Radiacion_Solar\", \"Temperatura\"],\n                data: [[radiationValue], [temperatureValue]],\n                labels: [\"Now\"]\n              }],\n              consumo: radiationValue > 100 ? 500 : 0,\n              grid_power: temperatureValue > 1500 ? -200 : 0\n            };\n            callback(dummyMsg);\n          }, 1000);\n        };\n      }\n\n      const MAX_RAD = 2000, MAX_TEMP = 2000;\n      const MIN_DURATION_MS = 1000, MAX_DURATION_MS = 10000;\n\n      let animationId1 = null, animationStartTime1 = null, currentAnimationDuration1 = MAX_DURATION_MS;\n      let animationId2 = null, animationStartTime2 = null, currentAnimationDuration2 = MAX_DURATION_MS;\n\n      const bar1 = document.getElementById('bar1');\n      const lineBg1 = document.getElementById('lineBg1');\n      const bar2 = document.getElementById('bar2');\n      const lineBg2 = document.getElementById('lineBg2');\n      const iconoPanel = document.querySelector('.icono-panel');\n      const iconoEdificio = document.querySelector('.icono-edificio');\n      const iconoGrid = document.querySelector('.icono-grid');\n\n      // Cálculo de distancias\n      const barLen1 = parseFloat(bar1.getAttribute('width'));\n      const x1_line1 = parseFloat(lineBg1.getAttribute('x1'));\n      const x2_line1 = parseFloat(lineBg1.getAttribute('x2'));\n      const travelDistance1 = (x2_line1 - x1_line1) - barLen1;\n\n      const barLen2 = parseFloat(bar2.getAttribute('width'));\n      const x1_line2 = parseFloat(lineBg2.getAttribute('x1'));\n      const x2_line2 = parseFloat(lineBg2.getAttribute('x2'));\n      const travelDistance2 = (x2_line2 - x1_line2) - barLen2;\n\n      // Nueva step1: empieza en el edificio (ahora en x1) y va hacia la izquierda\n      function step1(timestamp) {\n        if (!animationStartTime1) animationStartTime1 = timestamp;\n        const elapsed = timestamp - animationStartTime1;\n        const progress = (elapsed % currentAnimationDuration1) / currentAnimationDuration1;\n        const startX1 = x2_line1 - barLen1;\n        const x_bar1 = startX1 - travelDistance1 * progress;\n        bar1.setAttribute('x', x_bar1);\n        if (animationId1) animationId1 = requestAnimationFrame(step1);\n      }\n\n      // Nueva step2: empieza en el edificio (centro) y va hacia la derecha\n      function step2(timestamp) {\n        if (!animationStartTime2) animationStartTime2 = timestamp;\n        const elapsed = timestamp - animationStartTime2;\n        const progress = (elapsed % currentAnimationDuration2) / currentAnimationDuration2;\n        const startX2 = x1_line2;\n        const x_bar2 = startX2 + travelDistance2 * progress;\n        bar2.setAttribute('x', x_bar2);\n        if (animationId2) animationId2 = requestAnimationFrame(step2);\n      }\n\n      scope.$watch('msg', function (msg) {\n        if (!msg || !msg.payload || !msg.payload[0]) {\n          if (animationId1) cancelAnimationFrame(animationId1);\n          if (animationId2) cancelAnimationFrame(animationId2);\n          bar1.style.color = bar2.style.color = 'transparent';\n          iconoPanel.style.color = iconoEdificio.style.color = iconoGrid.style.color = '#cccccc';\n          return;\n        }\n\n        const series = msg.payload[0].series;\n        const data = msg.payload[0].data;\n        const latestRadiation = data[series.indexOf(\"Radiacion_Solar\")].slice(-1)[0] || 0;\n        const latestTemperature = data[series.indexOf(\"Temperatura\")].slice(-1)[0] || 0;\n        const consumo = msg.consumo || 0;\n        const gridPower = msg.grid_power || 0;\n\n        const scaledRad = Math.min(Math.max(latestRadiation, 0), MAX_RAD);\n        const scaledTemp = Math.min(Math.max(latestTemperature, 0), MAX_TEMP);\n\n        let newDur1 = scaledRad > 0\n          ? MAX_DURATION_MS - (scaledRad / MAX_RAD) * (MAX_DURATION_MS - MIN_DURATION_MS)\n          : Infinity;\n        newDur1 = Math.max(MIN_DURATION_MS, newDur1);\n\n        let newDur2 = scaledTemp > 0\n          ? MAX_DURATION_MS - (scaledTemp / MAX_TEMP) * (MAX_DURATION_MS - MIN_DURATION_MS)\n          : Infinity;\n        newDur2 = Math.max(MIN_DURATION_MS, newDur2);\n\n        const animate1 = latestRadiation > 0 && newDur1 < Infinity;\n        const animate2 = latestTemperature > 0 && newDur2 < Infinity;\n\n        if (animate1) {\n          if (!animationId1 || Math.abs(newDur1 - currentAnimationDuration1) > 50) {\n            if (animationId1) cancelAnimationFrame(animationId1);\n            currentAnimationDuration1 = newDur1;\n            animationStartTime1 = null;\n            bar1.setAttribute('x', x2_line1 - barLen1);\n            animationId1 = requestAnimationFrame(step1);\n          }\n        } else if (animationId1) {\n          cancelAnimationFrame(animationId1);\n          animationId1 = null;\n          bar1.style.color = 'transparent';\n        }\n\n        if (animate2) {\n          if (!animationId2 || Math.abs(newDur2 - currentAnimationDuration2) > 50) {\n            if (animationId2) cancelAnimationFrame(animationId2);\n            currentAnimationDuration2 = newDur2;\n            animationStartTime2 = null;\n            bar2.setAttribute('x', x1_line2);\n            animationId2 = requestAnimationFrame(step2);\n          }\n        } else if (animationId2) {\n          cancelAnimationFrame(animationId2);\n          animationId2 = null;\n          bar2.style.color = 'transparent';\n        }\n\n        // Colores de barras\n        if (animate1) {\n          const p = scaledRad / MAX_RAD;\n          bar1.style.color = `rgb(255, ${Math.round(255 - 255 * p)}, ${Math.round(150 - 150 * p)})`;\n        }\n        if (animate2) {\n          const p = scaledTemp / MAX_TEMP;\n          bar2.style.color = `rgb(${Math.round(255 * (1 - p))}, ${Math.round(255 * (1 - p))}, 255)`;\n        }\n\n        // Colores de iconos\n        iconoPanel.style.color = latestRadiation > 0 ? '#ffff00' : '#cccccc';\n        iconoEdificio.style.color = consumo > 0 ? 'orange' : '#cccccc';\n        let gridColor = '#cccccc';\n        if (gridPower > 0) gridColor = '#4dabf7';\n        else if (gridPower < 0) gridColor = '#ff7f0e';\n        iconoGrid.style.color = gridColor;\n      });\n    })(typeof scope !== 'undefined' ? scope : undefined);\n  </script>\n</body>\n\n</html>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "CSS_Anima",
+        "x": 2490,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "717cef9ec9f1fe87",
+        "type": "debug",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2480,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d895d0c07592efa7",
+        "type": "ui_chart",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "name": "GRAF_CONSUMO",
+        "group": "0a6525c364ecabac",
+        "order": 1,
+        "width": 40,
+        "height": "15",
+        "label": "CONSUMO",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "200",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#fad966",
+            "#999999",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "CSS_Graf_Consumo",
+        "x": 2510,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d1ed20de7c9d1fc",
+        "type": "comment",
+        "z": "babb09d49f994252",
+        "g": "d2d3cb0e150c9910",
+        "name": "Grupo Estilos",
+        "info": "Este nodo Template permite editar libremente en CSS el fondo\ndel dashboard.",
+        "x": 990,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "af795101aae55b0e",
+        "type": "ui_template",
+        "z": "babb09d49f994252",
+        "g": "d2d3cb0e150c9910",
+        "group": "0a6525c364ecabac",
+        "name": "CSS_Imagen_Cuerva",
+        "order": 7,
+        "width": "33",
+        "height": "1",
+        "format": "<style>\n    /* Establece los estilos para el elemento <body> (la página completa) */\n    body {\n        /* Especifica la imagen de fondo que se utilizará en la página */\n        background-image: url('/IMAGEN_FONDO_METEO.png');\n\n        /* Hace que la imagen de fondo cubra toda el área del fondo, ajustándose al tamaño de la ventana */\n        background-size: cover;\n\n        /* Centra la imagen de fondo tanto en el eje horizontal como vertical */\n        background-position: center;\n\n        /* Evita que la imagen de fondo se repita si no cubre toda el área visible */\n        background-repeat: no-repeat;\n    }\n</style>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1240,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6326ab4c14c1cd3e",
+        "type": "inject",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "59 23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1000,
+        "y": 740,
+        "wires": [
+            [
+                "cf36e3f80e5d983d"
+            ]
+        ]
+    },
+    {
+        "id": "cf36e3f80e5d983d",
+        "type": "function",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "Peticion_MYSQL",
+        "func": "msg.topic = \"SELECT id, fecha, Temperatura, Radiacion_Solar FROM mediciones_sensores WHERE DATE(fecha) = CURDATE();\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 740,
+        "wires": [
+            [
+                "3dc76bde15bf83ec"
+            ]
+        ]
+    },
+    {
+        "id": "ae05c8f3ca3e2527",
+        "type": "function",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "TABLA_HTML_Fotovoltaica_UNI_Madrid",
+        "func": "// Inicia la variable con la estructura básica del HTML y la tabla\nvar html = `<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <style>\n      table { border-collapse: collapse; width: 100%; }\n      th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }\n      th { background-color: #f2f2f2; }\n    </style>\n  </head>\n  <body>\n    <h2>Datos sensores MeteoCuerva</h2> <!-- Título dentro del cuerpo del email -->\n    <table>\n      <tr>\n        <th>id</th>\n        <th>fecha</th>\n        <th>Temperatura</th>\n        <th>Radiacion_Solar</th>\n      </tr>`;\n\n// Recorre cada registro obtenido de la consulta y agrega una fila a la tabla\nmsg.payload.forEach(function(row) {\n    html += `<tr>\n      <td>${row.id}</td>\n      <td>${row.fecha}</td>\n      <td>${row.Temperatura}</td>\n      <td>${row.Radiacion_Solar}</td>\n\n    </tr>`;\n});\n\nhtml += `</table>\n  </body>\n</html>`;\n\n// Asigna el HTML generado al payload\nmsg.payload = html;\n\n// Establece el asunto del correo\nmsg.topic = \"Datos sensores Meteo Cuerva*\";\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1880,
+        "y": 740,
+        "wires": [
+            [
+                "7a9f89a0074e937b",
+                "62e69a71a6948019"
+            ]
+        ]
+    },
+    {
+        "id": "3dc76bde15bf83ec",
+        "type": "mysql",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "mydb": "fcf557fe10b65b24",
+        "name": "Mediciones_Meteo_Cuerva_db",
+        "x": 1510,
+        "y": 740,
+        "wires": [
+            [
+                "ae05c8f3ca3e2527",
+                "62315b32e91fa5f6"
+            ]
+        ]
+    },
+    {
+        "id": "7a9f89a0074e937b",
+        "type": "e-mail",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": false,
+        "name": "plecoq@cuervaenergia.com",
+        "dname": "Datos_FOTOVOLTAICA_UN_MADRID",
+        "x": 2610,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "22d670562cfbdfc4",
+        "type": "comment",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "Grupo Reportes",
+        "info": "Este grupo envía los datos recogidos por \nlos sensores y almacenados en MYSQL a un correo \nelectrónico configurado",
+        "x": 1020,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "62e69a71a6948019",
+        "type": "debug",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "Datos_Email_FOTOVOLTAICA_UN_MADRID",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1900,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "9e5083eb519f6ffc",
+        "type": "xlsx-out",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "Excel_FOTOVOLTAICA_UN_MADRID",
+        "sheetName": "Mediciones",
+        "x": 2230,
+        "y": 700,
+        "wires": [
+            [
+                "7a9f89a0074e937b"
+            ]
+        ]
+    },
+    {
+        "id": "62315b32e91fa5f6",
+        "type": "function",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "Formateo_XLSX",
+        "func": "//msg.payload contiene los datos obtenidos de la base de datos\nlet data = msg.payload;\n\n// Transformar los datos en un array de objetos\nlet excelData = data.map(row => ({\n    Temperatura: row.Temperatura,\n    Radiacion_Solar: row.Radiacion_Solar\n}));\n\nmsg.payload = excelData;\n// Establece el asunto del correo\nmsg.topic = \"Datos sensores Meteo Cuerva*\";\nmsg.filename = \"Mediciones_sensores_METEOCUERVA*.xlsx\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1800,
+        "y": 700,
+        "wires": [
+            [
+                "f86d9b311fdf30d7",
+                "9e5083eb519f6ffc"
+            ]
+        ]
+    },
+    {
+        "id": "f86d9b311fdf30d7",
+        "type": "debug",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "Datos_FOTOVOLTAICA_UN_MADRID_XLSX",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1900,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "d8ad7c507e717d5b",
+        "type": "comment",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "name": "Grupo Mensajería",
+        "info": "Este grupo envía los datos recogidos por \nlos sensores y almacenados en MYSQL a un correo \nelectrónico configurado",
+        "x": 1010,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "monthPicker",
+        "type": "ui_template",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "group": "0a6525c364ecabac",
+        "name": "Selector_Fecha",
+        "order": 6,
+        "width": "11",
+        "height": "6",
+        "format": "<style>\n  .period-picker {\n\n    display: flex;\n\n    flex-direction: column;\n\n    align-items: flex-start;\n\n    padding: 0.1rem;\n\n    background-color: #2c2c2c;\n\n    border-radius: 0.75rem;\n\n    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);\n\n    font-family: 'Helvetica Neue', Arial, sans-serif;\n\n    color: #e0e0e0;\n\n    max-width: 400px;\n\n    margin: 1rem;\n\n  }\n\n\n\n  .period-picker__radios {\n\n    display: flex;\n\n    justify-content: space-between;\n\n    width: 100%;\n\n    margin-bottom: 0.3rem;\n\n  }\n\n\n\n  .period-picker__radios label {\n\n    font-size: 0.9rem;\n\n    cursor: pointer;\n\n    padding: 0.3rem 0.8rem;\n\n    border-radius: 0.35rem;\n\n    background-color: #2e2e3e;\n\n    color: #ccc;\n\n    transition: all 0.3s;\n\n  }\n\n\n\n  .period-picker__radios input[type=\"radio\"] {\n\n    display: none;\n\n  }\n\n\n\n  .period-picker__radios input[type=\"radio\"]:checked+label {\n\n    background-color: #4a90e2;\n\n    color: #fff;\n\n  }\n\n\n\n  .period-picker__wrapper {\n\n    position: relative;\n\n    width: 85%;\n\n    margin-bottom: 0.8rem;\n\n  }\n\n\n\n  .period-picker__icon {\n\n    position: absolute;\n\n    left: 0.6rem;\n\n    top: 50%;\n\n    transform: translateY(-50%);\n\n    font-size: 1.1rem;\n\n    color: #4a90e2;\n\n    pointer-events: none;\n\n  }\n\n\n\n  .period-picker__wrapper::after {\n\n    content: '▼';\n\n    position: absolute;\n\n    right: 0.6rem;\n\n    top: 50%;\n\n    transform: translateY(-50%);\n\n    font-size: 0.75rem;\n\n    color: #aaa;\n\n    pointer-events: none;\n\n  }\n\n\n\n  .period-picker__input {\n\n    width: 100%;\n\n    padding: 0.35rem 1.7rem;\n\n    border: 1px solid #444;\n\n    border-radius: 0.4rem;\n\n    font-size: 0.85rem;\n\n    text-align: center;\n\n    background-color: #2a2a3b;\n\n    color: #e0e0e0;\n\n    appearance: none;\n\n    -webkit-appearance: none;\n\n  }\n\n\n\n  .period-picker__input:focus {\n\n    outline: none;\n\n    border-color: #4a90e2;\n\n    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.4);\n\n    background-color: #33334a;\n\n  }\n\n\n\n  .period-picker__input::-webkit-calendar-picker-indicator {\n\n    opacity: 0;\n\n    cursor: pointer;\n\n  }\n\n\n\n  .period-picker__wrapper--no-arrow::after {\n\n    content: none;\n\n  }\n</style>\n\n\n\n<div class=\"period-picker\" ng-init=\"periodType='month'\">\n\n   \n  <!-- Radios: Año, Mes, Semana, Día -->\n\n    <div class=\"period-picker__radios\">\n\n        <input type=\"radio\" id=\"year\" ng-model=\"periodType\" value=\"year\">\n\n    <label for=\"year\">Año</label>\n\n        <input type=\"radio\" id=\"month\" ng-model=\"periodType\" value=\"month\">\n\n    <label for=\"month\">Mes</label>\n\n        <input type=\"radio\" id=\"week\" ng-model=\"periodType\" value=\"week\">\n\n    <label for=\"week\">Semana</label>\n\n        <input type=\"radio\" id=\"day\" ng-model=\"periodType\" value=\"day\">\n\n    <label for=\"day\">Día</label>\n\n      </div>\n\n\n\n   \n  <!-- Selector Año (input manual) -->\n\n    <div ng-show=\"periodType==='year'\" class=\"period-picker__wrapper period-picker__wrapper--no-arrow\">\n\n        <i class=\"period-picker__icon\">📅</i>\n\n        <input\n\n      type=\"number\"\n\n      min=\"1900\"\n\n      max=\"2100\"\n\n      step=\"1\"\n\n      placeholder=\"YYYY\"\n\n      ng-model=\"anioSeleccionado\"\n\n      ng-change=\"send({ payload: anioSeleccionado, period: periodType })\"\n\n      class=\"period-picker__input\"\n\n    />\n\n  </div>\n\n\n\n   \n  <!-- Selector Mes -->\n\n    <div ng-show=\"periodType==='month'\" class=\"period-picker__wrapper\">\n\n        <i class=\"period-picker__icon\">📅</i>\n\n        <input\n\n      type=\"month\"\n\n      ng-model=\"mesSeleccionado\"\n\n      ng-change=\"send({ payload: mesSeleccionado, period: periodType })\"\n\n      class=\"period-picker__input\"\n\n    />\n\n  </div>\n\n\n\n   \n  <!-- Selector Semana -->\n\n    <div ng-show=\"periodType==='week'\" class=\"period-picker__wrapper\">\n\n        <i class=\"period-picker__icon\">📅</i>\n\n        <input\n\n      type=\"week\"\n\n      ng-model=\"semanaSeleccionada\"\n\n      ng-change=\"send({ payload: semanaSeleccionada, period: periodType })\"\n\n      class=\"period-picker__input\"\n\n    />\n\n  </div>\n\n\n\n   \n  <!-- Selector Día -->\n\n    <div ng-show=\"periodType==='day'\" class=\"period-picker__wrapper\">\n\n        <i class=\"period-picker__icon\">📅</i>\n\n        <input\n\n      type=\"date\"\n\n      ng-model=\"diaSeleccionado\"\n\n      ng-change=\"send({ payload: diaSeleccionado, period: periodType })\"\n\n      class=\"period-picker__input\"\n\n    />\n\n  </div>\n\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1340,
+        "y": 420,
+        "wires": [
+            [
+                "functionMonth"
+            ]
+        ]
+    },
+    {
+        "id": "functionMonth",
+        "type": "function",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "name": "Petición_Datos_MYSQL_MES",
+        "func": "// msg.payload: \n//   - number/string 'YYYY'    si period==='year'\n//   - 'YYYY-MM'               si period==='month'\n//   - 'YYYY-Www'              si period==='week'\n//   - 'YYYY-MM-DD'            si period==='day'\n// msg.period: 'year' | 'month' | 'week' | 'day'\n\nlet startDate, endDate;\n\nif (msg.period === 'year') {\n  // ---- AÑO COMPLETO ----\n  let year = parseInt(msg.payload, 10);\n  startDate = new Date(year, 0, 1);        // 1 Ene\n  endDate = new Date(year + 1, 0, 0);    // 31 Dic (día 0 del año siguiente)\n\n} else if (msg.period === 'week' && typeof msg.payload === 'string' && msg.payload.includes('-W')) {\n  // ---- SEMANA ISO (lunes a domingo) ----\n  let [yearStr, weekStr] = msg.payload.split('-W');\n  let year = parseInt(yearStr, 10);\n  let week = parseInt(weekStr, 10);\n\n  let simple = new Date(year, 0, 1 + (week - 1) * 7);\n  let dayOfWeek = simple.getDay();    // 0=Dom,1=Lun,...6=Sáb\n  let diffToMonday = (dayOfWeek === 0 ? -6 : 1 - dayOfWeek);\n  let monday = new Date(simple.setDate(simple.getDate() + diffToMonday));\n\n  startDate = new Date(monday);\n  endDate = new Date(monday);\n  endDate.setDate(endDate.getDate() + 6);\n\n} else if (msg.period === 'day' && typeof msg.payload === 'string') {\n  // ---- DÍA CONCRETO ----\n  let d = new Date(msg.payload);\n  startDate = new Date(d);\n  endDate = new Date(d);\n\n} else {\n  // ---- MES ENTERO ----\n  let selected = msg.payload ? new Date(msg.payload) : new Date();\n  let y = selected.getFullYear();\n  let m = selected.getMonth();\n  startDate = new Date(y, m, 1);\n  endDate = new Date(y, m + 1, 0);\n}\n\n// Función de formateo a 'YYYY-MM-DD'\nfunction formatDate(d) {\n  return d.toISOString().split('T')[0];\n}\n\nlet formattedStart = `${formatDate(startDate)} 00:00:00`;\nlet formattedEnd = `${formatDate(endDate)} 23:59:59`;\n\nmsg.topic = `\n  SELECT fecha, Radiacion_Solar, Temperatura\n    FROM Mediciones_Sensores\n   WHERE fecha >= '${formattedStart}'\n     AND fecha <= '${formattedEnd}'\n   ORDER BY fecha\n`.trim();\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1630,
+        "y": 360,
+        "wires": [
+            [
+                "1dab2248a5304f44"
+            ]
+        ]
+    },
+    {
+        "id": "0a9e39a02f4154ae",
+        "type": "ui_template",
+        "z": "babb09d49f994252",
+        "d": true,
+        "g": "d2d3cb0e150c9910",
+        "group": "0a6525c364ecabac",
+        "name": "CSS_Selector_Dia",
+        "order": 8,
+        "width": "30",
+        "height": "1",
+        "format": "<style>\n  /* Contenedor general centrado y bajado 7px */\n  .CSS_Selector_dia {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 7px;\n    /* <-- Cambiado a 7px */\n  }\n\n  /* Input con fondo blanco, texto negro, bordes redondeados */\n  .CSS_Selector_dia input {\n    background-color: #ffffff !important;\n    color: #000000 !important;\n    border: 1px solid #ccc;\n    border-radius: 0.5rem;\n    padding: 0.5rem;\n    font-size: 1rem;\n    box-sizing: border-box;\n    width: auto;\n    min-width: 150px;\n    text-align: center;\n  }\n\n  /* Placeholder si aplica */\n  .CSS_Selector_dia input::placeholder {\n    color: #888 !important;\n  }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1230,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac389ea806520616",
+        "type": "ui_template",
+        "z": "babb09d49f994252",
+        "g": "d2d3cb0e150c9910",
+        "group": "0a6525c364ecabac",
+        "name": "CSS_Reportes",
+        "order": 4,
+        "width": "8",
+        "height": "11",
+        "format": "<!-- Contenedor principal -->\n<div class=\"card mx-auto my-5 text-center\" id=\"report-card\">\n  <div class=\"card-body p-4 d-flex flex-column align-items-center\">\n    <h5 class=\"card-title text-accent mb-4\">Generador de Reportes</h5>\n\n    <!-- Selector de rango -->\n    <div class=\"mb-4 w-100\">\n      <label for=\"rango\" class=\"form-label fw-semibold\">Selecciona el período:</label>\n      <select id=\"rango\" class=\"form-select form-select-dark text-center\" onchange=\"toggleDateInput()\">\n        <option value=\"dia\">Día completo</option>\n        <option value=\"mes\">Mes completo</option>\n      </select>\n    </div>\n\n    <!-- Selector para día -->\n    <div class=\"mb-4 w-100\" id=\"fechaDiaGroup\">\n      <label for=\"fechaDia\" class=\"form-label\">Selecciona un día:</label>\n      <input type=\"date\" id=\"fechaDia\" class=\"form-control form-control-dark text-center\" required>\n    </div>\n\n    <!-- Selector para mes -->\n    <div class=\"mb-4 w-100\" id=\"fechaMesGroup\" style=\"display: none;\">\n      <label for=\"fechaMes\" class=\"form-label\">Selecciona un mes:</label>\n      <input type=\"month\" id=\"fechaMes\" class=\"form-control form-control-dark text-center\" required>\n    </div>\n\n    <!-- Botón de descarga -->\n    <button onclick=\"descargarDatos()\" class=\"btn btn-accent w-100 py-2\">\n      <i class=\"fa fa-download me-2\"></i> Generar Reporte\n    </button>\n  </div>\n</div>\n\n<style>\n  :root {\n    --bg-page: #33334a;\n    --bg-card: #33334a;\n    --text-main: #e0e0e0;\n    --text-muted: #a0a0a0;\n    --accent: #4a90e2;\n    --accent-hover: #357ABD;\n    --input-bg: #33334a;\n    --input-border: #33334a;\n    --input-focus: #4a90e2;\n    --input-focus-shadow: rgba(74, 144, 226, 0.4);\n    --btn-hover-shadow: rgba(0, 0, 0, 0.4);\n  }\n\n  body {\n    background-color: var(--bg-page);\n    color: var(--text-main);\n    font-family: \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif;\n  }\n\n  #report-card {\n    max-width: 350px;\n    /* Ancho reducido para un recuadro más estrecho */\n    height: 170px;\n    /* Altura del contenedor */\n    background-color: #2c2c2c;\n    /* Nuevo color de fondo */\n    border-radius: 1rem;\n    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);\n    text-align: center;\n  }\n\n  .card-title {\n    color: var(--accent);\n    font-size: 1.25rem;\n  }\n\n  .form-label {\n    color: var(--text-main);\n    font-size: 0.9rem;\n  }\n\n  .form-label.fw-semibold {\n    font-weight: 600;\n  }\n\n  .form-control-dark,\n  .form-select-dark {\n    background-color: var(--input-bg);\n    border: 1px solid var(--input-border);\n    border-radius: 1rem;\n    color: var(--text-main);\n    transition: box-shadow 0.2s ease, border-color 0.2s ease;\n    text-align: center;\n  }\n\n  .form-control-dark:focus,\n  .form-select-dark:focus {\n    outline: none;\n    border-color: var(--input-focus);\n    box-shadow: 0 0 0 2px var(--input-focus-shadow);\n  }\n\n  .btn-accent {\n    background-color: var(--accent);\n    color: #ffffff;\n    border: none;\n    border-radius: 1rem;\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n  }\n\n  .btn-accent:hover {\n    background-color: var(--accent-hover);\n    transform: translateY(-2px);\n    box-shadow: 0 8px 20px var(--btn-hover-shadow);\n  }\n\n  .btn-accent i {\n    vertical-align: middle;\n  }\n</style>\n\n<script>\n  function toggleDateInput() {\n    const rango = document.getElementById('rango').value;\n    document.getElementById('fechaDiaGroup').style.display = rango === 'dia' ? 'block' : 'none';\n    document.getElementById('fechaMesGroup').style.display = rango === 'mes' ? 'block' : 'none';\n    document.getElementById('fechaDia').value = '';\n    document.getElementById('fechaMes').value = '';\n  }\n\n  function descargarDatos() {\n    const rango = document.getElementById('rango').value;\n    let fechaInicio, fechaFin;\n\n    if (rango === 'dia') {\n      const fecha = document.getElementById('fechaDia').value;\n      if (!fecha) {\n        alert('Por favor selecciona un día');\n        return;\n      }\n      fechaInicio = `${fecha}T00:00:00`;\n      fechaFin    = `${fecha}T23:59:59`;\n    } else {\n      const fechaMes = document.getElementById('fechaMes').value;\n      if (!fechaMes) {\n        alert('Por favor selecciona un mes');\n        return;\n      }\n      const [year, month] = fechaMes.split('-');\n      const ultimoDia = new Date(year, month, 0).getDate();\n      fechaInicio = `${year}-${month}-01T00:00:00`;\n      fechaFin    = `${year}-${month}-${String(ultimoDia).padStart(2,'0')}T23:59:59`;\n    }\n\n    window.location.href = `/descargar-excel?inicio=${encodeURIComponent(fechaInicio)}&fin=${encodeURIComponent(fechaFin)}`;\n  }\n\n  (function init() {\n    const today = new Date().toISOString().split('T')[0];\n    document.getElementById('fechaDia').value = today;\n    document.getElementById('fechaMes').value = today.slice(0,7);\n  })();\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1220,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ba29ef45816af9c",
+        "type": "http in",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "",
+        "url": "/descargar-excel",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1020,
+        "y": 960,
+        "wires": [
+            [
+                "e963b893223d1e22"
+            ]
+        ]
+    },
+    {
+        "id": "d1333a743b55d041",
+        "type": "http response",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 2650,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "49c6bb81de85fe38",
+        "type": "mysql",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "mydb": "fcf557fe10b65b24",
+        "name": "Mediciones_Meteo_Cuerva_db",
+        "x": 1530,
+        "y": 960,
+        "wires": [
+            [
+                "f34e785714cac7aa",
+                "781e87e7ffe2c1ba"
+            ]
+        ]
+    },
+    {
+        "id": "e963b893223d1e22",
+        "type": "function",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "Extraer_Parametros",
+        "func": "// Obtener fechas del query (ej: ?inicio=2025-04-22T00:00:00)\nconst fechaInicio = msg.req.query.inicio.replace(\"T\", \" \");  // Formato: '2025-04-22 00:00:00'\nconst fechaFin = msg.req.query.fin.replace(\"T\", \" \");        // Formato: '2025-04-22 23:59:59'\n\n// Construir consulta SIN parámetros (como en tu ejemplo funcional)\nmsg.topic = `\n  SELECT fecha, Radiacion_Solar, Temperatura\n    FROM Mediciones_Sensores\n   WHERE fecha >= '${fechaInicio}'\n     AND fecha <= '${fechaFin}'\n   ORDER BY fecha\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 960,
+        "wires": [
+            [
+                "49c6bb81de85fe38",
+                "8d96f5af2508a43f"
+            ]
+        ]
+    },
+    {
+        "id": "f34e785714cac7aa",
+        "type": "function",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "Formateo_XLSX",
+        "func": "// msg.payload: array de objetos con { fecha, Radiacion_Solar, Temperatura }\nlet data = msg.payload;\n\nlet excelData = data.map(row => {\n    // parsear la fecha ISO a objeto Date\n    const d = new Date(row.fecha);\n    // formatear a “dd/mm/yyyy hh:MM:ss”\n    const fechaHora = d.toLocaleString('es-ES', {\n        day: '2-digit',\n        month: '2-digit',\n        year: 'numeric',\n        hour: '2-digit',\n        minute: '2-digit',\n        second: '2-digit',\n        hour12: false\n    });\n    return {\n        FechaHora: fechaHora,\n        Temperatura: row.Temperatura,\n        Radiacion_Solar: row.Radiacion_Solar\n    };\n});\n\nmsg.payload = excelData;\nmsg.topic = \"Datos sensores Meteo Cuerva\";\nmsg.filename = \"Datos_FOTOV_UNI_MADRID.xlsx\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1820,
+        "y": 960,
+        "wires": [
+            [
+                "c5b8830690bc9917"
+            ]
+        ]
+    },
+    {
+        "id": "c5b8830690bc9917",
+        "type": "xlsx-out",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "Excel_FOTOVOLTAICA_UN_MADRID",
+        "sheetName": "Mediciones",
+        "x": 2130,
+        "y": 960,
+        "wires": [
+            [
+                "5c9b3af7661e8ca6"
+            ]
+        ]
+    },
+    {
+        "id": "781e87e7ffe2c1ba",
+        "type": "debug",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1820,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "8d96f5af2508a43f",
+        "type": "debug",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "5c9b3af7661e8ca6",
+        "type": "function",
+        "z": "babb09d49f994252",
+        "g": "11f9d9361a5c8597",
+        "name": "Formateo.xlsx",
+        "func": "// Obtener fechas desde los parámetros\nconst fechaInicio = msg.req.query.inicio.split('T')[0]; // Ej: \"2025-04-22\"\nconst fechaFin = msg.req.query.fin.split('T')[0];\n\n// Configurar headers para forzar la descarga como .xlsx\nmsg.headers = {\n  \"Content-Type\": \"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\", // MIME type correcto\n  \"Content-Disposition\": `attachment; filename=\"Datos_Fotov_UNI_MADRID_${fechaInicio}_a_${fechaFin}.xlsx\"` // Extensión explícita\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2460,
+        "y": 960,
+        "wires": [
+            [
+                "d1333a743b55d041"
+            ]
+        ]
+    },
+    {
+        "id": "6437164a2e662361",
+        "type": "ui_spacer",
+        "z": "babb09d49f994252",
+        "name": "spacer",
+        "group": "0a6525c364ecabac",
+        "order": 5,
+        "width": "17",
+        "height": "2"
+    },
+    {
+        "id": "61250f1c7638e670",
+        "type": "ui_spacer",
+        "z": "babb09d49f994252",
+        "name": "spacer",
+        "group": "0a6525c364ecabac",
+        "order": 3,
+        "width": "4",
+        "height": "2"
+    },
+    {
+        "id": "aaaab5d307fbd5c9",
+        "type": "MySQLdatabase",
+        "name": "Mediciones_Meteo_Cuerva_db",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "Mediciones_Meteo_Cuerva_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "0a6525c364ecabac",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "c3916878ce0ac060",
+        "order": 1,
+        "disp": false,
+        "width": "42",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fcf557fe10b65b24",
+        "type": "MySQLdatabase",
+        "name": "Mediciones_Meteo_Cuerva",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "Mediciones_Meteo_Cuerva_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "c3916878ce0ac060",
+        "type": "ui_tab",
+        "name": "FOTOVOLTAICA UNIVERSIDAD DE MADRID",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

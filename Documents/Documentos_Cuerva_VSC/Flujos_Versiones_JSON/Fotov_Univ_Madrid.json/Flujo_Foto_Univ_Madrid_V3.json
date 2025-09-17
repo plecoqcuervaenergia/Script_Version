@@ -1,0 +1,45 @@
+[
+    {
+        "id": "monthPicker",
+        "type": "ui_template",
+        "z": "babb09d49f994252",
+        "g": "6841818ba1237e59",
+        "group": "0a6525c364ecabac",
+        "name": "Selector_Fecha",
+        "order": 3,
+        "width": 15,
+        "height": 6,
+        "format": "<style>\n  .period-picker {\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n    padding: 1.5rem;\n    background-color: #1e1e2f;\n    border-radius: 0.75rem;\n    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);\n    font-family: 'Helvetica Neue', Arial, sans-serif;\n    color: #e0e0e0;\n    max-width: 420px;\n    margin: 2rem;\n  }\n\n  .period-picker__radios {\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    margin-bottom: 1.25rem;\n  }\n\n  .period-picker__radios label {\n    font-size: 0.9rem;\n    cursor: pointer;\n    padding: 0.3rem 0.8rem;\n    border-radius: 0.35rem;\n    background-color: #2e2e3e;\n    color: #ccc;\n    transition: all 0.3s;\n  }\n\n  .period-picker__radios input[type=\"radio\"] {\n    display: none;\n  }\n\n  .period-picker__radios input[type=\"radio\"]:checked + label {\n    background-color: #4a90e2;\n    color: #fff;\n  }\n\n  .period-picker__wrapper {\n    position: relative;\n    width: 85%;\n    margin-bottom: 0.8rem;\n  }\n\n  .period-picker__icon {\n    position: absolute;\n    left: 0.6rem;\n    top: 50%;\n    transform: translateY(-50%);\n    font-size: 1.1rem;\n    color: #4a90e2;\n    pointer-events: none;\n  }\n\n  .period-picker__wrapper::after {\n    content: '▼';\n    position: absolute;\n    right: 0.6rem;\n    top: 50%;\n    transform: translateY(-50%);\n    font-size: 0.75rem;\n    color: #aaa;\n    pointer-events: none;\n  }\n\n  .period-picker__input {\n    width: 100%;\n    padding: 0.35rem 1.7rem;\n    border: 1px solid #444;\n    border-radius: 0.4rem;\n    font-size: 0.85rem;\n    text-align: center;\n    background-color: #2a2a3b;\n    color: #e0e0e0;\n    appearance: none;\n    -webkit-appearance: none;\n  }\n\n  .period-picker__input:focus {\n    outline: none;\n    border-color: #4a90e2;\n    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.4);\n    background-color: #33334a;\n  }\n\n  .period-picker__input::-webkit-calendar-picker-indicator {\n    opacity: 0;\n    cursor: pointer;\n  }\n\n  .period-picker__wrapper--no-arrow::after {\n    content: none;\n  }\n</style>\n\n<div class=\"period-picker\" ng-init=\"periodType='month'\">\n  <!-- Radios: Año, Mes, Semana, Día -->\n  <div class=\"period-picker__radios\">\n    <input type=\"radio\" id=\"year\" ng-model=\"periodType\" value=\"year\">\n    <label for=\"year\">Año</label>\n    <input type=\"radio\" id=\"month\" ng-model=\"periodType\" value=\"month\">\n    <label for=\"month\">Mes</label>\n    <input type=\"radio\" id=\"week\" ng-model=\"periodType\" value=\"week\">\n    <label for=\"week\">Semana</label>\n    <input type=\"radio\" id=\"day\" ng-model=\"periodType\" value=\"day\">\n    <label for=\"day\">Día</label>\n  </div>\n\n  <!-- Selector Año (input manual) -->\n  <div ng-show=\"periodType==='year'\" class=\"period-picker__wrapper period-picker__wrapper--no-arrow\">\n    <i class=\"period-picker__icon\">📅</i>\n    <input\n      type=\"number\"\n      min=\"1900\"\n      max=\"2100\"\n      step=\"1\"\n      placeholder=\"YYYY\"\n      ng-model=\"anioSeleccionado\"\n      ng-change=\"send({ payload: anioSeleccionado, period: periodType })\"\n      class=\"period-picker__input\"\n    />\n  </div>\n\n  <!-- Selector Mes -->\n  <div ng-show=\"periodType==='month'\" class=\"period-picker__wrapper\">\n    <i class=\"period-picker__icon\">📅</i>\n    <input\n      type=\"month\"\n      ng-model=\"mesSeleccionado\"\n      ng-change=\"send({ payload: mesSeleccionado, period: periodType })\"\n      class=\"period-picker__input\"\n    />\n  </div>\n\n  <!-- Selector Semana -->\n  <div ng-show=\"periodType==='week'\" class=\"period-picker__wrapper\">\n    <i class=\"period-picker__icon\">📅</i>\n    <input\n      type=\"week\"\n      ng-model=\"semanaSeleccionada\"\n      ng-change=\"send({ payload: semanaSeleccionada, period: periodType })\"\n      class=\"period-picker__input\"\n    />\n  </div>\n\n  <!-- Selector Día -->\n  <div ng-show=\"periodType==='day'\" class=\"period-picker__wrapper\">\n    <i class=\"period-picker__icon\">📅</i>\n    <input\n      type=\"date\"\n      ng-model=\"diaSeleccionado\"\n      ng-change=\"send({ payload: diaSeleccionado, period: periodType })\"\n      class=\"period-picker__input\"\n    />\n  </div>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1340,
+        "y": 420,
+        "wires": [
+            [
+                "functionMonth"
+            ]
+        ]
+    },
+    {
+        "id": "0a6525c364ecabac",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "c3916878ce0ac060",
+        "order": 1,
+        "disp": false,
+        "width": "42",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c3916878ce0ac060",
+        "type": "ui_tab",
+        "name": "FOTOVOLTAICA UNIVERSIDAD DE MADRID",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

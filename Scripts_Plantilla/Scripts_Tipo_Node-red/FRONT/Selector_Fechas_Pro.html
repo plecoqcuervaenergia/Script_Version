@@ -1,0 +1,160 @@
+<style>
+    .period-picker {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.5rem;
+      background-color: #1e1e2f;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: #e0e0e0;
+      max-width: 420px;
+      margin: 2rem;
+    }
+  
+    .period-picker__radios {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 1.25rem;
+    }
+  
+    .period-picker__radios label {
+      font-size: 0.9rem;
+      cursor: pointer;
+      padding: 0.3rem 0.8rem;
+      border-radius: 0.35rem;
+      background-color: #2e2e3e;
+      color: #ccc;
+      transition: all 0.3s;
+    }
+  
+    .period-picker__radios input[type="radio"] {
+      display: none;
+    }
+  
+    .period-picker__radios input[type="radio"]:checked + label {
+      background-color: #4a90e2;
+      color: #fff;
+    }
+  
+    .period-picker__wrapper {
+      position: relative;
+      width: 85%;
+      margin-bottom: 0.8rem;
+    }
+  
+    .period-picker__icon {
+      position: absolute;
+      left: 0.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.1rem;
+      color: #4a90e2;
+      pointer-events: none;
+    }
+  
+    .period-picker__wrapper::after {
+      content: '▼';
+      position: absolute;
+      right: 0.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.75rem;
+      color: #aaa;
+      pointer-events: none;
+    }
+  
+    .period-picker__input {
+      width: 100%;
+      padding: 0.35rem 1.7rem;
+      border: 1px solid #444;
+      border-radius: 0.4rem;
+      font-size: 0.85rem;
+      text-align: center;
+      background-color: #2a2a3b;
+      color: #e0e0e0;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+  
+    .period-picker__input:focus {
+      outline: none;
+      border-color: #4a90e2;
+      box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.4);
+      background-color: #33334a;
+    }
+  
+    .period-picker__input::-webkit-calendar-picker-indicator {
+      opacity: 0;
+      cursor: pointer;
+    }
+  
+    .period-picker__wrapper--no-arrow::after {
+      content: none;
+    }
+  </style>
+  
+  <div class="period-picker" ng-init="periodType='month'">
+    <!-- Radios: Año, Mes, Semana, Día -->
+    <div class="period-picker__radios">
+      <input type="radio" id="year" ng-model="periodType" value="year">
+      <label for="year">Año</label>
+      <input type="radio" id="month" ng-model="periodType" value="month">
+      <label for="month">Mes</label>
+      <input type="radio" id="week" ng-model="periodType" value="week">
+      <label for="week">Semana</label>
+      <input type="radio" id="day" ng-model="periodType" value="day">
+      <label for="day">Día</label>
+    </div>
+  
+    <!-- Selector Año (input manual) -->
+    <div ng-show="periodType==='year'" class="period-picker__wrapper period-picker__wrapper--no-arrow">
+      <i class="period-picker__icon">📅</i>
+      <input
+        type="number"
+        min="1900"
+        max="2100"
+        step="1"
+        placeholder="YYYY"
+        ng-model="anioSeleccionado"
+        ng-change="send({ payload: anioSeleccionado, period: periodType })"
+        class="period-picker__input"
+      />
+    </div>
+  
+    <!-- Selector Mes -->
+    <div ng-show="periodType==='month'" class="period-picker__wrapper">
+      <i class="period-picker__icon">📅</i>
+      <input
+        type="month"
+        ng-model="mesSeleccionado"
+        ng-change="send({ payload: mesSeleccionado, period: periodType })"
+        class="period-picker__input"
+      />
+    </div>
+  
+    <!-- Selector Semana -->
+    <div ng-show="periodType==='week'" class="period-picker__wrapper">
+      <i class="period-picker__icon">📅</i>
+      <input
+        type="week"
+        ng-model="semanaSeleccionada"
+        ng-change="send({ payload: semanaSeleccionada, period: periodType })"
+        class="period-picker__input"
+      />
+    </div>
+  
+    <!-- Selector Día -->
+    <div ng-show="periodType==='day'" class="period-picker__wrapper">
+      <i class="period-picker__icon">📅</i>
+      <input
+        type="date"
+        ng-model="diaSeleccionado"
+        ng-change="send({ payload: diaSeleccionado, period: periodType })"
+        class="period-picker__input"
+      />
+    </div>
+  </div>
+  

@@ -1,0 +1,33 @@
+{
+    "name": "mi-app-node-red",
+    "version": "1.0.0",
+    "description": "App Node-RED con interfaz de escritorio",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "build": "electron-builder"
+    },
+    "devDependencies": {
+      "electron": "^29.0.0",
+      "electron-builder": "^24.0.0"
+    },
+    "build": {
+      "appId": "com.tuempresa.node-red-app",
+      "productName": "Node-RED Desktop",
+      "directories": {
+        "output": "dist"
+      },
+      "files": [
+        "**/*"
+      ],
+      "win": {
+        "target": "nsis"
+      },
+      "nsis": {
+        "oneClick": false,
+        "perMachine": false,
+        "allowToChangeInstallationDirectory": true
+      }
+    }
+  }
+  

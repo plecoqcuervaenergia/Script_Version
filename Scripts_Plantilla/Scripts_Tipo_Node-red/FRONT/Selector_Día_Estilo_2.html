@@ -1,0 +1,43 @@
+<style>
+    /* Contenedor general centrado y bajado 3px */
+    .CSS_Selector_dia {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3px;
+      /* baja el recuadro 3px */
+    }
+  
+    /* Estilos para el select personalizado */
+    .CSS_Selector_dia select {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+      /* Texto negro */
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+      font-size: 1rem;
+      width: auto;
+      min-width: 150px;
+      appearance: none;
+      /* Elimina el estilo por defecto */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-align: center;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 0.5rem center;
+      background-size: 1.5em;
+    }
+  
+    /* Efecto hover y focus */
+    .CSS_Selector_dia select:hover {
+      border-color: #999;
+    }
+  
+    .CSS_Selector_dia select:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    }
+  </style>

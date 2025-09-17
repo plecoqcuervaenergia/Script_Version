@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Línea con Barra de Potencia y Iconos Debajo</title>
+  <style>
+    body {
+      margin: 0;
+      position: relative;
+    }
+
+    /* Línea gris de fondo */
+    .line-bg {
+      stroke: #cccccc;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    /* Barra móvil encima de la línea */
+    .bar {
+      /* El color de la barra se establecerá dinámicamente */
+      fill: currentColor;
+    }
+
+    /* Iconos 3D a 80×80px colocados por debajo de la línea */
+    .icono-panel,
+    .icono-inversor {
+      position: absolute;
+      top: 0px;
+      width: 80px;
+      height: 80px;
+      z-index: 10;
+      fill: currentColor;
+      /* El color se establecerá dinámicamente */
+    }
+
+    /* MODIFICACIÓN: Movido el icono de placas 100px a la derecha */
+    .icono-panel {
+      left: 110px;
+    }
+
+    .icono-inversor {
+      left: -500px;
+      /* Este icono está fuera del rango visible */
+    }
+
+    /* Edificio también debajo */
+    .icono-edificio {
+      position: absolute;
+      top: 0px;
+      left: 2050px;
+      /* Icono de edificio en 2050px */
+      font-size: 60px;
+      /* El color se establecerá dinámicamente */
+      color: #cccccc;
+      z-index: 10;
+    }
+  </style>
+</head>
+
+<body>
+  <svg id="svg" width="2150" height="300">
+    <line id="lineBg" class="line-bg" x1="110" y1="40" x2="2050" y2="40"></line>
+    <rect id="bar" class="bar" x="110" y="37" width="100" height="6"></rect>
+  </svg>
+
+  <svg class="icono-panel" viewBox="0 0 96 64">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#4a90e2" />
+        <stop offset="100%" stop-color="#005f9e" />
+      </linearGradient>
+      <linearGradient id="shade1" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="rgba(0,0,0,0.2)" />
+        <stop offset="100%" stop-color="transparent" />
+      </linearGradient>
+    </defs>
+    <rect x="0" y="8" width="96" height="48" rx="4" ry="4" fill="#333" />
+    <g fill="url(#grad1)">
+      <rect x="4" y="12" width="28" height="40" />
+      <rect x="34" y="12" width="28" height="40" />
+      <rect x="64" y="12" width="28" height="40" />
+    </g>
+    <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+      <line x1="4" y1="24" x2="32" y2="24" />
+      <line x1="4" y1="36" x2="32" y2="36" />
+      <line x1="34" y1="24" x2="62" y2="24" />
+      <line x1="34" y1="36" x2="62" y2="36" />
+      <line x1="64" y1="24" x2="92" y2="24" />
+      <line x1="64" y1="36" x2="92" y2="36" />
+      <line x1="16" y1="12" x2="16" y2="52" />
+      <line x1="48" y1="12" x2="48" y2="52" />
+      <line x1="80" y1="12" x2="80" y2="52" />
+    </g>
+    <rect x="4" y="12" width="28" height="40" fill="url(#shade1)" />
+    <rect x="34" y="12" width="28" height="40" fill="url(#shade1)" />
+    <rect x="64" y="12" width="28" height="40" fill="url(#shade1)" />
+  </svg>
+
+  <svg class="icono-inversor" viewBox="0 0 48 48">
+    <path d="M24 4l-8 14h16l-8-14zm0 40l8-14h-16l8 14zM4 24h14l-8-16 8-16zm40 0h-14l8-16-8-16z" />
+  </svg>
+
+
+  <i class="fa fa-building icono-edificio"></i>
+
+  <script>
+    (function(scope) {
+      // Dummy scope and $watch for standalone testing if not in Node-RED context
+      if (typeof scope === 'undefined') {
+        scope = {};
+        scope.$watch = function(prop, callback) {
+          console.log('Dummy $watch called for', prop);
+           // Simulate messages with the new payload structure for testing
+           let radiationValue = 50;
+           setInterval(() => {
+             // Simulate increasing radiation then decreasing
+             radiationValue += 50;
+             if (radiationValue > 1000) radiationValue = 50; // Cycle radiation
+             const dummyMsg = {
+               payload: [
+                 {
+                   series: ["Radiacion_Solar", "Temperatura"],
+                   data: [
+                     // Radiacion_Solar data (last value matters)
+                     [10, 20, 30, radiationValue],
+                     // Temperatura data (not used for bar)
+                     [20, 22, 21, 23]
+                   ],
+                   labels: ["Time1", "Time2", "Time3", "Time4"]
+                 }
+               ],
+               consumo: 1000 // Example consumo, assuming it might still be here
+             };
+             console.log("Simulating message with radiation:", radiationValue);
+             callback(dummyMsg);
+           }, 2000); // Send message every 2 seconds with changing radiation
+        };
+      }
+
+      // Variable to store the request ID for the animation frame
+      let animationId = null;
+      // Variable to store the animation start timestamp
+      let animationStartTime = null;
+      // Variable to store the current animation duration
+      let currentAnimationDuration = 10000; // Default duration (10 seconds)
+
+      scope.$watch('msg', function(msg) {
+        if (!msg) {
+             console.log("No message received.");
+             return;
+         }
+         // console.log("Message received:", msg); // Uncomment for detailed payload
+
+        // --- Start: Get Radiation data from new payload structure ---
+        let latestRadiation = 0;
+        // Keep consumption variable, assume it might be in the payload or handled elsewhere
+        const consumo = msg.consumo || (msg.payload && msg.payload.consumo) || 0; // Try to get consumo from msg or msg.payload
+
+        // Check if the payload structure matches the expected format
+        if (msg.payload && Array.isArray(msg.payload) && msg.payload.length > 0 &&
+            msg.payload[0] && msg.payload[0].data && Array.isArray(msg.payload[0].data) &&
+            msg.payload[0].data.length > 0 && Array.isArray(msg.payload[0].data[0]) &&
+            msg.payload[0].data[0].length > 0) {
+
+             // Assuming Radiacion_Solar is the first array in data (index 0)
+             const radiationDataArray = msg.payload[0].data[0];
+             latestRadiation = radiationDataArray[radiationDataArray.length - 1];
+             console.log("Latest Radiation value:", latestRadiation);
+
+             // Optional: Get Temperatura if needed, assuming it's data[1]
+             // if (msg.payload[0].data.length > 1 && Array.isArray(msg.payload[0].data[1]) && msg.payload[0].data[1].length > 0) {
+             //     const latestTemperatura = msg.payload[0].data[1][msg.payload[0].data[1].length - 1];
+             //     console.log("Latest Temperatura value:", latestTemperatura);
+             // }
+
+        } else {
+            console.log("Could not find radiation data in the expected payload structure.");
+            // If data isn't found, latestRadiation remains 0, resulting in slow speed/yellow color
+        }
+        // --- End: Get Radiation data ---
+
+
+        const maxRad = 1000; // Define el valor máximo esperado de radiación para escalar
+        const minDur = 1; // Duración mínima de la animación en segundos (velocidad máxima)
+        const maxDur = 10; // Duración máxima de la animación en segundos (velocidad mínima)
+
+
+        // Escalar el valor de radiación al rango [0, maxRad]
+        const scaledRadiation = Math.min(Math.max(latestRadiation, 0), maxRad);
+
+        // Calcular la duración (inversa a la velocidad): más radiación -> menor duración -> más rápido
+        // dur = maxDur - (valor escalado / maxRad) * (maxDur - minDur)
+        let newDur = maxDur - (scaledRadiation / maxRad) * (maxDur - minDur);
+        // Asegurar que la duración esté dentro del rango [minDur, maxDur]
+        newDur = Math.max(minDur, Math.min(maxDur, newDur));
+        newDur = newDur * 1000; // Convertir a milisegundos
+
+        console.log(`Radiation: ${latestRadiation}, Scaled: ${scaledRadiation}, New Duration (ms): ${newDur}`);
+
+        // Solo actualiza la duración si ha cambiado significativamente para evitar reinicios constantes
+        if (Math.abs(newDur - currentAnimationDuration) > 50) { // Tolerance of 50ms
+            currentAnimationDuration = newDur;
+
+            // Si la duración cambia, debemos detener la animación actual y reiniciar
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+            }
+            // Reset the start time so the next animation cycle uses the new duration correctly
+            animationStartTime = null;
+            // Request the next frame to start the new animation cycle
+            animationId = requestAnimationFrame(step);
+            console.log("Animation duration updated.");
+
+        } else {
+             console.log("Animation duration change below threshold.");
+             // If duration didn't change significantly, ensure animation is still running
+             if (!animationId) {
+                  // This case might happen if no message was received previously to start it
+                  animationId = requestAnimationFrame(step);
+             }
+        }
+
+
+        // Calcular el color de amarillo (baja radiación) a rojo (alta radiación)
+        // Cuando scaledRadiation es 0 -> g = 255 -> rgb(255, 255, 0) = Amarillo
+        // Cuando scaledRadiation es maxRad -> g = 0 -> rgb(255, 0, 0) = Rojo
+        const g = Math.round(255 - (scaledRadiation / maxRad) * 255);
+        const color = `rgb(255, ${g}, 0)`;
+
+        console.log(`Bar Color: ${color}`);
+
+        const bar    = document.getElementById('bar');
+        const lineBg = document.getElementById('lineBg'); // Need lineBg to get x1 and x2
+
+         if (!lineBg || !bar) {
+             console.error("SVG elements not found!");
+             // Stop animation if elements are missing
+             if (animationId) {
+                 cancelAnimationFrame(animationId);
+                 animationId = null;
+             }
+             return;
+         }
+
+         // Get bar length dynamically in case it changes (though not expected here)
+         const barLen = parseFloat(bar.getAttribute('width'));
+
+
+        // Aplicar color a la barra
+        bar.style.setProperty('color', color);
+
+        // Animation function - it will use the most recent currentAnimationDuration
+        function step(timestamp) {
+            if (!animationStartTime) {
+                animationStartTime = timestamp;
+            }
+
+            const elapsed = timestamp - animationStartTime;
+            // Use the currentAnimationDuration variable
+            const p = (elapsed % currentAnimationDuration) / currentAnimationDuration;
+
+            // Need x1, x2, L here. Get them once or ensure they are accessible.
+            // Getting them dynamically inside step is robust if line changes,
+            // but slightly less efficient. For a static line, getting once is fine.
+            // Let's keep getting dynamically as it was in previous versions.
+             const x1 = parseFloat(lineBg.getAttribute('x1'));
+             const x2 = parseFloat(lineBg.getAttribute('x2'));
+             const L  = x2 - x1;
+             // barLen is already defined and unlikely to change dynamically here
+
+            const x = x1 + (L - barLen) * p;
+            bar.setAttribute('x', x);
+
+            animationId = requestAnimationFrame(step); // Continue the loop
+        }
+
+        // The animation loop is managed by the logic above based on duration changes.
+        // If duration didn't change significantly, the existing animation continues.
+        // If duration changed, the old one is cancelled and a new one is requested.
+
+
+        // Actualizar iconos: panel e inversor basados en radiación, edificio basado en consumo
+        document.querySelector('.icono-panel')
+                ?.style.setProperty('color', latestRadiation > 0 ? '#ffff00':'#cccccc'); // Amarillo si radiación > 0
+        document.querySelector('.icono-inversor')
+                ?.style.setProperty('color', latestRadiation > 0 ? '#00ff00':'#aaaaaa'); // Verde si radiación > 0
+        document.querySelector('.icono-edificio')
+                ?.style.setProperty('color', consumo > 0 ? 'orange':'#cccccc'); // Se mantiene basado en consumo
+      });
+
+        // Ensure the animation starts initially if a message is received or simulation runs
+        // The $watch function handles starting it when the first message arrives
+        // or when the duration changes.
+    })(typeof scope !== 'undefined' ? scope : {}); // Pass scope if defined, otherwise empty object
+  </script>
+</body>
+
+</html>

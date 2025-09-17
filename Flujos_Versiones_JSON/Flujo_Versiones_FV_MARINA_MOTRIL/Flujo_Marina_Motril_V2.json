@@ -1,0 +1,3124 @@
+[
+    {
+        "id": "f9a3d819cc58cb5e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3154ae3d5fd77b31",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "02c765216d8bf87b",
+            "5abf48c08084e602",
+            "3d876e0e131adcf1",
+            "a234c8c581113bbf",
+            "67a5ed4e7fabe969",
+            "90691de73ea7e396",
+            "271da608f8c59e1f",
+            "309974b562aec0fa",
+            "f0e31600fe321cdc",
+            "f5bba1d96c131132",
+            "3f306c5c9349547e",
+            "2d59dc35185c4218",
+            "829cd96172e9c82f",
+            "fcab405e1fe024d3",
+            "f4324788640f113b",
+            "3a490ba78480619d",
+            "71b4577cad205835",
+            "6de423f3f0bf0a79",
+            "87f3664210f70135",
+            "acf0bd9c4232d82f",
+            "f1b6a140b7696b8c"
+        ],
+        "x": 554,
+        "y": 1719,
+        "w": 1552,
+        "h": 642
+    },
+    {
+        "id": "abe133516ed2a08a",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "daa41c82385515f5",
+            "eeda6e8bf72ed66b",
+            "ebb0c8907d9bb158",
+            "da4e8a7e9a1294ef",
+            "7994d56c4358c33b",
+            "71df6d40044e67b7",
+            "0d75c71eede846fe",
+            "4e6d0cd736111307",
+            "68d76acdf0880c34",
+            "a43e402418c64b2a",
+            "4bffbc7babe20643",
+            "5dcf277fb6bbb535",
+            "457e5d00d2d6637b",
+            "6edbb769c1daed4b",
+            "59e25994bc4619d0",
+            "cb11c4b36bbfb9a8",
+            "301f45af0c83511a",
+            "5130094111147e86",
+            "b34fc11651812235",
+            "b40bbb211ab9337b",
+            "2fad48c4d672c3c8",
+            "ac3ece3f537aac90",
+            "aa08cc2dc1f85ad8",
+            "b066b8bcbc3a5e5f",
+            "97186e1f7d60199b",
+            "5df727d76df0c3fd",
+            "ae38355c92ad42fc",
+            "82bda46f76d7e0e5",
+            "41edd28f9ef033a6"
+        ],
+        "x": 554,
+        "y": 639,
+        "w": 1872,
+        "h": 1002
+    },
+    {
+        "id": "86b94c3abf05e49e",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "bde40f6800e438d1",
+            "062ab90be188bf81",
+            "23ff6317e3b1374f"
+        ],
+        "x": 554,
+        "y": 3139,
+        "w": 502,
+        "h": 169.5
+    },
+    {
+        "id": "1fe43cc52fbe0218",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "0aa7042fdc854023",
+            "661197c63c960878",
+            "b14aca5986fe3608"
+        ],
+        "x": 554,
+        "y": 2919,
+        "w": 652,
+        "h": 142
+    },
+    {
+        "id": "7173bec65d757bce",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3eb0db3d26075b24",
+            "67b48e5de166ccb2",
+            "5e2d7da0dfe038ec",
+            "6d92ee43abe45e7b",
+            "7b9e2747c62e98f9",
+            "e5f36b7993e5ae90",
+            "ceeedb5612358037"
+        ],
+        "x": 554,
+        "y": 2679,
+        "w": 1552,
+        "h": 162
+    },
+    {
+        "id": "a3317137ae5fffff",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7ab8231d1a650ae6",
+            "6459b4047dadcd3b",
+            "8b84b1c0c88271ee",
+            "f7b3248127627df7",
+            "00b972d8a08d608b",
+            "3cca278e544d73f0",
+            "9c58914a857872bc",
+            "e656b1a8c7cab8b0",
+            "d51e4763ca4deb4c",
+            "3367ca58c0073aec",
+            "fd1caf720bfdecd0",
+            "f6badde03f953a1d",
+            "b6d77478595a91f7",
+            "9b7139dd7bd97d1a"
+        ],
+        "x": 564,
+        "y": 3859,
+        "w": 2222,
+        "h": 262
+    },
+    {
+        "id": "e6301b2985d007e7",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "622dc481e97429e8",
+            "da3f188353bb5e64",
+            "5d1594ea60202450",
+            "554d9e9ec0034d72",
+            "8921d379f5d689f7",
+            "7075c13a6f3e49d4",
+            "0251db8a31eb4f9e",
+            "e523d47d7bfbd7be",
+            "84ba0780cfe7fa22",
+            "6df966d344332ea5",
+            "f9c1bc0421fb98e6"
+        ],
+        "x": 554,
+        "y": 3379,
+        "w": 992,
+        "h": 402
+    },
+    {
+        "id": "72a605fcf035f0af",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9d19e8e7e61ecf5f",
+            "f2abc6ba71cd4184",
+            "d04e0dd6b0ebcd7a",
+            "f52617678d7e5513",
+            "0895117d780178e0",
+            "cf6cf9e8d8b41cbe",
+            "6318ee30915d115e",
+            "e12ac600f5a05286",
+            "5eedb840e1a939c7",
+            "95b40a56a13a2baa",
+            "a4c2e780559d0169",
+            "3ac279e4d9221a57",
+            "6c9276e65bc5b67d",
+            "db6dd91bea5f2059"
+        ],
+        "x": 564,
+        "y": 4219,
+        "w": 2222,
+        "h": 262
+    },
+    {
+        "id": "f5bf0b0e10b38b68",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5f6a6c64f369e1a5",
+            "f926e0fda313b943",
+            "4d2156f88ea699fb",
+            "06182a794330708c",
+            "03f0a5cf320cb3e4",
+            "9c4a61d06eabbed7",
+            "3ac1301a370464d4"
+        ],
+        "x": 554,
+        "y": 2439,
+        "w": 1552,
+        "h": 162
+    },
+    {
+        "id": "dc353c7332b6ad3a",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "59de307d52fb00d4",
+            "73379e03d2d65031",
+            "bf767f57ca611582",
+            "8ac086f6915832b5",
+            "b276f3512653bec3",
+            "b10c32e89d265c04",
+            "a54a8ac2742a5a64",
+            "72189135a0874ec6",
+            "ea1b712e929f9013",
+            "28322ab58c7fcea7",
+            "78095810a6971ee5"
+        ],
+        "x": 554,
+        "y": 379,
+        "w": 1692,
+        "h": 202
+    },
+    {
+        "id": "9266b33f759a58f7",
+        "type": "group",
+        "z": "f9a3d819cc58cb5e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "fcff864c905037a0",
+            "e948294dc378d971",
+            "325804243344395d",
+            "e4f25f95f5f88659",
+            "2eb7b242fa01841f",
+            "0d6a3a8b532f2a62",
+            "0954702769f984ee",
+            "199e3a37e82541a0",
+            "2909290294675bf5",
+            "4a7232406cce7ba1"
+        ],
+        "x": 554,
+        "y": 19,
+        "w": 1492,
+        "h": 282
+    },
+    {
+        "id": "02c765216d8bf87b",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Radiacion Sucia",
+        "func": "if (\n    msg.unitid === 40 &&\n    msg.address === 0 &&\n    Array.isArray(msg.payload) &&\n    typeof msg.payload[0] === \"number\"\n) {\n    const originalValue = msg.payload[0];\n\n    const result = Math.trunc(originalValue / 10);\n\n    if (Number.isFinite(result)) {\n        msg.payload = result;\n        return msg;\n    } else {\n        return null; // Resultado inválido\n    }\n} else {\n    return null; // Mensaje no válido o formato incorrecto\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 1840,
+        "wires": [
+            [
+                "5abf48c08084e602",
+                "67a5ed4e7fabe969",
+                "309974b562aec0fa"
+            ]
+        ]
+    },
+    {
+        "id": "5abf48c08084e602",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Radiacion Sucia",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "3d876e0e131adcf1",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Radiacion Limpia",
+        "func": "if (\n    msg.unitid === 41 &&\n    msg.address === 0 &&\n    Array.isArray(msg.payload) &&\n    typeof msg.payload[0] === \"number\"\n) {\n    const originalValue = msg.payload[0];\n\n    const result = Math.trunc(originalValue / 10);\n\n    if (Number.isFinite(result)) {\n        msg.payload = result;\n        return msg;\n    } else {\n        return null; // Resultado inválido\n    }\n} else {\n    return null; // Mensaje no válido o formato incorrecto\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 1980,
+        "wires": [
+            [
+                "a234c8c581113bbf",
+                "90691de73ea7e396",
+                "271da608f8c59e1f"
+            ]
+        ]
+    },
+    {
+        "id": "a234c8c581113bbf",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Radiacion Limpia",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "67a5ed4e7fabe969",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Guardar_Radiacion_Sucia_MySQL",
+        "func": "// Extraer la Radición Sucia del payload del mensaje MQTT\nvar Radiacion_Sucia = msg.payload; //en piranometro (var interna) copiamos valor de msg.payload \n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Radiacion_Placas) VALUES (\" +Radiacion_Sucia + \")\"; //tabla, columna y variable\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 1840,
+        "wires": [
+            [
+                "3f306c5c9349547e"
+            ]
+        ]
+    },
+    {
+        "id": "90691de73ea7e396",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Guardar_Radiacion_Sensor_MySQL",
+        "func": "// Extraer la Radición Sensor del payload del mensaje MQTT\nvar Radiacion_Sensor = msg.payload; //en piranometro (var interna) copiamos valor de msg.payload \n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Radiacion_Sensor) VALUES (\" +Radiacion_Sensor + \")\"; //tabla, columna y variable\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 1980,
+        "wires": [
+            [
+                "3f306c5c9349547e"
+            ]
+        ]
+    },
+    {
+        "id": "271da608f8c59e1f",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Guardar sensor_limpio",
+        "func": "global.set(\"sensor_limpio\", msg.payload);\nreturn null;",
+        "outputs": 0,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "0aa7042fdc854023",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "g": "1fe43cc52fbe0218",
+        "name": "Set Precio FV (€/kWh)",
+        "props": [
+            {
+                "p": "precio_fv",
+                "v": "0.14",
+                "vt": "num"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 790,
+        "y": 3020,
+        "wires": [
+            [
+                "661197c63c960878"
+            ]
+        ]
+    },
+    {
+        "id": "661197c63c960878",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "1fe43cc52fbe0218",
+        "name": "Guardar precio_fv global",
+        "func": "const actual = global.get(\"precio_fv\", \"file\");\nif (typeof actual !== \"number\") {\n    global.set(\"precio_fv\", msg.precio_fv, \"file\");\n}\nreturn null;",
+        "outputs": 0,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 3020,
+        "wires": []
+    },
+    {
+        "id": "3eb0db3d26075b24",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "7173bec65d757bce",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 1990,
+        "y": 2800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67b48e5de166ccb2",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "7173bec65d757bce",
+        "name": "Peticion_DIARIA",
+        "func": "// Se asume disparo a las 23:59\nmsg.topic = `\n  SELECT\n    (cur.Generacion_Total    - prev.Generacion_Total)    AS diff_generacion_total,\n    (cur.Energia_Importada   - prev.Energia_Importada)   AS diff_energia_importada\n  FROM\n    (\n      -- Último registro de hoy\n      SELECT Generacion_Total, Energia_Importada\n      FROM Mediciones_Sensores\n      WHERE fecha >= CURDATE()\n        AND fecha  < DATE_ADD(CURDATE(), INTERVAL 1 DAY)\n      ORDER BY fecha DESC\n      LIMIT 1\n    ) AS cur\n  CROSS JOIN\n    (\n      -- Último registro de ayer\n      SELECT Generacion_Total, Energia_Importada\n      FROM Mediciones_Sensores\n      WHERE fecha >= DATE_SUB(CURDATE(), INTERVAL 1 DAY)\n        AND fecha  < CURDATE()\n      ORDER BY fecha DESC\n      LIMIT 1\n    ) AS prev;\n`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 2800,
+        "wires": [
+            [
+                "5e2d7da0dfe038ec"
+            ]
+        ]
+    },
+    {
+        "id": "5e2d7da0dfe038ec",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "7173bec65d757bce",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 1130,
+        "y": 2800,
+        "wires": [
+            [
+                "7b9e2747c62e98f9"
+            ]
+        ]
+    },
+    {
+        "id": "6d92ee43abe45e7b",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "g": "7173bec65d757bce",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "59 23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 720,
+        "y": 2800,
+        "wires": [
+            [
+                "67b48e5de166ccb2"
+            ]
+        ]
+    },
+    {
+        "id": "7b9e2747c62e98f9",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "7173bec65d757bce",
+        "name": "Calculo Coste FV_DIARIA",
+        "func": "const data = msg.payload[0] || {};\nconst diff_generacion_total  = data.diff_generacion_total  || 0;\nconst diff_energia_importada = data.diff_energia_importada || 0;\n\nconst precio_fv = global.get(\"precio_fv\") || 0;\nconst coste_fv   = diff_generacion_total * precio_fv;\n\n// Podemos renombrar el total diario\nconst consumo_total_diario = diff_generacion_total + diff_energia_importada;\n\nmsg.payload = {\n    diff_generacion_total,\n    diff_energia_importada,\n    coste_fv,\n    consumo_total_diario\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 2800,
+        "wires": [
+            [
+                "e5f36b7993e5ae90"
+            ]
+        ]
+    },
+    {
+        "id": "bde40f6800e438d1",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "d": true,
+        "g": "86b94c3abf05e49e",
+        "name": "Reiniciar IOT2050",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 730,
+        "y": 3260,
+        "wires": [
+            [
+                "062ab90be188bf81"
+            ]
+        ]
+    },
+    {
+        "id": "062ab90be188bf81",
+        "type": "exec",
+        "z": "f9a3d819cc58cb5e",
+        "d": true,
+        "g": "86b94c3abf05e49e",
+        "command": "sudo /sbin/reboot",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Reboot System",
+        "x": 950,
+        "y": 3260,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e5f36b7993e5ae90",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "7173bec65d757bce",
+        "name": "Guardar consumo y coste en Mysql_DIARIA",
+        "func": "const {\n  diff_generacion_total,\n  diff_energia_importada,\n  coste_fv,\n  consumo_total_diario\n} = msg.payload;\n\nmsg.topic = `\n  INSERT INTO Mediciones_Sensores\n    (generacion_diaria,\n     energia_importada_diaria,\n     coste_fv,\n     consumo_total_diario)\n  VALUES\n    (${diff_generacion_total},\n     ${diff_energia_importada},\n     ${coste_fv},\n     ${consumo_total_diario});\n`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1710,
+        "y": 2800,
+        "wires": [
+            [
+                "3eb0db3d26075b24"
+            ]
+        ]
+    },
+    {
+        "id": "daa41c82385515f5",
+        "type": "modbus-read",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Energia_Exportada",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "37119",
+        "quantity": "2",
+        "rate": "6",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "09f54fea36391678",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 790,
+        "y": 1060,
+        "wires": [
+            [
+                "0d75c71eede846fe",
+                "6edbb769c1daed4b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "eeda6e8bf72ed66b",
+        "type": "modbus-read",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Energia_Importada",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "37121",
+        "quantity": "2",
+        "rate": "8",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "09f54fea36391678",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 790,
+        "y": 1220,
+        "wires": [
+            [
+                "4e6d0cd736111307",
+                "59e25994bc4619d0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ebb0c8907d9bb158",
+        "type": "modbus-read",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Generacion_Total",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "32106",
+        "quantity": "2",
+        "rate": "4",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "09f54fea36391678",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 780,
+        "y": 900,
+        "wires": [
+            [
+                "a43e402418c64b2a",
+                "457e5d00d2d6637b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "da4e8a7e9a1294ef",
+        "type": "modbus-read",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Potencia_Activa",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "32080",
+        "quantity": "2",
+        "rate": "2",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "09f54fea36391678",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 780,
+        "y": 740,
+        "wires": [
+            [
+                "71df6d40044e67b7",
+                "5dcf277fb6bbb535"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7994d56c4358c33b",
+        "type": "modbus-read",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Potencia_Activa_Meter",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "37113",
+        "quantity": "2",
+        "rate": "10",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "09f54fea36391678",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 800,
+        "y": 1380,
+        "wires": [
+            [
+                "68d76acdf0880c34",
+                "cb11c4b36bbfb9a8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "71df6d40044e67b7",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Active Power Inversor",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "0d75c71eede846fe",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Energia Exportada",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "4e6d0cd736111307",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Energia Importada",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "68d76acdf0880c34",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Potencia activa Meter",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "a43e402418c64b2a",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Genreacion Total",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "309974b562aec0fa",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Guardar sensor_sucio",
+        "func": "global.set(\"sensor_sucio\", msg.payload);\nreturn null;",
+        "outputs": 0,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "f0e31600fe321cdc",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 1990,
+        "y": 2040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5bba1d96c131132",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "GRUPO SENSORES",
+        "info": "",
+        "x": 680,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "4bffbc7babe20643",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "GRUPO MEDICIONES DE CONSUMO",
+        "info": "",
+        "x": 730,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "23ff6317e3b1374f",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "86b94c3abf05e49e",
+        "name": "GRUPO REINICIO IOT2050-MARINA-MOTRIL",
+        "info": "",
+        "x": 760,
+        "y": 3180,
+        "wires": []
+    },
+    {
+        "id": "b14aca5986fe3608",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "1fe43cc52fbe0218",
+        "name": "GRUPO ATRIBUCIÓN DE VALOR A VARIABLE \"PRECIO FV\"",
+        "info": "",
+        "x": 800,
+        "y": 2960,
+        "wires": []
+    },
+    {
+        "id": "ceeedb5612358037",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "7173bec65d757bce",
+        "name": "GRUPO CÁLCULO DE PRECIOS DIARIO",
+        "info": "",
+        "x": 740,
+        "y": 2720,
+        "wires": []
+    },
+    {
+        "id": "5dcf277fb6bbb535",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Conversion_[highWord, lowWord]",
+        "func": "// ---------- Parámetros de configuración ----------\n// msg.payload: [highWord, lowWord]\n// msg.swap     (boolean) opcional; true si hay que invertir high/low.\n// msg.scale    (number)  opcional; factor por el que dividimos el valor combinado.\n// msg.decimals (number)  opcional; número de decimales en el resultado.\n\nmsg.swap = false;\nmsg.scale = 1000;    // kW en lugar de W\nmsg.decimals = 3;\n\n\nconst p = msg.payload;\nif (!Array.isArray(p) || p.length !== 2\n    || typeof p[0] !== \"number\"\n    || typeof p[1] !== \"number\") {\n    node.warn(\"Payload no es un array [high, low]\");\n    return null;\n}\n\n// Parámetros por defecto si no vienen en msg\nconst swap     = (typeof msg.swap     === \"boolean\") ? msg.swap     : false;\nconst scale    = (typeof msg.scale    === \"number\")  ? msg.scale    : 1;\nconst decimals = (typeof msg.decimals === \"number\")  ? msg.decimals : 0;\n\n// Extraemos high y low\nlet high = p[0], low = p[1];\n\n// Si hay que intercambiar palabras:\nif (swap) {\n    [high, low] = [low, high];\n}\n\n// Combinar en 32 bits sin signo\nconst combined = (high << 16) + low;\n\n// Aplicar factor de escala y formatear\nconst value = combined / scale;\nmsg.payload = Number(value.toFixed(decimals));\nmsg.topic = \"Potencia_Activa\";\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 740,
+        "wires": [
+            [
+                "301f45af0c83511a",
+                "ac3ece3f537aac90"
+            ]
+        ]
+    },
+    {
+        "id": "457e5d00d2d6637b",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Conversion_[highWord, lowWord]",
+        "func": "// ---------- Parámetros de configuración ----------\n// msg.payload: [highWord, lowWord]\n// msg.swap     (boolean) opcional; true si hay que invertir high/low.\n// msg.scale    (number)  opcional; factor por el que dividimos el valor combinado.\n// msg.decimals (number)  opcional; número de decimales en el resultado.\n\n\nmsg.swap = false;\nmsg.scale = 100;     // si está en centésimas\nmsg.decimals = 2;\n\n\nconst p = msg.payload;\nif (!Array.isArray(p) || p.length !== 2\n    || typeof p[0] !== \"number\"\n    || typeof p[1] !== \"number\") {\n    node.warn(\"Payload no es un array [high, low]\");\n    return null;\n}\n\n// Parámetros por defecto si no vienen en msg\nconst swap     = (typeof msg.swap     === \"boolean\") ? msg.swap     : false;\nconst scale    = (typeof msg.scale    === \"number\")  ? msg.scale    : 1;\nconst decimals = (typeof msg.decimals === \"number\")  ? msg.decimals : 0;\n\n// Extraemos high y low\nlet high = p[0], low = p[1];\n\n// Si hay que intercambiar palabras:\nif (swap) {\n    [high, low] = [low, high];\n}\n\n// Combinar en 32 bits sin signo\nconst combined = (high << 16) + low;\n\n// Aplicar factor de escala y formatear\nconst value = combined / scale;\nmsg.payload = Number(value.toFixed(decimals));\nmsg.topic = \"Generacion_Total\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 900,
+        "wires": [
+            [
+                "5130094111147e86",
+                "ac3ece3f537aac90"
+            ]
+        ]
+    },
+    {
+        "id": "6edbb769c1daed4b",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Conversion_[highWord, lowWord]",
+        "func": "// ---------- Parámetros de configuración ----------\n// msg.payload: [highWord, lowWord]\n// msg.swap     (boolean) opcional; true si hay que invertir high/low.\n// msg.scale    (number)  opcional; factor por el que dividimos el valor combinado.\n// msg.decimals (number)  opcional; número de decimales en el resultado.\n\n\nmsg.swap = false;\nmsg.scale = 100;    // kW en lugar de W\nmsg.decimals = 3;\n\nconst p = msg.payload;\nif (!Array.isArray(p) || p.length !== 2\n    || typeof p[0] !== \"number\"\n    || typeof p[1] !== \"number\") {\n    node.warn(\"Payload no es un array [high, low]\");\n    return null;\n}\n\n// Parámetros por defecto si no vienen en msg\nconst swap     = (typeof msg.swap     === \"boolean\") ? msg.swap     : false;\nconst scale    = (typeof msg.scale    === \"number\")  ? msg.scale    : 1;\nconst decimals = (typeof msg.decimals === \"number\")  ? msg.decimals : 0;\n\n// Extraemos high y low\nlet high = p[0], low = p[1];\n\n// Si hay que intercambiar palabras:\nif (swap) {\n    [high, low] = [low, high];\n}\n\n// Combinar en 32 bits sin signo\nconst combined = (high << 16) + low;\n\n// Aplicar factor de escala y formatear\nconst value = combined / scale;\nmsg.payload = Number(value.toFixed(decimals));\nmsg.topic = \"Energia_Exportada\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 1060,
+        "wires": [
+            [
+                "b34fc11651812235",
+                "ac3ece3f537aac90"
+            ]
+        ]
+    },
+    {
+        "id": "59e25994bc4619d0",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Conversion_[highWord, lowWord]",
+        "func": "// ---------- Parámetros de configuración ----------\n// msg.payload: [highWord, lowWord]\n// msg.swap     (boolean) opcional; true si hay que invertir high/low.\n// msg.scale    (number)  opcional; factor por el que dividimos el valor combinado.\n// msg.decimals (number)  opcional; número de decimales en el resultado.\n\nmsg.swap = false;\nmsg.scale = 100;     // si está en centésimas\nmsg.decimals = 2;\n\nconst p = msg.payload;\nif (!Array.isArray(p) || p.length !== 2\n    || typeof p[0] !== \"number\"\n    || typeof p[1] !== \"number\") {\n    node.warn(\"Payload no es un array [high, low]\");\n    return null;\n}\n\n// Parámetros por defecto si no vienen en msg\nconst swap     = (typeof msg.swap     === \"boolean\") ? msg.swap     : false;\nconst scale    = (typeof msg.scale    === \"number\")  ? msg.scale    : 1;\nconst decimals = (typeof msg.decimals === \"number\")  ? msg.decimals : 0;\n\n// Extraemos high y low\nlet high = p[0], low = p[1];\n\n// Si hay que intercambiar palabras:\nif (swap) {\n    [high, low] = [low, high];\n}\n\n// Combinar en 32 bits sin signo\nconst combined = (high << 16) + low;\n\n// Aplicar factor de escala y formatear\nconst value = combined / scale;\nmsg.payload = Number(value.toFixed(decimals));\nmsg.topic = \"Energia_Importada\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 1220,
+        "wires": [
+            [
+                "b40bbb211ab9337b",
+                "ac3ece3f537aac90"
+            ]
+        ]
+    },
+    {
+        "id": "cb11c4b36bbfb9a8",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Conversion_[highWord, lowWord]",
+        "func": "// ---------- Parámetros de configuración ----------\n// msg.payload: [highWord, lowWord]\n// msg.swap     (boolean) opcional; true si hay que invertir high/low.\n// msg.scale    (number)  opcional; factor por el que dividimos el valor combinado.\n// msg.decimals (number)  opcional; número de decimales en el resultado.\n\n\nmsg.swap = false;\nmsg.scale = 1000;     // si está en centésimas\nmsg.decimals = 2;\n\nconst p = msg.payload;\nif (!Array.isArray(p) || p.length !== 2\n    || typeof p[0] !== \"number\"\n    || typeof p[1] !== \"number\") {\n    node.warn(\"Payload no es un array [high, low]\");\n    return null;\n}\n\n// Parámetros por defecto si no vienen en msg\nconst swap     = (typeof msg.swap     === \"boolean\") ? msg.swap     : false;\nconst scale    = (typeof msg.scale    === \"number\")  ? msg.scale    : 1;\nconst decimals = (typeof msg.decimals === \"number\")  ? msg.decimals : 0;\n\n// Extraemos high y low\nlet high = p[0], low = p[1];\n\n// Si hay que intercambiar palabras:\nif (swap) {\n    [high, low] = [low, high];\n}\n\n// Combinar en 32 bits sin signo\nconst combined = (high << 16) + low;\n\n// Aplicar factor de escala y formatear\nconst value = combined / scale;\nmsg.payload = Number(value.toFixed(decimals));\nmsg.topic = \"Potencia_Activa_Meter\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 1380,
+        "wires": [
+            [
+                "2fad48c4d672c3c8",
+                "ac3ece3f537aac90"
+            ]
+        ]
+    },
+    {
+        "id": "301f45af0c83511a",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Active Power Inversor_REAL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "5130094111147e86",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Genreacion Total_REAL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "b34fc11651812235",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Energia Exportada_REAL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "b40bbb211ab9337b",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Energia Importada_REAL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "2fad48c4d672c3c8",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Potencia activa Meter_REAL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "ac3ece3f537aac90",
+        "type": "join",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "CONCENTRADOR_MENSAJES",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "6",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1620,
+        "y": 1140,
+        "wires": [
+            [
+                "aa08cc2dc1f85ad8",
+                "b066b8bcbc3a5e5f"
+            ]
+        ]
+    },
+    {
+        "id": "aa08cc2dc1f85ad8",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "INSERCIÓN_MySQL",
+        "func": "// msg.payload es ahora un objeto con todas tus métricas\nconst d = msg.payload;\n\n// Construye la consulta SQL de una sola vez\nmsg.topic =\n  `INSERT INTO Mediciones_Sensores\n     (Potencia_Activa,\n      Generacion_Total,\n      Energia_Exportada,\n      Energia_Importada,\n      generacion_diaria,\n      Potencia_Activa_Meter)\n   VALUES\n     (${d.Potencia_Activa},\n      ${d.Generacion_Total},\n      ${d.Energia_Exportada},\n      ${d.Energia_Importada},\n      ${d.generacion_diaria},\n      ${d.Potencia_Activa_Meter});`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1980,
+        "y": 1140,
+        "wires": [
+            [
+                "41edd28f9ef033a6"
+            ]
+        ]
+    },
+    {
+        "id": "b066b8bcbc3a5e5f",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "COMPROBACION_MENSAJE_ÚNICO",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1630,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "3f306c5c9349547e",
+        "type": "join",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "CONCENTRADOR_MENSAJES",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1740,
+        "y": 2040,
+        "wires": [
+            [
+                "f0e31600fe321cdc"
+            ]
+        ]
+    },
+    {
+        "id": "2d59dc35185c4218",
+        "type": "modbus-read",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Lectura_Radiacion_Sucia",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "40",
+        "dataType": "HoldingRegister",
+        "adr": "0",
+        "quantity": "",
+        "rate": "6",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 810,
+        "y": 1840,
+        "wires": [
+            [
+                "02c765216d8bf87b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "829cd96172e9c82f",
+        "type": "modbus-read",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Lectura_Radiacion_Limpia",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "",
+        "adr": "",
+        "quantity": "",
+        "rate": "8",
+        "rateUnit": "",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 810,
+        "y": 1980,
+        "wires": [
+            [
+                "3d876e0e131adcf1"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7ab8231d1a650ae6",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "name": "Consulta_SQL",
+        "func": "// Node-RED Function: construir consulta SQL para SUMA mensual (última lectura <= 22:30 por día)\n// Entradas opcionales:\n//   - msg.prevMonth = true    -> se usará el mes anterior\n//   - msg.year (number)       -> año específico\n//   - msg.month (number)      -> mes específico (1..12)\n// Salida:\n//   - msg.topic   : texto SQL\n//   - msg.columns : nombres de columnas esperadas en el mismo orden\n\n// Determinar modo de fechas\nlet mode = 'current'; // default\nif (msg.prevMonth) mode = 'prev';\nif (typeof msg.year === 'number' && typeof msg.month === 'number') mode = 'specific';\n\nlet sqlRange = '';\nif (mode === 'specific') {\n  // month debe ser 1..12\n  let y = Number(msg.year);\n  let m = String(msg.month).padStart(2, '0');\n  // Se usa BETWEEN 'YYYY-MM-01' AND LAST_DAY('YYYY-MM-01')\n  sqlRange = `fecha BETWEEN '${y}-${m}-01' AND LAST_DAY('${y}-${m}-01')`;\n} else if (mode === 'prev') {\n  sqlRange = `fecha BETWEEN DATE_FORMAT(CURDATE() - INTERVAL 1 MONTH, '%Y-%m-01')\n                     AND LAST_DAY(CURDATE() - INTERVAL 1 MONTH)`;\n} else {\n  // mes actual\n  sqlRange = `fecha BETWEEN DATE_FORMAT(CURDATE(), '%Y-%m-01') AND LAST_DAY(CURDATE())`;\n}\n\n// Construir la consulta que primero selecciona la última lectura por día (hora <= 22:30)\n// y luego suma las columnas deseadas.\nmsg.topic = `\nSELECT\n  COALESCE(SUM(m.generacion_diaria),0) AS total_generacion,\n  COALESCE(SUM(m.coste_fv_diario),0)   AS total_coste,\n  COALESCE(SUM(m.consumida_real),0)    AS total_consumo\nFROM Mediciones_Sensores m\nINNER JOIN (\n  SELECT DATE(fecha) AS dia, MAX(fecha) AS max_fecha\n  FROM Mediciones_Sensores\n  WHERE\n    ${sqlRange}\n    AND TIME(fecha) <= '22:30:00'\n    AND generacion_diaria > 0\n    AND coste_fv_diario > 0\n    AND consumida_real > 0\n  GROUP BY DATE(fecha)\n) s ON DATE(m.fecha) = s.dia AND m.fecha = s.max_fecha;\n`;\n\n// Nombres de columnas (en el mismo orden que la SELECT)\nmsg.columns = ['total_generacion','total_coste','total_consumo'];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 3980,
+        "wires": [
+            [
+                "8b84b1c0c88271ee"
+            ]
+        ]
+    },
+    {
+        "id": "6459b4047dadcd3b",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "name": "Grupo Mensajería MENSUAL",
+        "info": "Este grupo envía los datos recogidos por \nlos sensores y almacenados en MYSQL a un correo \nelectrónico configurado",
+        "x": 710,
+        "y": 3900,
+        "wires": []
+    },
+    {
+        "id": "8b84b1c0c88271ee",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 1170,
+        "y": 3980,
+        "wires": [
+            [
+                "f7b3248127627df7",
+                "00b972d8a08d608b"
+            ]
+        ]
+    },
+    {
+        "id": "f7b3248127627df7",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "name": "Formateo_XLSX",
+        "func": "// Function: preparar payload para Excel a partir de totales\n// Entrada: msg.payload = [{ total_generacion, total_coste, total_consumo, dias_contabilizados? }]\nlet d = Array.isArray(msg.payload) && msg.payload.length ? msg.payload[0] : (msg.payload || {});\n\nlet monthLabel = msg.monthLabel || \n  new Intl.DateTimeFormat('es-ES', { month:'long', year:'numeric', timeZone: 'Europe/Madrid' }).format(new Date());\n\nlet rows = [];\n\n// Cabecera descriptiva\nrows.push({\n  Fecha: `Cuerva Energía - Resumen Mensual: ${monthLabel}`,\n  'Generación total (kWh)': '',\n  'Coste total (€)': '',\n  'Consumo total (kWh)': ''\n});\n\n// Fila de totales\nrows.push({\n  Fecha: 'Totales',\n  'Generación total (kWh)': Number(d.total_generacion)||0,\n  'Coste total (€)': Number(d.total_coste)||0,\n  'Consumo total (kWh)': Number(d.total_consumo)||0\n});\n\nif (d.dias_contabilizados != null) {\n  rows.push({ Fecha: 'Días contabilizados', 'Generación total (kWh)': d.dias_contabilizados, 'Coste total (€)': '', 'Consumo total (kWh)': '' });\n}\n\nmsg.payload = rows;\nmsg.filename = `ResumenMensualFV_Cuerva.xlsx`;\nmsg.sheetName = \"Resumen Mensual\";\nmsg.options = {\n  header: ['Fecha','Generación total (kWh)','Coste total (€)','Consumo total (kWh)'],\n  columnWidths: [{wpx:240},{wpx:140},{wpx:120},{wpx:140}],\n  columnFormats: ['@','0.00','0.00','0.00']\n};\nmsg.topic = \"excel\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 3980,
+        "wires": [
+            [
+                "3cca278e544d73f0",
+                "e656b1a8c7cab8b0"
+            ]
+        ]
+    },
+    {
+        "id": "00b972d8a08d608b",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "name": "TABLA_HTML_MeteoCuerva*",
+        "func": "// Function: HTML resumen mensual a partir de totales\n// Se espera msg.payload = [{ total_generacion, total_coste, total_consumo, dias_contabilizados? }]\nlet data = Array.isArray(msg.payload) && msg.payload.length ? msg.payload[0] : (msg.payload || {});\n\nconst monthLabel = msg.monthLabel ||\n  new Intl.DateTimeFormat('es-ES', { month: 'long', year: 'numeric', timeZone: 'Europe/Madrid' }).format(new Date());\n\nconst dias = data.dias_contabilizados != null ? data.dias_contabilizados : '';\n\nlet html = `<!doctype html>\n<html lang=\"es\">\n<head>\n<meta charset=\"utf-8\">\n<title>Resumen Mensual FV - ${monthLabel}</title>\n<link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap\" rel=\"stylesheet\">\n<style>\n  body{font-family:'Inter',sans-serif;background:#f4f6fa;color:#2e3a59;margin:0}\n  header{background:#1F2333;color:#fff;padding:16px 24px}\n  main{padding:20px}\n  .card{background:#fff;border-radius:8px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}\n  table{width:100%;border-collapse:collapse}\n  th,td{padding:12px;text-align:center;border-bottom:1px solid #eceef1}\n  thead th{background:linear-gradient(90deg,#00C853,#FF6D00);color:#fff}\n  tfoot td{font-weight:700}\n</style>\n</head>\n<body>\n  <header><h1>Cuerva Energía — Resumen Mensual: ${monthLabel}</h1></header>\n  <main>\n    <div class=\"card\">\n      <h2>Totales del mes ${monthLabel}</h2>\n      <table>\n        <thead>\n          <tr>\n            <th>Días contabilizados</th>\n            <th>Generación total (kWh)</th>\n            <th>Coste total (€)</th>\n            <th>Consumo total a facturar (kWh)</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td>${dias}</td>\n            <td>${(Number(data.total_generacion)||0).toFixed(2)}</td>\n            <td>${(Number(data.total_coste)||0).toFixed(2)}</td>\n            <td>${(Number(data.total_consumo)||0).toFixed(2)}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </main>\n  <footer style=\"padding:12px 24px;font-size:12px;color:#777;background:#fff\">\n    <div>Informe generado: ${new Intl.DateTimeFormat('es-ES',{day:'2-digit',month:'2-digit',year:'numeric',timeZone:'Europe/Madrid'}).format(new Date())}</div>\n    <div>© ${new Date().getFullYear()} Cuerva Energía</div>\n  </footer>\n</body>\n</html>`;\n\nmsg.payload = html;\nmsg.topic = \"html\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 4020,
+        "wires": [
+            [
+                "9c58914a857872bc",
+                "9b7139dd7bd97d1a"
+            ]
+        ]
+    },
+    {
+        "id": "3cca278e544d73f0",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "name": "Datos_Email_MeteoCuerva*_XLSX",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1620,
+        "y": 3920,
+        "wires": []
+    },
+    {
+        "id": "9c58914a857872bc",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "name": "Datos_Email_MeteoCuerva*",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1600,
+        "y": 4080,
+        "wires": []
+    },
+    {
+        "id": "e656b1a8c7cab8b0",
+        "type": "xlsx-out",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "name": "Excel_Meteo CUERVA*",
+        "sheetName": "Mediciones",
+        "x": 1920,
+        "y": 3980,
+        "wires": [
+            [
+                "9b7139dd7bd97d1a"
+            ]
+        ]
+    },
+    {
+        "id": "d51e4763ca4deb4c",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "name": "Formato_Archivo",
+        "func": "// Nodo Function: preparar email tras el Join (adjunta excel y deja el HTML en msg.payload)\n// Entradas esperadas (varias opciones):\n// - msg.payload = { html: \"...\", excel: <Buffer|ArrayBuffer|Uint8Array|base64 string> }\n// - o msg.html, msg.excel por separado\n// Opcionales:\n// - msg.filename  -> nombre del fichero adjunto\n// - msg.monthLabel -> \"agosto 2025\" (si quieres forzar etiqueta)\n// - msg.emailSubject -> asunto personalizado\n\n// --- 1) Obtener html y excel desde variantes posibles\nlet html = null;\nlet excelRaw = null;\n\nif (msg.payload && typeof msg.payload === 'object') {\n    if (msg.payload.html) html = msg.payload.html;\n    if (msg.payload.excel) excelRaw = msg.payload.excel;\n}\nif (!html && msg.html) html = msg.html;\nif (!excelRaw && msg.excel) excelRaw = msg.excel;\n\n// Asegurarse de que html sea string\nif (!html) html = '';\n\n// --- 2) Normalizar excelRaw a Buffer si existe\nlet excelBuf = null;\nif (excelRaw != null) {\n    // Si viene como base64 string (posible \"data:...;base64,\" o solo base64)\n    if (typeof excelRaw === 'string') {\n        let s = excelRaw;\n        const m = s.match(/^data:.*;base64,(.*)$/);\n        if (m) s = m[1];\n        try {\n            excelBuf = Buffer.from(s, 'base64');\n        } catch (e) {\n            // fallback: intentar convertir string directamente (si no es base64)\n            excelBuf = Buffer.from(s);\n        }\n    } else {\n        // Si viene como Buffer, ArrayBuffer, Uint8Array, etc.\n        if (Buffer.isBuffer(excelRaw)) {\n            excelBuf = excelRaw;\n        } else if (excelRaw instanceof ArrayBuffer) {\n            excelBuf = Buffer.from(new Uint8Array(excelRaw));\n        } else if (ArrayBuffer.isView(excelRaw)) { // Uint8Array, etc.\n            // excelRaw.buffer puede ser mayor que la vista (usar byteOffset/byteLength)\n            excelBuf = Buffer.from(excelRaw.buffer, excelRaw.byteOffset || 0, excelRaw.byteLength || excelRaw.length);\n        } else {\n            // último recurso: intentar stringify\n            try { excelBuf = Buffer.from(JSON.stringify(excelRaw)); } catch (e) { excelBuf = null; }\n        }\n    }\n}\n\n// --- 3) Determinar etiqueta de mes / sujeto\n// Preferir msg.monthLabel si viene, si no intentar extraer de html o usar mes actual\nlet monthLabel = msg.monthLabel || null;\nif (!monthLabel && typeof html === 'string') {\n    // intentar detectar \"Resumen Mensual: agosto 2025\" u \"Resumen Mensual FV: agosto 2025\"\n    const re = /Resumen Mensual[^:\\n\\r\\-]*[:\\-\\s]*([A-Za-zñÑáéíóúÁÉÍÓÚ]+ \\d{4})/i;\n    const mm = html.match(re);\n    if (mm && mm[1]) monthLabel = mm[1].toLowerCase();\n}\nif (!monthLabel) {\n    monthLabel = new Intl.DateTimeFormat('es-ES', { month: 'long', year: 'numeric', timeZone: 'Europe/Madrid' }).format(new Date());\n}\n\n// Asunto: preferir msg.emailSubject si existe, si no elegir según tipo (mensual o genérico)\nlet subject = msg.emailSubject || (html.includes('Resumen Mensual') ? `Informe mensual Planta Fotovoltaica Cuerva - ${monthLabel}` : `Informe Planta Fotovoltaica Cuerva`);\n\n// --- 4) Construir attachments (si hay buffer)\nmsg.attachments = msg.attachments || [];\nif (excelBuf) {\n    // Nombre por defecto: permitir override por msg.filename\n    let fname = msg.filename || (`Informe_Cuerva_${monthLabel.replace(/\\s+/g, '_')}.xlsx`);\n    msg.attachments.push({\n        filename: fname,\n        content: excelBuf,\n        contentType: \"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\"\n    });\n}\n\n// --- 5) Poner el HTML como cuerpo y el asunto en msg.topic\nmsg.payload = html;\nmsg.topic = subject;\n\n// devolver msg listo para nodo email\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2370,
+        "y": 4020,
+        "wires": [
+            [
+                "3367ca58c0073aec",
+                "f6badde03f953a1d",
+                "b6d77478595a91f7"
+            ]
+        ]
+    },
+    {
+        "id": "3367ca58c0073aec",
+        "type": "e-mail",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "server": "smtp.azurecomm.net",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": false,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": true,
+        "name": "plecoq@cuervaenergia.com",
+        "dname": "",
+        "x": 2620,
+        "y": 4020,
+        "wires": []
+    },
+    {
+        "id": "622dc481e97429e8",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "d": true,
+        "g": "e6301b2985d007e7",
+        "name": "Modo operación (0=autoconsumo, 1=vertido)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 820,
+        "y": 3660,
+        "wires": [
+            [
+                "da3f188353bb5e64"
+            ]
+        ]
+    },
+    {
+        "id": "da3f188353bb5e64",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "d": true,
+        "g": "e6301b2985d007e7",
+        "name": "Set modo_operacion",
+        "func": "const modo = msg.payload;\n\nif (modo === 0) {\n    global.set(\"modo_operacion\", \"autoconsumo\", \"file\");\n} else if (modo === 1) {\n    global.set(\"modo_operacion\", \"vertido\", \"file\");\n} else {\n    node.warn(\"Valor inválido: usa 0 o 1\");\n    return null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 3660,
+        "wires": [
+            [
+                "0251db8a31eb4f9e"
+            ]
+        ]
+    },
+    {
+        "id": "5d1594ea60202450",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "g": "e6301b2985d007e7",
+        "name": "Superficie placas (m²)",
+        "props": [
+            {
+                "p": "superficie_placas",
+                "v": "40",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "x": 740,
+        "y": 3500,
+        "wires": [
+            [
+                "554d9e9ec0034d72"
+            ]
+        ]
+    },
+    {
+        "id": "554d9e9ec0034d72",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "e6301b2985d007e7",
+        "name": "Guardar superficie_placas",
+        "func": "const actual = global.get(\"superficie_placas\", \"file\");\nif (typeof actual !== \"number\") {\n    global.set(\"superficie_placas\", msg.superficie_placas, \"file\");\n}\nreturn null;",
+        "outputs": 0,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 3500,
+        "wires": []
+    },
+    {
+        "id": "8921d379f5d689f7",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "g": "e6301b2985d007e7",
+        "name": "Set Rendimiento Deseado (%)",
+        "props": [
+            {
+                "p": "rendimiento_deseado",
+                "v": "80",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "x": 770,
+        "y": 3580,
+        "wires": [
+            [
+                "7075c13a6f3e49d4"
+            ]
+        ]
+    },
+    {
+        "id": "7075c13a6f3e49d4",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "e6301b2985d007e7",
+        "name": "Guardar rendimiento_deseado global",
+        "func": "global.set(\"rendimiento_deseado\", msg.rendimiento_deseado, \"file\");\nreturn null;",
+        "outputs": 0,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 3580,
+        "wires": []
+    },
+    {
+        "id": "0251db8a31eb4f9e",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "d": true,
+        "g": "e6301b2985d007e7",
+        "name": "Cálculo rendimientos FV",
+        "func": "// Obtener variables\nconst sensor_limpio = global.get(\"sensor_limpio\");\nconst sensor_sucio = global.get(\"sensor_sucio\");\nconst potencia_real = global.get(\"potencia_real\");\nconst superficie_placas = global.get(\"superficie_placas\");\nconst modo_operacion = global.get(\"modo_operacion\"); // \"autoconsumo\" o \"vertido\"\n\n// Validar sensores mínimos\nif (\n    typeof sensor_limpio !== \"number\" ||\n    typeof sensor_sucio !== \"number\"\n) {\n    msg.payload = { error: \"Faltan datos mínimos (sensores) para el cálculo.\" };\n    return msg;\n}\n\n// Cálculo del rendimiento teórico\nlet rendimiento_teorico = 0;\n\nif (sensor_sucio > 0) {\n    rendimiento_teorico = (sensor_sucio / sensor_limpio) * 100;\n}\n\n// Preparar resultado básico\nmsg.payload = {\n    rendimiento_teorico: rendimiento_teorico.toFixed(2),\n    modo_operacion,\n    detalles: {\n        sensor_limpio,\n        sensor_sucio\n    }\n};\n\n// Si el modo es \"vertido\", calcular también el rendimiento real\nif (modo_operacion === \"vertido\") {\n    if (\n        typeof potencia_real === \"number\" &&\n        typeof superficie_placas === \"number\"\n    ) {\n        const potencia_teorica = sensor_limpio * superficie_placas;\n        let rendimiento_real = 0;\n\n        if (potencia_teorica > 0) {\n            rendimiento_real = (potencia_real * 1000 / potencia_teorica) * 100;\n        }\n\n        msg.payload.rendimiento_real = rendimiento_real.toFixed(2);\n        msg.payload.detalles.potencia_real = potencia_real;\n        msg.payload.detalles.potencia_teorica = potencia_teorica;\n        msg.payload.detalles.superficie_placas = superficie_placas;\n    } else {\n        msg.payload.rendimiento_real = \"N/A\";\n        msg.payload.detalles.advertencia = \"Faltan datos para calcular el rendimiento real\";\n    }\n}\n\n// Preparar objeto para guardar en la base de datos\nconst ahora = new Date().toISOString();\n\nmsg.payloadDB = {\n    fecha: ahora,\n    rendimiento_teorico: parseFloat(rendimiento_teorico.toFixed(2)),\n    modo_operacion: modo_operacion || \"N/A\",\n};\n\n// Añadir rendimiento real y otros datos si corresponde\nif (modo_operacion === \"vertido\" && msg.payload.rendimiento_real !== \"N/A\") {\n    msg.payloadDB.rendimiento_real = parseFloat(msg.payload.rendimiento_real);\n    msg.payloadDB.potencia_real = potencia_real;\n    msg.payloadDB.potencia_teorica = msg.payload.detalles.potencia_teorica;\n    msg.payloadDB.superficie_placas = superficie_placas;\n}\n\n// Guardar rendimiento actual en global\nglobal.set(\"rendimiento_actual\", rendimiento_teorico, \"file\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 3660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e523d47d7bfbd7be",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "e6301b2985d007e7",
+        "name": "Comparar rendimiento vs deseado",
+        "func": "const rendimiento_teorico = parseFloat(global.get(\"rendimiento_actual\", \"file\"));\nconst rendimiento_deseado = global.get(\"rendimiento_deseado\", \"file\") || 95;\n\nif (isNaN(rendimiento_teorico)) {\n    node.warn(\"No hay rendimiento actual guardado.\");\n    return null;\n}\n\nif (rendimiento_teorico < rendimiento_deseado) {\n    msg.topic = \"Aviso de bajo rendimiento planta fotovoltaica\";\n    msg.payload = `La planta se encuentra con un rendimiento del ${rendimiento_teorico.toFixed(2)}% frente al rendimiento mínimo deseado ${rendimiento_deseado}%. \\n\\nSe requiere realizar limpieza de placas.`;\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 3740,
+        "wires": [
+            [
+                "84ba0780cfe7fa22"
+            ]
+        ]
+    },
+    {
+        "id": "84ba0780cfe7fa22",
+        "type": "e-mail",
+        "z": "f9a3d819cc58cb5e",
+        "g": "e6301b2985d007e7",
+        "server": "smtp.azurecomm.net",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": false,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": true,
+        "name": "joseaguileram94@gmail.com",
+        "dname": "",
+        "x": 1400,
+        "y": 3740,
+        "wires": []
+    },
+    {
+        "id": "6df966d344332ea5",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "e6301b2985d007e7",
+        "name": "GRUPO RENDIMIENTO FV",
+        "info": "",
+        "x": 700,
+        "y": 3420,
+        "wires": []
+    },
+    {
+        "id": "f9c1bc0421fb98e6",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "g": "e6301b2985d007e7",
+        "name": "Disparo diario 14:00",
+        "props": [],
+        "repeat": "",
+        "crontab": "00 14 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 740,
+        "y": 3740,
+        "wires": [
+            [
+                "e523d47d7bfbd7be"
+            ]
+        ]
+    },
+    {
+        "id": "fcab405e1fe024d3",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Temperatura Limpia",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "f4324788640f113b",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Temperatura Limpia",
+        "func": "if (msg.unitid === 40 && msg.address === 7 && Array.isArray(msg.payload) && typeof msg.payload[0] === \"number\") {\n    const originalValue = msg.payload[0];\n\n    // Dividir entre 10 y redondear a 1 decimal\n    const valor = Math.round((originalValue / 10) * 10) / 10;\n\n    // Solo valor numérico con 1 decimal\n    msg.payload = valor.toFixed(1);\n\n    return msg;\n} else {\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 2120,
+        "wires": [
+            [
+                "fcab405e1fe024d3",
+                "3a490ba78480619d"
+            ]
+        ]
+    },
+    {
+        "id": "3a490ba78480619d",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Guardar_Temperatura_Sensor_MySQL",
+        "func": "// Extraer la Temperatura Placas del payload del mensaje MQTT\nvar Temperatura_Sensor = msg.payload; //en Temperaturas_Placas (var interna) copiamos valor de msg.payload \n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Temperatura_Sensor) VALUES (\" + Temperatura_Sensor + \")\"; //tabla, columna y variable\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 2120,
+        "wires": [
+            [
+                "3f306c5c9349547e"
+            ]
+        ]
+    },
+    {
+        "id": "71b4577cad205835",
+        "type": "modbus-read",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Lectura_Temperatura_Limpia",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "",
+        "adr": "",
+        "quantity": "",
+        "rate": "9",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 820,
+        "y": 2120,
+        "wires": [
+            [
+                "f4324788640f113b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6de423f3f0bf0a79",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Temperatura Sucia",
+        "func": "if (msg.unitid === 40 && msg.address === 7 && Array.isArray(msg.payload) && typeof msg.payload[0] === \"number\") {\n    const originalValue = msg.payload[0];\n\n    // Dividir entre 10 y redondear a 1 decimal\n    const valor = Math.round((originalValue / 10) * 10) / 10;\n\n    // Solo valor numérico con 1 decimal\n    msg.payload = valor.toFixed(1);\n\n    return msg;\n} else {\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 2260,
+        "wires": [
+            [
+                "87f3664210f70135",
+                "acf0bd9c4232d82f"
+            ]
+        ]
+    },
+    {
+        "id": "87f3664210f70135",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Temperatura Sucia",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "acf0bd9c4232d82f",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Guardar_Temperatura_Placas_MySQL",
+        "func": "// Extraer la Temperatura Placas del payload del mensaje MQTT\nvar Temperatura_Placas = msg.payload; //en Temperaturas_Placas (var interna) copiamos valor de msg.payload \n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Temperatura_Placas) VALUES (\" +Temperatura_Placas + \")\"; //tabla, columna y variable\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 2260,
+        "wires": [
+            [
+                "3f306c5c9349547e"
+            ]
+        ]
+    },
+    {
+        "id": "f1b6a140b7696b8c",
+        "type": "modbus-read",
+        "z": "f9a3d819cc58cb5e",
+        "g": "3154ae3d5fd77b31",
+        "name": "Lectura_Temperatura_Sucia",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "",
+        "adr": "",
+        "quantity": "",
+        "rate": "7",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 820,
+        "y": 2260,
+        "wires": [
+            [
+                "6de423f3f0bf0a79"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9d19e8e7e61ecf5f",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "30 22 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 730,
+        "y": 4340,
+        "wires": [
+            [
+                "f2abc6ba71cd4184"
+            ]
+        ],
+        "info": "Aqui decimos cuando envia los correos"
+    },
+    {
+        "id": "f2abc6ba71cd4184",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "name": "Consulta_SQL",
+        "func": "// Function: Obtener último valor válido de generación, coste diario y consumo facturable\nmsg.topic = `\n  SELECT \n    id,\n    fecha,\n    generacion_diaria,\n    coste_fv_diario,\n    consumida_real\n  FROM Mediciones_Sensores\n  WHERE \n    generacion_diaria       > 0\n    AND coste_fv_diario     > 0\n    AND consumida_real      > 0\n  ORDER BY fecha DESC\n  LIMIT 1;\n`;\n\n// Nombres de las columnas en el mismo orden que las seleccionadas arriba\nmsg.columns = [\n  'id',\n  'fecha',\n  'generacion_diaria',\n  'coste_fv_diario',\n  'consumida_real'\n];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 4340,
+        "wires": [
+            [
+                "f52617678d7e5513"
+            ]
+        ]
+    },
+    {
+        "id": "d04e0dd6b0ebcd7a",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "name": "Grupo Mensajería DIARIO",
+        "info": "Este grupo envía los datos recogidos por \nlos sensores y almacenados en MYSQL a un correo \nelectrónico configurado",
+        "x": 700,
+        "y": 4260,
+        "wires": []
+    },
+    {
+        "id": "f52617678d7e5513",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 1280,
+        "y": 4340,
+        "wires": [
+            [
+                "cf6cf9e8d8b41cbe",
+                "0895117d780178e0"
+            ]
+        ]
+    },
+    {
+        "id": "0895117d780178e0",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "name": "Formateo_XLSX",
+        "func": "// Función para normalizar la fecha al minuto (sin segundos)\nfunction getMinuteKey(dateStr) {\n    let d = new Date(dateStr);\n    d.setSeconds(0, 0);\n    return d.toISOString();\n}\n\n// Función para formatear solo la fecha \"DD/MM/YYYY\" (sin hora)\nfunction formatDate(dateStr) {\n    let d = new Date(dateStr);\n    return new Intl.DateTimeFormat('es-ES', {\n        day: '2-digit',\n        month: '2-digit',\n        year: 'numeric',\n        timeZone: 'Europe/Madrid'\n    }).format(d);\n}\n\n// 1) Agrupar por minuto y combinar solo los campos deseados\nlet grupos = {};\nmsg.payload.forEach(row => {\n    let key = getMinuteKey(row.fecha);\n    if (!grupos[key]) {\n        grupos[key] = {\n            fecha: key,\n            generacion_diaria: null,\n            coste_fv_diario: null,\n            consumida_real: null\n        };\n    }\n    if (row.generacion_diaria != null)        grupos[key].generacion_diaria = row.generacion_diaria;\n    if (row.coste_fv_diario != null)          grupos[key].coste_fv_diario   = row.coste_fv_diario;\n    if (row.consumida_real != null)           grupos[key].consumida_real     = row.consumida_real;\n});\n\n// 2) Ordenar y mapear a array final\nlet filas = Object.values(grupos)\n    .filter(row => row.fecha && !isNaN(new Date(row.fecha).getTime()))\n    .sort((a, b) => {\n        let dateA = new Date(a.fecha);\n        let dateB = new Date(b.fecha);\n        return dateA.getTime() - dateB.getTime();\n    })\n    .map((r, i) => ({\n        Fecha: formatDate(r.fecha),\n        'Generación Hoy': r.generacion_diaria,\n        'Precio (€)': r.coste_fv_diario != null ? r.coste_fv_diario.toFixed(2) : null,\n        'Consumo (kWh)': r.consumida_real     != null ? r.consumida_real.toFixed(2)     : null\n    }));\n\n// 3) Insertar fila título al principio (como cabecera extendida)\nconst titulo = [{\n    Fecha: \"Cuerva Energía - Resumen diario Planta Fotovoltaica Marina Motril\",\n    'Generación Hoy': '',\n    'Precio (€)': '',\n    'Consumo (kWh)': ''\n}];\nconst filasConTitulo = titulo.concat(filas);\n\nmsg.payload = filasConTitulo;\nmsg.filename = \"ResumenDiariolFV_Cuerva.xlsx\";\nmsg.sheetName = \"Resumen Diario\";\n\nmsg.options = {\n    header: ['Fecha', 'Generación total hoy', 'Precio (€)', 'Consumo a facturar hoy (kWh)'],\n    columnWidths: [\n        { wpx: 180 },\n        { wpx: 140 },\n        { wpx: 100 },\n        { wpx: 120 }\n    ],\n    columnFormats: [\n        'dd/mm/yyyy',\n        '0.00',\n        '0.00',\n        '0.00'\n    ],\n    headerStyle: {\n        font: { bold: true, color: 'FFFFFFFF', name: 'Inter', sz: 12 },\n        fill: { fgColor: { rgb: 'FF1F2333' } }\n    },\n    cellStyle: {\n        font: { name: 'Inter', sz: 11, color: 'FF2E3A59' },\n        alignment: { horizontal: 'left' }  \n    },\n    rowStyles: [\n        { fill: { fgColor: { rgb: 'FFF9FAFC' } } },\n        { fill: { fgColor: { rgb: 'FFFFFFFF' } } }\n    ],\n    rowStyleOverrides: {\n        0: {\n            font: { bold: true, sz: 14, color: 'FF00703C', name: 'Inter' },\n            alignment: { horizontal: 'center' },\n            fill: { fgColor: { rgb: 'FFFFFFFF' } }\n        }\n    }\n};\n\nmsg.topic = \"excel\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1550,
+        "y": 4340,
+        "wires": [
+            [
+                "6318ee30915d115e",
+                "5eedb840e1a939c7"
+            ]
+        ]
+    },
+    {
+        "id": "cf6cf9e8d8b41cbe",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "name": "TABLA_HTML_MeteoCuerva*",
+        "func": "// Función para normalizar la fecha al minuto (sin segundos)\nfunction getMinuteKey(dateStr) {\n  let d = new Date(dateStr);\n  d.setSeconds(0, 0);\n  return d.toISOString();\n}\n\n// Función para formatear solo la fecha \"DD/MM/YYYY\" (sin hora)\nfunction formatDate(dateStr) {\n  let d = new Date(dateStr);\n  return new Intl.DateTimeFormat('es-ES', {\n    day: '2-digit',\n    month: '2-digit',\n    year: 'numeric',\n    timeZone: 'Europe/Madrid'\n  }).format(d);\n}\n\nconst now = new Date().toLocaleDateString('es-ES', {\n  day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Europe/Madrid'\n});\n\nlet html = `<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Informe Generación y Precio FV</title>\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap\" rel=\"stylesheet\">\n  <style>\n    body {\n      font-family: 'Inter', sans-serif;\n      margin: 0; padding: 0;\n      background: #f4f6fa; color: #2e3a59;\n    }\n    header {\n      background: #1F2333; color: #fff;\n      padding: 16px 32px; display: flex; align-items: center;\n      box-shadow: 0 2px 4px rgba(0,0,0,0.1);\n    }\n    header svg {\n      margin-right: 16px;\n      border-radius: 4px;\n      flex-shrink: 0;\n      background: black;\n    }\n    header h1 { font-size: 20px; font-weight: 600; margin: 0; }\n    main { padding: 24px; }\n    h2 { font-size: 18px; margin-bottom: 16px; font-weight: 600; }\n    .table-container {\n      overflow-x: auto; background: #fff;\n      border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);\n    }\n    table { width: 100%; border-collapse: collapse; }\n    thead {\n      position: sticky; top: 0;\n      background: linear-gradient(90deg, #00C853, #FF6D00);\n      color: #fff; z-index: 1;\n    }\n    thead th {\n      padding: 12px 16px; font-weight: 600;\n      text-transform: uppercase; font-size: 13px;\n      border-bottom: 2px solid rgba(255,255,255,0.3);\n    }\n    tbody tr:nth-child(even) { background: #f9fafc; }\n    tbody tr:hover { background: #e8f0fe; }\n    tbody td {\n      padding: 12px 16px; border-bottom: 1px solid #eceef1;\n      font-size: 13px; text-align: center;\n    }\n    footer {\n      margin-top: 24px; padding: 16px 32px;\n      font-size: 12px; color: #777;\n      display: flex; justify-content: space-between;\n      background: #fff; box-shadow: 0 -1px 4px rgba(0,0,0,0.05);\n    }\n  </style>\n</head>\n<body>\n  <header>\n    <svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Logo Cuerva\" >\n      <rect width=\"40\" height=\"40\" fill=\"black\" rx=\"4\" ry=\"4\"/>\n      <text x=\"50%\" y=\"50%\" fill=\"white\" font-family=\"Inter, sans-serif\" font-weight=\"700\" font-size=\"24\" dominant-baseline=\"middle\" text-anchor=\"middle\">C*</text>\n    </svg>\n    <h1>Cuerva Energía - Informe FV Diario</h1>\n  </header>\n  <main>\n    <h2>Generación y Precio FV Hoy</h2>\n    <div class=\"table-container\">\n      <table>\n        <thead>\n          <tr>\n            <th>Fecha</th>\n            <th>Generación total hoy (kWh)</th>\n            <th>Precio (€)</th>\n            <th>Consumo a facturar hoy (kWh)</th>\n          </tr>\n        </thead>\n        <tbody>`;\n\nmsg.payload.forEach(row => {\n  html += `<tr>\n      <td>${formatDate(row.fecha)}</td>\n      <td>${row.generacion_diaria != null ? row.generacion_diaria.toFixed(2) : ''}</td>\n      <td>${row.coste_fv_diario != null ? row.coste_fv_diario.toFixed(2) : ''}</td>\n      <td>${row.consumida_real != null ? row.consumida_real.toFixed(2) : ''}</td>\n    </tr>`;\n});\n\nhtml += `\n        </tbody>\n      </table>\n    </div>\n  </main>\n  <footer>\n    <div>Informe generado: ${now}</div>\n    <div>© ${new Date().getFullYear()} Cuerva Energía</div>\n  </footer>\n</body>\n</html>`;\n\nmsg.payload = html;\nmsg.topic = \"html\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 4380,
+        "wires": [
+            [
+                "e12ac600f5a05286",
+                "3ac279e4d9221a57"
+            ]
+        ]
+    },
+    {
+        "id": "6318ee30915d115e",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "name": "Datos_Email_MeteoCuerva*_XLSX",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1620,
+        "y": 4280,
+        "wires": []
+    },
+    {
+        "id": "e12ac600f5a05286",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "name": "Datos_Email_MeteoCuerva*",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1600,
+        "y": 4440,
+        "wires": []
+    },
+    {
+        "id": "5eedb840e1a939c7",
+        "type": "xlsx-out",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "name": "Excel_Meteo CUERVA*",
+        "sheetName": "Mediciones",
+        "x": 1920,
+        "y": 4340,
+        "wires": [
+            [
+                "3ac279e4d9221a57"
+            ]
+        ]
+    },
+    {
+        "id": "95b40a56a13a2baa",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "name": "Formato_Archivo",
+        "func": "// Después del Join, msg.payload tiene esta forma:\n// {\n//   html:  \"<!DOCTYPE html>…\",     // tu cadena HTML\n//   excel: <Buffer …>              // el buffer de Excel\n// }\n\n// 1) Adjuntar el buffer de Excel\nmsg.attachments = [{\n  filename: msg.filename || \"InformePlantaFVCUERVA.xlsx\",\n  content: msg.payload.excel,    // <-- aquí el Buffer\n  contentType: \"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\"\n}];\n\n// 2) Definir el cuerpo del correo como la cadena HTML\nmsg.payload = msg.payload.html;  // <-- aquí el HTML puro\n\n// 3) Asunto del email\nmsg.topic = \"Informe diario Planta Fotovoltaica Cuerva\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2370,
+        "y": 4380,
+        "wires": [
+            [
+                "a4c2e780559d0169",
+                "6c9276e65bc5b67d",
+                "db6dd91bea5f2059"
+            ]
+        ]
+    },
+    {
+        "id": "5f6a6c64f369e1a5",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "f5bf0b0e10b38b68",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 1990,
+        "y": 2560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f926e0fda313b943",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "f5bf0b0e10b38b68",
+        "name": "Peticion_MES",
+        "func": "msg.topic = `\n  SELECT\n    (cur.Generacion_Total - prev.Generacion_Total) AS diff_generacion_total,\n    (cur.Energia_Importada - prev.Energia_Importada) AS diff_Energia_Importada\n\n  FROM\n    (\n      SELECT Generacion_Total,\n             Energia_Importada        \n      FROM Mediciones_Sensores\n      WHERE DATE(fecha) = DATE_FORMAT(CURDATE(), '%Y-%m-01')\n      LIMIT 1\n    ) AS cur\n  CROSS JOIN\n    (\n      SELECT Generacion_Total,\n             Energia_Importada \n      FROM Mediciones_Sensores\n      WHERE DATE(fecha) = DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 MONTH), '%Y-%m-01')\n      LIMIT 1\n    ) AS prev;\n`;\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 2560,
+        "wires": [
+            [
+                "4d2156f88ea699fb"
+            ]
+        ]
+    },
+    {
+        "id": "4d2156f88ea699fb",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "f5bf0b0e10b38b68",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 1110,
+        "y": 2560,
+        "wires": [
+            [
+                "06182a794330708c"
+            ]
+        ]
+    },
+    {
+        "id": "06182a794330708c",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "f5bf0b0e10b38b68",
+        "name": "Calculo Coste FV_MES",
+        "func": "const data = msg.payload[0];\nconst diff_generacion_total = data.diff_generacion_total;\nconst diff_energia_importada = data.diff_energia_importada;\n\nconst precio_fv = global.get(\"precio_fv\") || 0;\nconst coste_fv = diff_generacion_total * precio_fv;\n\n// Guardamos todos los valores en msg.payload\nmsg.payload = {\n    diff_generacion_total,\n    diff_energia_importada,\n    coste_fv,\n    mes_consumo_total: diff_generacion_total + diff_energia_importada\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 2560,
+        "wires": [
+            [
+                "03f0a5cf320cb3e4"
+            ]
+        ]
+    },
+    {
+        "id": "03f0a5cf320cb3e4",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "f5bf0b0e10b38b68",
+        "name": "Guardar consumo y coste en Mysql_MES",
+        "func": "const {\n  diff_generacion_total,\n  diff_energia_importada,\n  coste_fv,\n  mes_consumo_total\n} = msg.payload;\n\nmsg.topic = `\n  INSERT INTO Mediciones_Sensores\n    (generacion_mensual, Mes_Energia_Importada, coste_fv, Mes_Consumo_Total)\n  VALUES\n    (${diff_generacion_total}, ${diff_energia_importada}, ${coste_fv}, ${mes_consumo_total});\n`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 2560,
+        "wires": [
+            [
+                "5f6a6c64f369e1a5"
+            ]
+        ]
+    },
+    {
+        "id": "9c4a61d06eabbed7",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "f5bf0b0e10b38b68",
+        "name": "GRUPO CÁLCULO DE PRECIOS MENSUAL",
+        "info": "",
+        "x": 750,
+        "y": 2480,
+        "wires": []
+    },
+    {
+        "id": "59de307d52fb00d4",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "name": "Peticion_1min",
+        "func": "// Nodo Function: Preparar SELECT del último valor para cálculos de energía\n\nmsg.topic = `\n  SELECT \n    id,\n    consumida_real,\n    generacion_diaria,\n    Energia_Exportada,\n    Energia_Importada\n  FROM Mediciones_Sensores\n  WHERE generacion_diaria IS NOT NULL\n  ORDER BY fecha DESC\n  LIMIT 1;\n`.replace(/\\s+/g, ' ').trim();\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 500,
+        "wires": [
+            [
+                "73379e03d2d65031"
+            ]
+        ]
+    },
+    {
+        "id": "73379e03d2d65031",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 1110,
+        "y": 500,
+        "wires": [
+            [
+                "b276f3512653bec3",
+                "b10c32e89d265c04"
+            ]
+        ]
+    },
+    {
+        "id": "bf767f57ca611582",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 690,
+        "y": 500,
+        "wires": [
+            [
+                "59de307d52fb00d4"
+            ]
+        ]
+    },
+    {
+        "id": "8ac086f6915832b5",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "name": "GRUPO CÁLCULO DE PRECIOS TIEMPO REAL",
+        "info": "",
+        "x": 760,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "3ac1301a370464d4",
+        "type": "cronplus",
+        "z": "f9a3d819cc58cb5e",
+        "g": "f5bf0b0e10b38b68",
+        "name": "",
+        "outputField": "payload",
+        "timeZone": "",
+        "storeName": "",
+        "commandResponseMsgOutput": "output1",
+        "defaultLocation": "",
+        "defaultLocationType": "default",
+        "outputs": 1,
+        "options": [
+            {
+                "name": "schedule1",
+                "topic": "topic1",
+                "payloadType": "default",
+                "payload": "",
+                "expressionType": "cron",
+                "expression": "0 0 0 1 * *",
+                "location": "",
+                "offset": "0",
+                "solarType": "all",
+                "solarEvents": "sunrise,sunset"
+            }
+        ],
+        "x": 700,
+        "y": 2560,
+        "wires": [
+            [
+                "f926e0fda313b943"
+            ]
+        ]
+    },
+    {
+        "id": "fd1caf720bfdecd0",
+        "type": "cronplus",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "name": "",
+        "outputField": "payload",
+        "timeZone": "",
+        "storeName": "",
+        "commandResponseMsgOutput": "output1",
+        "defaultLocation": "",
+        "defaultLocationType": "default",
+        "outputs": 1,
+        "options": [
+            {
+                "name": "schedule1",
+                "topic": "topic1",
+                "payloadType": "default",
+                "payload": "",
+                "expressionType": "cron",
+                "expression": "0 0 0 1 * *",
+                "location": "",
+                "offset": "0",
+                "solarType": "all",
+                "solarEvents": "sunrise,sunset"
+            }
+        ],
+        "x": 720,
+        "y": 3980,
+        "wires": [
+            [
+                "7ab8231d1a650ae6"
+            ]
+        ]
+    },
+    {
+        "id": "fcff864c905037a0",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "g": "9266b33f759a58f7",
+        "name": "CICLO",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 680,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e948294dc378d971",
+        "type": "ui_template",
+        "z": "f9a3d819cc58cb5e",
+        "g": "9266b33f759a58f7",
+        "group": "7d53e5625b8837b0",
+        "name": "PLATILLA_GRÁFICO",
+        "order": 2,
+        "width": "38",
+        "height": "22",
+        "format": "<script src=\"https://cdn.jsdelivr.net/npm/apexcharts\"></script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap\" rel=\"stylesheet\">\n\n<style>\n  .nr-dashboard-group.PLANTILLA .chart-container {\n    display: flex;\n    justify-content: center;\n    align-items: flex-start;\n    width: 100%;\n  }\n\n  .chart-container {\n    width: 100%;\n  }\n\n  .apexcharts-tooltip.custom-tooltip {\n    background: #2E3348;\n    color: #E0E0E0;\n    border: 1px solid #444;\n    padding: 35px 35px;\n    border-radius: 8px;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);\n    font-family: 'Inter', sans-serif;\n  }\n\n  .apexcharts-tooltip.custom-tooltip .apexcharts-tooltip-title {\n    background: #2E3348;\n    border-bottom: 1px solid #444;\n    font-weight: 300;\n    padding-bottom: 8px;\n    margin-bottom: 8px;\n  }\n\n  .chart {\n    font-family: 'Inter', sans-serif;\n  }\n</style>\n\n<div class=\"chart-container\">\n  <div id=\"combined-chart\" class=\"chart\"></div>\n</div>\n\n<script>\n  (function(scope) {\n    scope.combinedChart = null;\n\n    scope.$watch('msg', function(msg) {\n      if (!msg || !msg.payload || msg.payload.length < 3) return;\n\n      const energySeries   = msg.payload[0];\n      const costSeries     = msg.payload[1];\n      const consumoSeries  = msg.payload[2];\n\n      const modernColors = ['#FF4560', '#00E396', '#1E88E5'];\n      const height       = msg.chartheight || 400;\n\n      const combinedOptions = {\n        chart: {\n          type: 'line',\n          height: height,\n          background: '#1F2333',\n          zoom: { type: 'x', enabled: true, autoScaleYaxis: true },\n          toolbar: { show: true, autoSelected: 'zoom' },\n          fontFamily: 'Inter, Arial, sans-serif',\n          dropShadow: { enabled: true, top: 3, left: 0, blur: 4, opacity: 0.2 }\n        },\n        series: [\n          { name: energySeries.name   || 'Generación Diaria',   data: energySeries.data,  type: 'line' },\n          { name: costSeries.name     || 'Coste Diario',        data: costSeries.data,    type: 'line' },\n          { name: consumoSeries.name  || 'Consumo FV Facturar', data: consumoSeries.data, type: 'line' }\n        ],\n        colors: modernColors,\n        dataLabels: { enabled: false },\n        stroke: {\n          curve:     'smooth',\n          width:     [3, 3, 3],\n          dashArray: [0, 0, 4],\n          opacity:    1\n        },\n        fill: { opacity: 1 },\n        markers: {\n          size: 0,\n          strokeWidth: 0,\n          hover: {\n            size:         8,\n            strokeWidth:  2,\n            strokeOpacity:1,\n            strokeColor:  '#fff'\n          }\n        },\n        xaxis: {\n          type:        'datetime',\n          datetimeUTC: true,\n          labels:      { style: { colors: '#A0AEC0', fontSize: '12px' } },\n          axisBorder:  { show: false },\n          axisTicks:   { show: false }\n        },\n        yaxis: [\n          {\n            seriesName: energySeries.name,\n            title: {\n              text: 'Generación (kWh)',\n              style: { color: modernColors[0], fontSize: '12px' }\n            },\n            labels: {\n              formatter: val => val.toFixed(2) + ' kWh',\n              style:     { colors: modernColors[0], fontSize: '12px' },\n              offsetX:  -10\n            },\n            opposite: true\n          },\n          {\n            seriesName: costSeries.name,\n            title: {\n              text: 'Coste (€)',\n              style: { color: modernColors[1], fontSize: '12px' }\n            },\n            labels: {\n              formatter: val => val.toFixed(2) + ' €',\n              style:     { colors: modernColors[1], fontSize: '12px' },\n              offsetX:  -10\n            },\n            opposite: false\n          },\n          {\n            seriesName: consumoSeries.name,\n            title: {\n              text: 'Consumo FV a Facturar (kWh)',\n              style: { color: modernColors[2], fontSize: '12px' }\n            },\n            labels: {\n              formatter: val => val.toFixed(2) + ' kWh',\n              style:     { colors: modernColors[2], fontSize: '12px' },\n              offsetX:  -10\n            },\n            opposite: true\n          }\n        ],\n        grid: {\n          borderColor:    '#373C52',\n          strokeDashArray:4,\n          xaxis:          { lines: { show: false } },\n          padding:        { top:20, right:40, bottom:10, left:20 }\n        },\n        legend: {\n          position:        'top',\n          horizontalAlign: 'right',\n          fontSize:        '14px',\n          labels:          { colors: '#FFFFFF' },\n          markers:         { radius:12 },\n          itemMargin:      { horizontal: 12, vertical: 4 }\n        },\n        title: {\n          text:   msg.chartTitle || 'Generación Solar, Coste y Consumo FV Facturable',\n          align:  'left',\n          margin: 25,\n          style:  { fontSize:'18px', fontWeight:'700', color:'#FFFFFF' }\n        },\n        tooltip: {\n          enabled:    true,\n          shared:     true,\n          intersect:  false,\n          theme:      'dark',\n          x:          { format: 'dd MMM yyyy - HH:mm' },\n          y: [\n            { formatter: val => val.toFixed(2) + ' kWh' },\n            { formatter: val => val.toFixed(2) + ' €' },\n            { formatter: val => val.toFixed(2) + ' kWh' }\n          ]\n        }\n      };\n\n      if (scope.combinedChart) {\n        scope.combinedChart.updateOptions(combinedOptions);\n      } else {\n        scope.combinedChart = new ApexCharts(\n          document.querySelector(\"#combined-chart\"),\n          combinedOptions\n        );\n        scope.combinedChart.render();\n      }\n    });\n  })(scope);\n</script>\n\n\n\n\n\n\n\n\n<style>\n  #energy-icon {\n    position: relative;\n    width: 100%;\n    max-width: 650px; /* Ancho máximo para mantener la proporción */\n    height: 120px;\n    margin: 20px auto 0;\n    font-family: sans-serif;\n  }\n\n  /* ☀️ Placa Solar Mejorada */\n  #energy-icon .panel {\n    position: absolute;\n    bottom: 10px;\n    right: 50px;\n    width: 120px;\n    height: 60px;\n    background-color: #0b1a2a; /* Color base oscuro */\n    border: 2px solid #7fcdff;\n    border-radius: 6px;\n    transform: rotate(-20deg) skewX(-10deg); /* Inclinación más dinámica */\n    transform-origin: bottom right;\n    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);\n    overflow: hidden; /* Oculta lo que se salga del borde */\n    /* Patrón de celdas solares */\n    background-image:\n      linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),\n      linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);\n    background-size: 20px 20px;\n  }\n\n  /* Efecto de brillo en la placa solar */\n  #energy-icon .panel::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: -150%;\n    width: 70%;\n    height: 100%;\n    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);\n    transform: skewX(-25deg);\n    animation: glare 5s infinite ease-in-out;\n  }\n\n  /* 🏢 Edificio Mejorado */\n  #energy-icon .building {\n    position: absolute;\n    bottom: 0;\n    left: 50px;\n    width: 80px;\n    height: 90px;\n    background: linear-gradient(180deg, #5c677d, #3c4a61); /* Degradado sutil */\n    border-radius: 4px 4px 0 0;\n    border: 1px solid #7a8baa;\n    border-bottom: none;\n    box-shadow: 0 0 20px rgba(0,0,0,0.3);\n  }\n\n  /* Techo del edificio */\n  #energy-icon .building::before {\n    content: '';\n    position: absolute;\n    top: -6px;\n    left: -2px;\n    width: calc(100% + 4px);\n    height: 6px;\n    background: #343f51;\n    border-radius: 2px;\n  }\n\n  /* Ventanas del edificio */\n  #energy-icon .windows {\n    position: absolute;\n    top: 10px;\n    left: 50%;\n    transform: translateX(-50%);\n    width: 80%;\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 8px;\n  }\n\n  #energy-icon .window {\n    width: 100%;\n    height: 10px;\n    background: linear-gradient(180deg, #87ceeb, #5a9eba); /* Degradado para simular reflejo */\n    border-radius: 2px;\n    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);\n    /* Animación de luces de ventanas */\n    animation: window-light 8s infinite ease-in-out;\n  }\n  \n  /* Retraso en animación para que no todas parpadeen a la vez */\n  #energy-icon .window:nth-child(2n) { animation-delay: -2s; }\n  #energy-icon .window:nth-child(3n) { animation-delay: -4s; }\n  #energy-icon .window:nth-child(5n) { animation-delay: -6s; }\n\n\n  /* ⚡️ Animación de Flujo de Energía */\n  #energy-icon .energy-flow-path {\n    stroke: rgba(0, 229, 255, 0.2); /* Línea base estática */\n    stroke-width: 4;\n  }\n  \n  #energy-icon .energy-flow-animated {\n    stroke: url(#flow-gradient); /* Usamos un degradado para el trazo */\n    stroke-width: 4;\n    stroke-dasharray: 50 150; /* Longitud del guion (energía) y el espacio */\n    stroke-linecap: round;\n    animation: flow 2s linear infinite;\n  }\n\n  /* Definición de animaciones */\n  @keyframes glare {\n    50% { left: 150%; }\n  }\n\n  @keyframes flow {\n    to {\n      stroke-dashoffset: -200; /* Mueve el guion a lo largo de la línea */\n    }\n  }\n\n  @keyframes window-light {\n    0%, 100% { opacity: 0.8; }\n    50% { opacity: 1; }\n    75% { opacity: 0.6; }\n  }\n</style>\n\n<div id=\"energy-icon\">\n  <div class=\"building\">\n    <div class=\"windows\">\n      <div class=\"window\"></div><div class=\"window\"></div><div class=\"window\"></div>\n      <div class=\"window\"></div><div class=\"window\"></div><div class=\"window\"></div>\n      <div class=\"window\"></div><div class=\"window\"></div><div class=\"window\"></div>\n      <div class=\"window\"></div><div class=\"window\"></div><div class=\"window\"></div>\n    </div>\n  </div>\n\n  <div class=\"panel\"></div>\n\n  <svg viewBox=\"0 0 650 120\" preserveAspectRatio=\"xMidYMid meet\">\n    <defs>\n      <linearGradient id=\"flow-gradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n        <stop offset=\"0%\" stop-color=\"#8effff\" stop-opacity=\"1\" />\n        <stop offset=\"100%\" stop-color=\"#00e5ff\" stop-opacity=\"0.1\" />\n      </linearGradient>\n    </defs>\n\n    <path id=\"flowPath\"\n      d=\"M 550,70 Q 350,20 140,80\" \n      stroke-linejoin=\"round\"\n      stroke-linecap=\"round\"\n      fill=\"none\"\n      class=\"energy-flow-path\"\n    />\n    <path id=\"flowPathAnimated\"\n      d=\"M 550,70 Q 350,20 140,80\" \n      stroke-linejoin=\"round\"\n      stroke-linecap=\"round\"\n      fill=\"none\"\n      class=\"energy-flow-animated\"\n    />\n  </svg>\n</div>\n\n<script>\n  (function(scope) {\n    scope.$watch('msg', function(msg) {\n      // Aquí podrías sincronizar velocidad con msg.payload\n    });\n  })(scope);\n</script>\n\n\n\n\n\n",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "PLATILLA",
+        "x": 1920,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "325804243344395d",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "9266b33f759a58f7",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 1270,
+        "y": 180,
+        "wires": [
+            [
+                "0d6a3a8b532f2a62"
+            ]
+        ]
+    },
+    {
+        "id": "e4f25f95f5f88659",
+        "type": "comment",
+        "z": "f9a3d819cc58cb5e",
+        "g": "9266b33f759a58f7",
+        "name": "GRUPO GRÁFICOS",
+        "info": "",
+        "x": 670,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "2eb7b242fa01841f",
+        "type": "ui_template",
+        "z": "f9a3d819cc58cb5e",
+        "g": "9266b33f759a58f7",
+        "group": "7d53e5625b8837b0",
+        "name": "CSS_Imagen_Cuerva",
+        "order": 4,
+        "width": "33",
+        "height": "1",
+        "format": "<style>\n    body {\n        background-image: url('/IMAGEN_FONDO_METEO.png');\n        background-size: cover;\n        background-position: center;\n        background-repeat: no-repeat;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1920,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0d6a3a8b532f2a62",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "9266b33f759a58f7",
+        "name": "Conversion_Datos/Aplicacion_Estilos",
+        "func": "// Validar que hay datos\nif (!msg.payload || !msg.payload.length) {\n    node.warn(\"No hay datos para hoy.\");\n    return null;\n}\n\nconst serieGeneracion = [];\nconst serieCoste = [];\nconst serieConsumoFacturar = [];\n\nmsg.payload.forEach(fila => {\n    const ts = new Date(fila.fecha).getTime();\n    if (isNaN(ts)) {\n        node.warn(\"Descartando fila sin timestamp válido: \" + JSON.stringify(fila));\n        return;\n    }\n\n    const gen100 = parseFloat(fila.generacion_diaria);\n    const cost100 = parseFloat(fila.coste_fv_diario);\n    const consumoFact = parseFloat(fila.consumida_real);\n\n    serieGeneracion.push({ x: ts, y: gen100 });\n    serieCoste.push({ x: ts, y: cost100 });\n    serieConsumoFacturar.push({ x: ts, y: consumoFact });\n});\n\nmsg.payload = [\n    {\n        name: 'Generación Diaria Acumulada (kWh)',\n        data: serieGeneracion,\n        color: '#00C853',\n        fill: { opacity: 0.1 }\n    },\n    {\n        name: 'Coste Diario Acumulado (€)',\n        data: serieCoste,\n        color: '#FF6D00',\n        fill: { opacity: 0.1 }\n    },\n    {\n        name: 'Consumo FV a Facturar (kWh)',\n        data: serieConsumoFacturar,\n        color: '#1E88E5',\n        fill: { opacity: 0.1 }\n    }\n];\n\nmsg.charttitle = \"Generación, Consumo Autoconsumido y Coste Diario Acumulados\";\nmsg.chartheight = 800;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 180,
+        "wires": [
+            [
+                "e948294dc378d971"
+            ]
+        ]
+    },
+    {
+        "id": "97186e1f7d60199b",
+        "type": "modbus-read",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Daily Energy Yield",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "32114",
+        "quantity": "2",
+        "rate": "12",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "09f54fea36391678",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 790,
+        "y": 1540,
+        "wires": [
+            [
+                "5df727d76df0c3fd",
+                "ae38355c92ad42fc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5df727d76df0c3fd",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Daily Energy Yield",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "ae38355c92ad42fc",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Conversion_[highWord, lowWord]",
+        "func": "// ---------- Parámetros de configuración ----------\n// msg.payload: [highWord, lowWord]\n// msg.swap     (boolean) opcional; true si hay que invertir high/low.\n// msg.scale    (number)  opcional; factor por el que dividimos el valor combinado.\n// msg.decimals (number)  opcional; número de decimales en el resultado.\n\n\nmsg.swap = false;\nmsg.scale = 100;     // si está en centésimas\nmsg.decimals = 2;\n\nconst p = msg.payload;\nif (!Array.isArray(p) || p.length !== 2\n    || typeof p[0] !== \"number\"\n    || typeof p[1] !== \"number\") {\n    node.warn(\"Payload no es un array [high, low]\");\n    return null;\n}\n\n// Parámetros por defecto si no vienen en msg\nconst swap     = (typeof msg.swap     === \"boolean\") ? msg.swap     : false;\nconst scale    = (typeof msg.scale    === \"number\")  ? msg.scale    : 1;\nconst decimals = (typeof msg.decimals === \"number\")  ? msg.decimals : 0;\n\n// Extraemos high y low\nlet high = p[0], low = p[1];\n\n// Si hay que intercambiar palabras:\nif (swap) {\n    [high, low] = [low, high];\n}\n\n// Combinar en 32 bits sin signo\nconst combined = (high << 16) + low;\n\n// Aplicar factor de escala y formatear\nconst value = combined / scale;\nmsg.payload = Number(value.toFixed(decimals));\nmsg.topic = \"generacion_diaria\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 1540,
+        "wires": [
+            [
+                "82bda46f76d7e0e5",
+                "ac3ece3f537aac90"
+            ]
+        ]
+    },
+    {
+        "id": "82bda46f76d7e0e5",
+        "type": "debug",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "name": "Daily Energy Yield_REAL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "b276f3512653bec3",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "name": "Aplicar_precio_Instantaneo",
+        "func": "// Asegurarse que payload es array con al menos un elemento\nif (!Array.isArray(msg.payload) || msg.payload.length === 0) {\n  node.error(\"Payload no es un array o está vacío\");\n  return null;\n}\n\n// Sacar el primer objeto\nlet datos = msg.payload[0];\n\n// Comprobar que consumida_real existe y es número\nif (typeof datos.consumida_real !== \"number\") {\n  node.error(\"Falta consumida_real o no es número\");\n  return null;\n}\n\nlet consumo = datos.consumida_real;\n\n// Recuperar precio global\nlet precio = global.get(\"precio_fv\", \"file\");\nif (typeof precio !== \"number\") {\n  node.error(\"Variable global precio_fv no definida o no es un número\");\n  return null;\n}\n\n// Calcular coste\nlet coste = parseFloat((consumo * precio).toFixed(2));\n\n// **Añadir id para UPDATE**\nmsg.payload = {\n  id: datos.id,              // <--- aquí conservamos el id\n  coste_fv_real: coste,\n  consumida_real: consumo,\n  precio_fv: precio\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 500,
+        "wires": [
+            [
+                "72189135a0874ec6"
+            ]
+        ]
+    },
+    {
+        "id": "a4c2e780559d0169",
+        "type": "e-mail",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "server": "smtp.azurecomm.net",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": false,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": true,
+        "name": "plecoq@cuervaenergia.com",
+        "dname": "",
+        "x": 2620,
+        "y": 4380,
+        "wires": []
+    },
+    {
+        "id": "3ac279e4d9221a57",
+        "type": "join",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "name": "Unir_msg",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2170,
+        "y": 4380,
+        "wires": [
+            [
+                "95b40a56a13a2baa"
+            ]
+        ]
+    },
+    {
+        "id": "b10c32e89d265c04",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "name": "Calculo_Consumo_REAL",
+        "func": "// Asegurar que el payload es un array y tiene al menos un elemento\nif (!Array.isArray(msg.payload) || msg.payload.length === 0) {\n    node.error(\"Payload no es un array o está vacío\", msg.payload);\n    return null;\n}\n\n// Extraemos el primer resultado del array\nlet data = msg.payload[0];\n\n// Convertimos y validamos los valores\nlet daily = Number(data.generacion_diaria);\nlet expAcum = Number(data.Energia_Exportada);\nlet impAcum = Number(data.Energia_Importada);\n\nif (isNaN(daily) || isNaN(expAcum) || isNaN(impAcum)) {\n    node.error(\"Uno o más valores no son numéricos\", { daily, expAcum, impAcum });\n    return null;\n}\n\n// Leer acumulados anteriores (o inicializar)\nlet last = flow.get('last_acumulados') || {\n    expAcum: expAcum,\n    impAcum: impAcum\n};\n\n// Calcular deltas\nlet delta_exp = expAcum - last.expAcum;\nlet delta_imp = impAcum - last.impAcum;\n\n// Forzar que no sean negativos ni NaN\nif (isNaN(delta_exp) || delta_exp < 0) delta_exp = 0;\nif (isNaN(delta_imp) || delta_imp < 0) delta_imp = 0;\n\n// Calcular PV consumida en el edificio, garantizando ≤ daily\nlet pv_consumida = daily - delta_exp;\n\n// Guardar acumulados para la próxima iteración\nflow.set('last_acumulados', {\n    expAcum: expAcum,\n    impAcum: impAcum\n});\n\n// Construir y devolver resultados\nmsg.payload = {\n    id: data.id,                   // para futuros updates en la BD\n    delta_export_kwh: delta_exp,\n    delta_import_kwh: delta_imp,\n    pv_consumida_kwh: pv_consumida\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 460,
+        "wires": [
+            [
+                "a54a8ac2742a5a64"
+            ]
+        ]
+    },
+    {
+        "id": "a54a8ac2742a5a64",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "name": "Guardar_EXP/IMPO/DIARIA_REAL",
+        "func": "// msg.payload contiene directamente los valores calculados\nlet data = msg.payload;\n\nif (!data || typeof data !== 'object') {\n    node.error(\"Payload no tiene datos calculados\");\n    return null;\n}\n\nlet id = data.id;\nlet delta_export = data.delta_export_kwh;\nlet delta_import = data.delta_import_kwh;\nlet pv_consumida = data.pv_consumida_kwh;\n\nif (id === undefined) {\n    node.error(\"No se encontró el ID para update\");\n    return null;\n}\nif ([delta_export, delta_import, pv_consumida].some(x => typeof x !== 'number')) {\n    node.error(\"Valores calculados incorrectos\");\n    return null;\n}\n\nmsg.topic = `\n    UPDATE Mediciones_Sensores\n    SET \n        exportada_real = ${delta_export.toFixed(2)},\n        importada_real = ${delta_import.toFixed(2)},\n        consumida_real = ${pv_consumida.toFixed(2)}\n    WHERE id = ${id};\n`.replace(/\\s+/g, ' ').trim();\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1740,
+        "y": 460,
+        "wires": [
+            [
+                "28322ab58c7fcea7"
+            ]
+        ]
+    },
+    {
+        "id": "72189135a0874ec6",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "name": "Guardar_Precio_Intantante",
+        "func": "// 1. Leemos el coste calculado (€/kWh * kWh)  \nlet coste = msg.payload.coste_fv_real;\nif (typeof coste !== \"number\") {\n    node.error(\"Falta msg.payload.coste_fv_real o no es un número\");\n    return null;\n}\n\n// 2. Obtenemos el ID del registro a actualizar  \n//    Puede venir en msg.payload.id o msg.id según tu flujo\nlet id = msg.payload.id || msg.id;\nif (id === undefined) {\n    node.error(\"Falta el ID del registro para el UPDATE\");\n    return null;\n}\n\n// 3. Construimos la sentencia SQL  \nmsg.topic = `\n  UPDATE Mediciones_Sensores\n  SET coste_fv_diario = ${coste.toFixed(2)}\n  WHERE id = ${id};\n`.replace(/\\s+/g, ' ').trim();\n\n// 4. Devolvemos el mensaje para que el nodo MySQL/PG lo ejecute  \nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1720,
+        "y": 500,
+        "wires": [
+            [
+                "ea1b712e929f9013"
+            ]
+        ]
+    },
+    {
+        "id": "41edd28f9ef033a6",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "abe133516ed2a08a",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 2310,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea1b712e929f9013",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 2130,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28322ab58c7fcea7",
+        "type": "mysql",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "mydb": "1de79bb004a1a23e",
+        "name": "",
+        "x": 2130,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0954702769f984ee",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "g": "9266b33f759a58f7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 07 * * *",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 690,
+        "y": 140,
+        "wires": [
+            [
+                "199e3a37e82541a0"
+            ]
+        ]
+    },
+    {
+        "id": "78095810a6971ee5",
+        "type": "inject",
+        "z": "f9a3d819cc58cb5e",
+        "g": "dc353c7332b6ad3a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 07 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 690,
+        "y": 540,
+        "wires": [
+            [
+                "59de307d52fb00d4"
+            ]
+        ]
+    },
+    {
+        "id": "199e3a37e82541a0",
+        "type": "function",
+        "z": "f9a3d819cc58cb5e",
+        "g": "9266b33f759a58f7",
+        "name": "Peticion_por_fecha",
+        "func": "// Asumimos que msg.payload = '2025-07-28T00:00:00.000Z' o similar\nlet selectedDate = new Date(msg.payload).toLocaleDateString('en-CA', {\n  timeZone: 'Europe/Madrid'\n});\n// 'en-CA' te da YYYY-MM-DD directamente\n\nmsg.topic = `\n  SELECT \n    CONVERT_TZ(fecha, 'UTC', 'Europe/Madrid') AS fecha,\n    generacion_diaria,\n    coste_fv_diario,\n    consumida_real\n  FROM Mediciones_Sensores\n  WHERE DATE(CONVERT_TZ(fecha, 'UTC', 'Europe/Madrid')) = '${selectedDate}'\n    AND generacion_diaria   IS NOT NULL\n    AND coste_fv_diario     IS NOT NULL\n    AND consumida_real      IS NOT NULL\n  ORDER BY fecha ASC;\n`.replace(/\\s+/g,' ').trim();\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            [
+                "325804243344395d"
+            ]
+        ]
+    },
+    {
+        "id": "2909290294675bf5",
+        "type": "ui_date_picker",
+        "z": "f9a3d819cc58cb5e",
+        "g": "9266b33f759a58f7",
+        "name": "",
+        "label": "date",
+        "group": "7d53e5625b8837b0",
+        "order": 1,
+        "width": "11",
+        "height": "1",
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "DATE_P",
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "199e3a37e82541a0"
+            ]
+        ]
+    },
+    {
+        "id": "4a7232406cce7ba1",
+        "type": "ui_template",
+        "z": "f9a3d819cc58cb5e",
+        "g": "9266b33f759a58f7",
+        "group": "7d53e5625b8837b0",
+        "name": "Aspecto_Date_Picker",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n/* Base */\n.DATE_P .nr-dashboard-ui-datepicker,\n.DATE_P md-datepicker {\n  background-color: #1E1E2E !important;\n  color: #E0E0E0 !important;\n  border-radius: 8px !important;\n  box-shadow: inset 0 1px 3px rgba(0,0,0,0.9), 0 4px 8px rgba(0,0,0,0.6) !important;\n  transition: box-shadow 0.3s ease, transform 0.3s ease;\n}\n\n/* Al pasar el ratón */\n.DATE_P .nr-dashboard-ui-datepicker:hover,\n.DATE_P md-datepicker:hover {\n  box-shadow: inset 0 2px 6px rgba(0,0,0,0.8), 0 6px 12px rgba(0,0,0,0.7) !important;\n  transform: translateY(-2px) !important;\n}\n\n/* Input interno */\n.DATE_P input {\n  background: #2B2B3A !important;\n  color: #E0E0E0 !important;\n  border: 1px solid #3C3C50 !important;\n  border-radius: 6px !important;\n  padding: 10px 14px !important;\n  font-size: 15px !important;\n  font-family: 'Inter', sans-serif !important;\n  transition: border-color 0.2s ease, box-shadow 0.2s ease;\n}\n\n/* Placeholder */\n.DATE_P input::placeholder {\n  color: #7A7A8F !important;\n}\n\n/* Focus */\n.DATE_P input:focus {\n  outline: none !important;\n  border-color: #00E676 !important;\n  box-shadow: 0 0 0 3px rgba(0,230,118,0.3) !important;\n}\n\n/* Icono de calendario */\n.DATE_P md-icon,\n.DATE_P .md-datepicker-toggle-button md-icon {\n  fill: #FFAB00 !important;\n  width: 22px; height: 22px;\n  transition: fill 0.3s ease;\n}\n.DATE_P md-icon:hover {\n  fill: #FFD54F !important;\n}\n\n/* Calendario desplegable */\n.DATE_P .md-datepicker-calendar-pane {\n  background: rgba(43,43,58,0.9) !important;\n  backdrop-filter: blur(8px);\n  border-radius: 8px !important;\n  box-shadow: 0 8px 16px rgba(0,0,0,0.7) !important;\n}\n\n/* Cabecera del calendario */\n.DATE_P .md-calendar-header {\n  background: #383849 !important;\n  color: #E0E0E0 !important;\n  padding: 12px 0 !important;\n  font-weight: 600 !important;\n}\n\n/* Días */\n.DATE_P .md-calendar-date {\n  width: 36px; height: 36px;\n  line-height: 36px;\n  margin: 2px;\n  border-radius: 50%;\n  transition: background 0.2s ease, color 0.2s ease;\n}\n\n/* Hoy */\n.DATE_P .md-calendar-date.today {\n  background-color: #FFAB00 !important;\n  color: #1E1E2E !important;\n  font-weight: 600 !important;\n}\n\n/* Seleccionados */\n.DATE_P .md-calendar-date.md-calendar-date-selected {\n  background-color: #00E676 !important;\n  color: #1E1E2E !important;\n}\n\n/* Hover sobre día */\n.DATE_P .md-calendar-date:hover {\n  background-color: #44445A !important;\n  color: #E0E0E0 !important;\n}\n\n/* Navegación (flechas) */\n.DATE_P .md-calendar-button {\n  color: #E0E0E0 !important;\n  transition: color 0.2s ease;\n}\n.DATE_P .md-calendar-button:hover {\n  color: #00E676 !important;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 700,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c9276e65bc5b67d",
+        "type": "e-mail",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "server": "smtp.azurecomm.net",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": false,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": true,
+        "name": "jaguilera@cuervaenergia.com",
+        "dname": "",
+        "x": 2630,
+        "y": 4420,
+        "wires": []
+    },
+    {
+        "id": "db6dd91bea5f2059",
+        "type": "e-mail",
+        "z": "f9a3d819cc58cb5e",
+        "g": "72a605fcf035f0af",
+        "server": "smtp.azurecomm.net",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": false,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": true,
+        "name": "jcjoyac@cuervaenergia.com",
+        "dname": "",
+        "x": 2620,
+        "y": 4340,
+        "wires": []
+    },
+    {
+        "id": "f6badde03f953a1d",
+        "type": "e-mail",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "server": "smtp.azurecomm.net",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": false,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": true,
+        "name": "jcjoyac@cuervaenergia.com",
+        "dname": "",
+        "x": 2620,
+        "y": 3980,
+        "wires": []
+    },
+    {
+        "id": "b6d77478595a91f7",
+        "type": "e-mail",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "server": "smtp.azurecomm.net",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": false,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": true,
+        "name": "jaguilera@cuervaenergia.com",
+        "dname": "",
+        "x": 2630,
+        "y": 4060,
+        "wires": []
+    },
+    {
+        "id": "9b7139dd7bd97d1a",
+        "type": "join",
+        "z": "f9a3d819cc58cb5e",
+        "g": "a3317137ae5fffff",
+        "name": "Unir_msg",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 2150,
+        "y": 4020,
+        "wires": [
+            [
+                "d51e4763ca4deb4c"
+            ]
+        ]
+    },
+    {
+        "id": "1de79bb004a1a23e",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "planta_fotovoltaica",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "09f54fea36391678",
+        "type": "modbus-client",
+        "name": "Veleta-usb",
+        "clienttype": "serial",
+        "bufferCommands": true,
+        "stateLogEnabled": true,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyACM0",
+        "serialType": "RTU",
+        "serialBaudrate": "9600",
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": "1000",
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 21,
+        "commandDelay": 1500,
+        "clientTimeout": 5000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 1000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "7d53e5625b8837b0",
+        "type": "ui_group",
+        "name": "SELECTOR_OPCIONES",
+        "tab": "49ce3da32b7171c0",
+        "order": 3,
+        "disp": false,
+        "width": "38",
+        "collapse": false,
+        "className": "GRAF"
+    },
+    {
+        "id": "49ce3da32b7171c0",
+        "type": "ui_tab",
+        "name": "Fotovoltaica Marina de Motril",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    }
+]

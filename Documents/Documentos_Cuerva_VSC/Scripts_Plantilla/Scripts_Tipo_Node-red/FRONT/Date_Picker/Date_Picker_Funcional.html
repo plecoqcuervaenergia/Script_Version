@@ -1,0 +1,20 @@
+<template>
+    <div id="app">
+        <v-date-picker v-model="selectedDate" @click="sendDate" />
+    </div>
+</template>
+
+<script>
+    export default {
+  data() {
+    return {
+      selectedDate: null,
+    };
+  },
+  methods: {
+    sendDate() {
+      this.send({payload: this.selectedDate})
+    },
+  },
+};
+</script>

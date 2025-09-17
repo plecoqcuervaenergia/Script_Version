@@ -1,0 +1,73 @@
+<style>
+    /* Contenedor centrado y bajado 3px */
+    .month-picker {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      overflow: hidden;
+    }
+  
+    /* Etiqueta "Mes" en blanco */
+    .month-picker__label {
+      margin-right: 0.5rem;
+      font-size: 0.95rem;
+      color: #ffffff;
+    }
+  
+    /* Contenedor del input */
+    .month-picker__wrapper {
+      position: relative;
+      display: inline-block;
+    }
+  
+    /* Icono calendario blanco */
+    .month-picker__icon {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+  
+    /* Input más largo para mostrar bien mes y año */
+    .month-picker__input {
+      appearance: none;
+      -webkit-appearance: none;
+      background-color: #ffffff !important;
+      color: #000000 !important;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      padding: 0.4rem 0.5rem 0.4rem 2.2rem;
+      font-size: 1rem;
+      box-sizing: border-box;
+      width: 180px;
+      /* Aumentamos el ancho */
+      text-align: center;
+    }
+  
+    /* Oculta el icono nativo */
+    .month-picker__input::-webkit-calendar-picker-indicator {
+      opacity: 0;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+    }
+  </style>
+  
+  <div class="month-picker">
+    <label for="mesSeleccionado" class="month-picker__label">Mes:</label>
+    <div class="month-picker__wrapper">
+      <i class="month-picker__icon" aria-hidden="true">📅</i>
+      <input
+        id="mesSeleccionado"
+        type="month"
+        ng-model="mesSeleccionado"
+        ng-change="send({ payload: mesSeleccionado });"
+        class="month-picker__input"
+      />
+    </div>
+  </div>

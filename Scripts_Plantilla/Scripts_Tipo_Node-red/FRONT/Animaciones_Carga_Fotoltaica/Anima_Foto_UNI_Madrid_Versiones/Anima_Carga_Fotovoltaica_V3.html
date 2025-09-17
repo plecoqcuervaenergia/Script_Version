@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Línea con Barras de Potencia e Iconos v2</title>
+  <style>
+    /* Estilos CSS (sin cambios respecto a la versión anterior) */
+    body {
+      margin: 0;
+      position: relative;
+      font-family: sans-serif;
+    }
+
+    .line-bg {
+      stroke: #cccccc;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .bar {
+      fill: currentColor;
+    }
+
+    .icono-panel,
+    .icono-inversor,
+    .icono-edificio,
+    .icono-grid {
+      position: absolute;
+      top: 0px;
+      width: 80px;
+      height: 80px;
+      z-index: 10;
+      fill: currentColor;
+      color: #cccccc;
+    }
+
+    .icono-panel {
+      left: 110px;
+    }
+
+    .icono-inversor {
+      left: -400px;
+    }
+
+    .icono-edificio {
+      left: 1050px;
+      font-size: 60px;
+      transform: translateX(-50%);
+    }
+
+    .icono-grid {
+      left: 2050px;
+      transform: translateX(-50%);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <svg id="svg" width="2150" height="100">
+    <line id="lineBg1" class="line-bg" x1="150" y1="40" x2="1050" y2="40"></line>
+    <rect id="bar1" class="bar" x="150" y="37" width="100" height="6"></rect>
+
+    <line id="lineBg2" class="line-bg" x1="1050" y1="40" x2="2000" y2="40"></line>
+    <rect id="bar2" class="bar" x="1050" y="37" width="100" height="6"></rect>
+  </svg>
+
+  <svg class="icono-panel" viewBox="0 0 96 64">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#4a90e2" />
+        <stop offset="100%" stop-color="#005f9e" />
+      </linearGradient>
+      <linearGradient id="shade1" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="rgba(0,0,0,0.2)" />
+        <stop offset="100%" stop-color="transparent" />
+      </linearGradient>
+    </defs>
+    <rect x="0" y="8" width="96" height="48" rx="4" ry="4" fill="#333" />
+    <g fill="url(#grad1)">
+      <rect x="4" y="12" width="28" height="40" />
+      <rect x="34" y="12" width="28" height="40" />
+      <rect x="64" y="12" width="28" height="40" />
+    </g>
+    <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+      <line x1="4" y1="24" x2="32" y2="24" />
+      <line x1="4" y1="36" x2="32" y2="36" />
+      <line x1="34" y1="24" x2="62" y2="24" />
+      <line x1="34" y1="36" x2="62" y2="36" />
+      <line x1="64" y1="24" x2="92" y2="24" />
+      <line x1="64" y1="36" x2="92" y2="36" />
+      <line x1="16" y1="12" x2="16" y2="52" />
+      <line x1="48" y1="12" x2="48" y2="52" />
+      <line x1="80" y1="12" x2="80" y2="52" />
+    </g>
+    <rect x="4" y="12" width="28" height="40" fill="url(#shade1)" />
+    <rect x="34" y="12" width="28" height="40" fill="url(#shade1)" />
+    <rect x="64" y="12" width="28" height="40" fill="url(#shade1)" />
+  </svg>
+  <svg class="icono-inversor" viewBox="0 0 48 48">
+    <path d="M24 4l-8 14h16l-8-14zm0 40l8-14h-16l8 14zM4 24h14l-8-16 8-16zm40 0h-14l8-16-8-16z" />
+  </svg>
+  <i class="fa fa-building icono-edificio"></i>
+  <svg class="icono-grid" viewBox="0 0 64 64">
+    <defs>
+      <linearGradient id="gradGrid" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#A0A0A0" />
+        <stop offset="100%" stop-color="#606060" />
+      </linearGradient>
+    </defs>
+    <path d="M32 2 L32 12 M22 12 L42 12 M32 12 L32 22" stroke="currentColor" stroke-width="4" fill="none" />
+    <rect x="10" y="22" width="44" height="30" rx="5" ry="5" fill="url(#gradGrid)" stroke="black" stroke-width="1" />
+    <path d="M20 30 L20 44 M32 30 L32 44 M44 30 L44 44 M26 37 L38 37" stroke="#E0E0E0" stroke-width="3" fill="none" />
+    <path d="M32 52 L32 62 M22 62 L42 62" stroke="currentColor" stroke-width="4" fill="none" />
+  </svg>
+
+  <script>
+    (function (scope) {
+            // Dummy scope and $watch for standalone testing
+            if (typeof scope === 'undefined') {
+                scope = {};
+                scope.$watch = function (prop, callback) {
+                    console.log('Dummy $watch called for', prop);
+                    let radiationValue = 0;
+                    let temperatureValue = 0;
+                    setInterval(() => {
+                        radiationValue = (radiationValue + 150) % 2050; // Ciclo 0-2000
+                        temperatureValue = (temperatureValue + 180) % 2050; // Ciclo 0-2000
+
+                        const dummyMsg = {
+                            payload: [{
+                                series: ["Radiacion_Solar", "Temperatura"],
+                                data: [
+                                    [radiationValue], // Último valor Radiacion_Solar
+                                    [temperatureValue] // Último valor Temperatura
+                                ],
+                                labels: ["Now"]
+                            }],
+                            consumo: radiationValue > 100 ? 500 : 0, // Consumo ejemplo
+                            grid_power: temperatureValue > 1500 ? -200 : 0 // Grid power ejemplo
+                        };
+                        // console.log("Simulating:", dummyMsg.payload[0].data);
+                        callback(dummyMsg);
+                    }, 1000); // Cambia datos cada segundo
+                };
+            }
+
+            // --- Constantes de Configuración ---
+            const MAX_RAD = 2000; // Límite superior para radiación
+            const MAX_TEMP = 2000; // Límite superior para temperatura
+            const MIN_DURATION_MS = 1 * 1000; // Duración mínima (velocidad máxima) en ms
+            const MAX_DURATION_MS = 10 * 1000; // Duración máxima (velocidad mínima) en ms
+
+            // --- Estado de Animación (Separado para cada barra) ---
+            let animationId1 = null, animationStartTime1 = null, currentAnimationDuration1 = MAX_DURATION_MS;
+            let animationId2 = null, animationStartTime2 = null, currentAnimationDuration2 = MAX_DURATION_MS;
+
+            // --- Referencias a Elementos ---
+            const bar1 = document.getElementById('bar1');
+            const lineBg1 = document.getElementById('lineBg1');
+            const bar2 = document.getElementById('bar2');
+            const lineBg2 = document.getElementById('lineBg2');
+            const iconoPanel = document.querySelector('.icono-panel');
+            const iconoEdificio = document.querySelector('.icono-edificio');
+            const iconoGrid = document.querySelector('.icono-grid');
+
+            if (!bar1 || !lineBg1 || !bar2 || !lineBg2 || !iconoPanel || !iconoEdificio || !iconoGrid) {
+                console.error("Error: Elementos SVG/Icono no encontrados.");
+                return;
+            }
+
+            // --- Dimensiones (calculadas una vez) ---
+            const barLen1 = parseFloat(bar1.getAttribute('width'));
+            const x1_line1 = parseFloat(lineBg1.getAttribute('x1'));
+            const x2_line1 = parseFloat(lineBg1.getAttribute('x2'));
+            const L1 = x2_line1 - x1_line1;
+            const travelDistance1 = L1 - barLen1; // Distancia que recorre la esquina izq de bar1
+
+            const barLen2 = parseFloat(bar2.getAttribute('width'));
+            const x1_line2 = parseFloat(lineBg2.getAttribute('x1'));
+            const x2_line2 = parseFloat(lineBg2.getAttribute('x2'));
+            const L2 = x2_line2 - x1_line2;
+            const travelDistance2 = L2 - barLen2; // Distancia que recorre la esquina de bar2
+
+            // --- Funciones de Animación (Steps separados) ---
+
+            function step1(timestamp) { // Para Barra 1 (Solar)
+                if (!animationStartTime1) animationStartTime1 = timestamp;
+                if (currentAnimationDuration1 === Infinity || currentAnimationDuration1 <= 0) return; // No animar si duración inválida
+
+                const elapsed = timestamp - animationStartTime1;
+                const progress = (elapsed % currentAnimationDuration1) / currentAnimationDuration1; // Progreso cíclico [0, 1]
+
+                // Calcular posición X para L2R (Izquierda a Derecha)
+                const x_bar1 = x1_line1 + travelDistance1 * progress;
+                bar1.setAttribute('x', x_bar1);
+
+                // Solicitar el siguiente frame si la animación debe continuar
+                if (animationId1) { // Verifica si aún debe animar (controlado desde $watch)
+                    animationId1 = requestAnimationFrame(step1);
+                }
+            }
+
+            function step2(timestamp) { // Para Barra 2 (Temperatura)
+                if (!animationStartTime2) animationStartTime2 = timestamp;
+                 if (currentAnimationDuration2 === Infinity || currentAnimationDuration2 <= 0) return; // No animar si duración inválida
+
+                const elapsed = timestamp - animationStartTime2;
+                const progress = (elapsed % currentAnimationDuration2) / currentAnimationDuration2; // Progreso cíclico [0, 1]
+
+                // Calcular posición X para R2L (Derecha a Izquierda)
+                // Empieza en x2_line2 - barLen2 y se mueve hacia la izquierda
+                const startX2 = x2_line2 - barLen2;
+                const x_bar2 = startX2 - travelDistance2 * progress;
+                bar2.setAttribute('x', x_bar2);
+
+                // Solicitar el siguiente frame si la animación debe continuar
+                if (animationId2) { // Verifica si aún debe animar (controlado desde $watch)
+                     animationId2 = requestAnimationFrame(step2);
+                }
+            }
+
+            // --- Lógica Principal en $watch ---
+            scope.$watch('msg', function (msg) {
+                if (!msg || !msg.payload || !Array.isArray(msg.payload) || msg.payload.length === 0 || !msg.payload[0]) {
+                    console.log("Mensaje inválido o vacío.");
+                    // Detener ambas animaciones y ocultar barras si no hay datos válidos
+                    if (animationId1) cancelAnimationFrame(animationId1);
+                    if (animationId2) cancelAnimationFrame(animationId2);
+                    animationId1 = animationId2 = null;
+                    if(bar1) bar1.style.setProperty('color', 'transparent');
+                    if(bar2) bar2.style.setProperty('color', 'transparent');
+                    // Resetear iconos a gris
+                    if(iconoPanel) iconoPanel.style.setProperty('color', '#cccccc');
+                    if(iconoEdificio) iconoEdificio.style.setProperty('color', '#cccccc');
+                    if(iconoGrid) iconoGrid.style.setProperty('color', '#cccccc');
+                    return;
+                }
+
+                // --- Extracción de Datos ---
+                const series = msg.payload[0].series || [];
+                const data = msg.payload[0].data || [];
+                const radiationIndex = series.indexOf("Radiacion_Solar");
+                const temperatureIndex = series.indexOf("Temperatura");
+
+                let latestRadiation = 0;
+                if (radiationIndex !== -1 && data[radiationIndex] && data[radiationIndex].length > 0) {
+                    latestRadiation = data[radiationIndex][data[radiationIndex].length - 1];
+                }
+
+                let latestTemperature = null;
+                if (temperatureIndex !== -1 && data[temperatureIndex] && data[temperatureIndex].length > 0) {
+                    latestTemperature = data[temperatureIndex][data[temperatureIndex].length - 1];
+                }
+
+                const consumo = msg.consumo || 0;
+                const gridPower = msg.grid_power || 0;
+
+                // --- Escalado de Valores ---
+                const scaledRadiation = Math.min(Math.max(latestRadiation, 0), MAX_RAD);
+                const scaledTemperature = (latestTemperature !== null) ? Math.min(Math.max(latestTemperature, 0), MAX_TEMP) : 0;
+
+                // --- Cálculo de Duraciones (Velocidad) ---
+                // Mayor valor -> Menor duración (más rápido)
+                let newDur1 = (scaledRadiation <= 0) ? Infinity :
+                              MAX_DURATION_MS - (scaledRadiation / MAX_RAD) * (MAX_DURATION_MS - MIN_DURATION_MS);
+                newDur1 = Math.max(MIN_DURATION_MS, newDur1); // Clamp a rango [MIN_DURATION_MS, MAX_DURATION_MS] o Infinity
+
+                let newDur2 = (latestTemperature === null || scaledTemperature <= 0) ? Infinity :
+                              MAX_DURATION_MS - (scaledTemperature / MAX_TEMP) * (MAX_DURATION_MS - MIN_DURATION_MS);
+                newDur2 = Math.max(MIN_DURATION_MS, newDur2); // Clamp
+
+                // --- Determinar si deben animar ---
+                const shouldAnimate1 = latestRadiation > 0 && newDur1 !== Infinity;
+                const shouldAnimate2 = latestTemperature !== null && latestTemperature > 0 && newDur2 !== Infinity;
+
+                // --- Control Animación 1 (Solar) ---
+                const needsRestart1 = Math.abs(newDur1 - currentAnimationDuration1) > 50; // Umbral para reiniciar por cambio de duración
+                if (shouldAnimate1) {
+                    if (!animationId1 || needsRestart1) { // Iniciar o reiniciar si necesario
+                        if (animationId1) cancelAnimationFrame(animationId1); // Detener anterior si reinicia
+                        currentAnimationDuration1 = newDur1;
+                        animationStartTime1 = null; // Resetear tiempo de inicio
+                        animationId1 = requestAnimationFrame(step1);
+                        // console.log(`Anim1 Start/Restart | Dur: ${currentAnimationDuration1.toFixed(0)}ms`);
+                    }
+                    // Si ya anima y duración similar, step1 continúa solo
+                } else { // No debería animar
+                    if (animationId1) { // Si estaba animando, detenerla
+                        cancelAnimationFrame(animationId1);
+                        animationId1 = null;
+                        animationStartTime1 = null;
+                        bar1.style.setProperty('color', 'transparent'); // Ocultar al detener
+                        // console.log("Anim1 Stop");
+                    }
+                }
+
+                 // --- Control Animación 2 (Temperatura) ---
+                const needsRestart2 = Math.abs(newDur2 - currentAnimationDuration2) > 50;
+                if (shouldAnimate2) {
+                    if (!animationId2 || needsRestart2) {
+                        if (animationId2) cancelAnimationFrame(animationId2);
+                        currentAnimationDuration2 = newDur2;
+                        animationStartTime2 = null;
+                        animationId2 = requestAnimationFrame(step2);
+                        // console.log(`Anim2 Start/Restart | Dur: ${currentAnimationDuration2.toFixed(0)}ms`);
+                    }
+                } else {
+                    if (animationId2) {
+                        cancelAnimationFrame(animationId2);
+                        animationId2 = null;
+                        animationStartTime2 = null;
+                        bar2.style.setProperty('color', 'transparent'); // Ocultar al detener
+                        // console.log("Anim2 Stop");
+                    }
+                }
+
+
+                // --- Cálculo de Colores ---
+
+                // Color Barra 1: Amarillo Claro (255, 255, 150) a Rojo (255, 0, 0)
+                let color1 = 'transparent';
+                if (shouldAnimate1) {
+                    const progressRad = scaledRadiation / MAX_RAD; // [0, 1]
+                    const R1 = 255;
+                    const G1_start = 255, G1_end = 0;
+                    const B1_start = 150, B1_end = 0; // Empezar con algo de azul para que sea claro
+                    const G1 = Math.round(G1_start - progressRad * (G1_start - G1_end));
+                    const B1 = Math.round(B1_start - progressRad * (B1_start - B1_end));
+                    color1 = `rgb(${R1}, ${G1}, ${B1})`;
+                }
+                bar1.style.setProperty('color', color1);
+
+                // Color Barra 2: Blanco (255, 255, 255) a Azul (0, 0, 255)
+                let color2 = 'transparent';
+                 if (shouldAnimate2) {
+                    const progressTemp = scaledTemperature / MAX_TEMP; // [0, 1]
+                    // R y G van de 255 a 0. B se mantiene en 255.
+                    const R2 = Math.round(255 * (1 - progressTemp));
+                    const G2 = Math.round(255 * (1 - progressTemp));
+                    const B2 = 255;
+                    color2 = `rgb(${R2}, ${G2}, ${B2})`;
+                 }
+                bar2.style.setProperty('color', color2);
+
+                // --- Actualizar Colores de Iconos ---
+                 iconoPanel.style.setProperty('color', latestRadiation > 0 ? '#ffff00' : '#cccccc'); // Amarillo si radiación
+                 iconoEdificio.style.setProperty('color', consumo > 0 ? 'orange' : '#cccccc'); // Naranja si consumo
+                 // Color del icono Grid basado en gridPower (puede ser positivo o negativo)
+                 let gridColor = '#cccccc'; // Gris por defecto
+                 if (gridPower > 0) gridColor = '#4dabf7'; // Azul claro si se exporta a la red
+                 else if (gridPower < 0) gridColor = '#ff7f0e'; // Naranja/Rojo si se importa de la red (ejemplo)
+                 iconoGrid.style.setProperty('color', gridColor);
+
+
+            });
+
+        })(typeof scope !== 'undefined' ? scope : undefined);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,2508 @@
+[
+    {
+        "id": "c4e9dec220d1fd7e",
+        "type": "tab",
+        "label": "MeteoCuerva*",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4649e71ad4714806",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "d91abad437bb85e2",
+            "f19c01867553bdec",
+            "b568e31e675b0c08",
+            "77e68c17b55ca34f",
+            "553a964eb4254de3"
+        ],
+        "x": 794,
+        "y": 99,
+        "w": 1558,
+        "h": 382
+    },
+    {
+        "id": "29c7018c48c3b376",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "85a2f3854e398a8c",
+            "1e94a60c5640eb81",
+            "9f121285a16dde5b",
+            "3e0e0ae9c74d66c3",
+            "44f816c28d2bcc21"
+        ],
+        "x": 794,
+        "y": 679,
+        "w": 1578,
+        "h": 382
+    },
+    {
+        "id": "cd7f47a242dd4dfd",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "6efb7a2fc639c331",
+            "024d46acd4f6a9b2",
+            "3e563e395ef95921",
+            "b828fa1689a7f343",
+            "9af9cc2d4c775d4d"
+        ],
+        "x": 794,
+        "y": 1279,
+        "w": 1618,
+        "h": 382
+    },
+    {
+        "id": "ebe21cd204834023",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "9adb3fc9ea8d2f19",
+            "d22e9a59d454ac1e",
+            "dce9b16f8665e5e8",
+            "79e08852b80c9622",
+            "d1c9c77a47f2a317"
+        ],
+        "x": 794,
+        "y": 1819,
+        "w": 1558,
+        "h": 382
+    },
+    {
+        "id": "835660364b27c2da",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "eb198951d978e05a",
+            "1c6b41b1cfa393ab",
+            "3834c523ef5d42d5",
+            "b3a823449b87ab86",
+            "2223abee26e11ab0"
+        ],
+        "x": 794,
+        "y": 2339,
+        "w": 1618,
+        "h": 422
+    },
+    {
+        "id": "7b03a9705501d91c",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "8274f366398fe776",
+            "258d0321184e02c4",
+            "32aebd90179ff58e",
+            "ae087b6cc868d6da",
+            "34111f55b3b23ce2"
+        ],
+        "x": 794,
+        "y": 2859,
+        "w": 1578,
+        "h": 422
+    },
+    {
+        "id": "83b00db232ee9656",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "10ce9b168e878761",
+            "d04afbc946bbff7e"
+        ],
+        "x": 2934,
+        "y": 1479,
+        "w": 332,
+        "h": 182
+    },
+    {
+        "id": "24d45c3a9a0d8a7b",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "17ca37820eb7272b",
+            "a668086a9165be2e",
+            "6e741053e9a32eae"
+        ],
+        "x": 794,
+        "y": -1,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "4aac58d02c870c3d",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "339dcd09a6f83ff2",
+            "4867d148ccd02e2e",
+            "91cfa27d4cdd07b9",
+            "e84806a5ca6cd090"
+        ],
+        "x": 134,
+        "y": 1459,
+        "w": 412,
+        "h": 262
+    },
+    {
+        "id": "e31c9cf5c8838164",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "e062d417f85534d0",
+            "8dcd25a60ef25472",
+            "6aacad0d7ccb3545",
+            "d9c604c466db6270",
+            "de902e3b657c826d",
+            "9d2b65114d9af04e",
+            "35f24af6cd551982",
+            "737b42e5c1d1be26",
+            "56598a2e16cf991b",
+            "6bca1c92aa8d5a42"
+        ],
+        "x": 2634,
+        "y": 1039,
+        "w": 1732,
+        "h": 302
+    },
+    {
+        "id": "3e0e0ae9c74d66c3",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "g": "29c7018c48c3b376",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "9ee1a0687b717f12",
+            "d7c43c434f73237d",
+            "767143e6bdbd1e4a",
+            "82b5141954b2e48d",
+            "2246ae5bb7b05419",
+            "82f7696d4c34349a",
+            "88f370a5479e1ff3",
+            "c0d8312cc6747c1f"
+        ],
+        "x": 1074,
+        "y": 759,
+        "w": 1272,
+        "h": 182
+    },
+    {
+        "id": "b828fa1689a7f343",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "g": "cd7f47a242dd4dfd",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "4162133d1a5aea52",
+            "0f15bd152e605423",
+            "723584b742bdafb4",
+            "1560417cd2d34731",
+            "cd62453e2b92985c",
+            "0e6ce79f0df5b39d",
+            "51956cb0ae3de75f",
+            "0e9849e00d87574b"
+        ],
+        "x": 1074,
+        "y": 1359,
+        "w": 1312,
+        "h": 182
+    },
+    {
+        "id": "79e08852b80c9622",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ebe21cd204834023",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "95b53c4c68c06314",
+            "559a3a53e350487d",
+            "b9e99aeaa94f5fd2",
+            "0ab62abb183d8e17",
+            "dca6c7e6394f6188",
+            "d99471a4797af523",
+            "e5429f831fb7efc3",
+            "ba33bed06990681b"
+        ],
+        "x": 1094,
+        "y": 1899,
+        "w": 1232,
+        "h": 182
+    },
+    {
+        "id": "b3a823449b87ab86",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "g": "835660364b27c2da",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "518106778213ffea",
+            "55dd2d8917d4726d",
+            "89bff54bdb5456f1",
+            "e0d7f0123c1bab10",
+            "2baa24ee25e4a5dd",
+            "065b07e9a4a1ba65",
+            "23a6b15e8c765de7",
+            "a24e355381ae0ddb"
+        ],
+        "x": 1074,
+        "y": 2419,
+        "w": 1312,
+        "h": 182
+    },
+    {
+        "id": "ae087b6cc868d6da",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "g": "7b03a9705501d91c",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "1d84566fb3f13507",
+            "1dd52aa2690846e6",
+            "97a4d0373c94f19f",
+            "836d1d183dcc8b02",
+            "e512b3d5e019aa80",
+            "33521958d37e1ed9",
+            "3dc7360c9de5f05d",
+            "ef65c1799b583f4b"
+        ],
+        "x": 1074,
+        "y": 2939,
+        "w": 1272,
+        "h": 182
+    },
+    {
+        "id": "f19c01867553bdec",
+        "type": "group",
+        "z": "c4e9dec220d1fd7e",
+        "g": "4649e71ad4714806",
+        "style": {
+            "stroke": "#2a2a2a",
+            "stroke-opacity": "1",
+            "fill": "#0d0d0d",
+            "fill-opacity": "0.5",
+            "label": true,
+            "label-position": "nw",
+            "color": "#cccccc"
+        },
+        "nodes": [
+            "805e713fd53143d4",
+            "e2e89dc1c6bc58af",
+            "ebc6fa10a9c7bc92",
+            "db62ea3536a9ddd2",
+            "59296c49f17e542b",
+            "b502c4d04287d804",
+            "8b885ed3bc571919",
+            "6431ab0af375415a"
+        ],
+        "x": 994,
+        "y": 179,
+        "w": 1332,
+        "h": 182
+    },
+    {
+        "id": "85a2f3854e398a8c",
+        "type": "ui_gauge",
+        "z": "c4e9dec220d1fd7e",
+        "g": "29c7018c48c3b376",
+        "name": "Termómetro",
+        "group": "4b8696404a84ecef",
+        "order": 4,
+        "width": "30",
+        "height": "6",
+        "gtype": "compass",
+        "title": "",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-20",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "CSS_Temperatura",
+        "x": 1230,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "6efb7a2fc639c331",
+        "type": "ui_gauge",
+        "z": "c4e9dec220d1fd7e",
+        "g": "cd7f47a242dd4dfd",
+        "name": "Anemómetro",
+        "group": "4b8696404a84ecef",
+        "order": 7,
+        "width": "30",
+        "height": "6",
+        "gtype": "gage",
+        "title": "",
+        "label": "M/S",
+        "format": "{{value}}",
+        "min": "0.5",
+        "max": "12",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "CSS_Anemometro",
+        "x": 1210,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "9adb3fc9ea8d2f19",
+        "type": "ui_gauge",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ebe21cd204834023",
+        "name": "Barómetro",
+        "group": "4b8696404a84ecef",
+        "order": 10,
+        "width": "30",
+        "height": "6",
+        "gtype": "gage",
+        "title": "",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": "300",
+        "max": "1100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "CSS_Barometro",
+        "x": 1230,
+        "y": 2120,
+        "wires": []
+    },
+    {
+        "id": "eb198951d978e05a",
+        "type": "ui_gauge",
+        "z": "c4e9dec220d1fd7e",
+        "g": "835660364b27c2da",
+        "name": "Higrómetro",
+        "group": "4b8696404a84ecef",
+        "order": 13,
+        "width": "30",
+        "height": "6",
+        "gtype": "wave",
+        "title": "",
+        "label": "RH",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "CSS_Higrometro",
+        "x": 1230,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "8274f366398fe776",
+        "type": "ui_gauge",
+        "z": "c4e9dec220d1fd7e",
+        "g": "7b03a9705501d91c",
+        "name": "Veleta",
+        "group": "4b8696404a84ecef",
+        "order": 16,
+        "width": "30",
+        "height": "6",
+        "gtype": "compass",
+        "title": "",
+        "label": "Dirección Cardinal",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "360",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "CSS_Veleta",
+        "x": 1190,
+        "y": 3200,
+        "wires": []
+    },
+    {
+        "id": "1e94a60c5640eb81",
+        "type": "mqtt in",
+        "z": "c4e9dec220d1fd7e",
+        "g": "29c7018c48c3b376",
+        "name": "Datos_Broker_Termómetro",
+        "topic": "Envío_Datos_Termómetro_PC_Cuerva",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0957e7b6e7e363b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 950,
+        "y": 980,
+        "wires": [
+            [
+                "85a2f3854e398a8c",
+                "9f121285a16dde5b"
+            ]
+        ]
+    },
+    {
+        "id": "024d46acd4f6a9b2",
+        "type": "mqtt in",
+        "z": "c4e9dec220d1fd7e",
+        "g": "cd7f47a242dd4dfd",
+        "name": "Datos_Broker_Anemómetro",
+        "topic": "Envío_Datos_Anemómetro_PC_Cuerva",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0957e7b6e7e363b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 940,
+        "y": 1580,
+        "wires": [
+            [
+                "6efb7a2fc639c331",
+                "3e563e395ef95921"
+            ]
+        ]
+    },
+    {
+        "id": "d22e9a59d454ac1e",
+        "type": "mqtt in",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ebe21cd204834023",
+        "name": "Datos_Broker_Barómetro",
+        "topic": "Envío_Datos_Barómetro_PC_Cuerva",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0957e7b6e7e363b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 950,
+        "y": 2120,
+        "wires": [
+            [
+                "9adb3fc9ea8d2f19",
+                "dce9b16f8665e5e8"
+            ]
+        ]
+    },
+    {
+        "id": "1c6b41b1cfa393ab",
+        "type": "mqtt in",
+        "z": "c4e9dec220d1fd7e",
+        "g": "835660364b27c2da",
+        "name": "Datos_Broker_Higrómetro",
+        "topic": "Envío_Datos_Higrómetro_PC_Cuerva",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0957e7b6e7e363b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 950,
+        "y": 2680,
+        "wires": [
+            [
+                "eb198951d978e05a",
+                "3834c523ef5d42d5"
+            ]
+        ]
+    },
+    {
+        "id": "258d0321184e02c4",
+        "type": "mqtt in",
+        "z": "c4e9dec220d1fd7e",
+        "g": "7b03a9705501d91c",
+        "name": "Datos_Broker_Veleta",
+        "topic": "Envío_Datos_Veleta_PC_Cuerva",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0957e7b6e7e363b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 920,
+        "y": 3200,
+        "wires": [
+            [
+                "8274f366398fe776",
+                "32aebd90179ff58e"
+            ]
+        ]
+    },
+    {
+        "id": "10ce9b168e878761",
+        "type": "mysql",
+        "z": "c4e9dec220d1fd7e",
+        "g": "83b00db232ee9656",
+        "mydb": "fcf557fe10b65b24",
+        "name": "Mediciones_Meteo_Cuerva_db",
+        "x": 3110,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f121285a16dde5b",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "29c7018c48c3b376",
+        "name": "Guardar_Datos_Termómetro_MySQL_PC",
+        "func": "// Extraer la temperatura del payload del mensaje MQTT\nvar temperatura = msg.payload.temperatura;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Temperatura) VALUES (\" + temperatura + \")\";\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1020,
+        "wires": [
+            [
+                "10ce9b168e878761"
+            ]
+        ]
+    },
+    {
+        "id": "3e563e395ef95921",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "cd7f47a242dd4dfd",
+        "name": "Guardar_Datos_Anemómetro_MySQL_PC",
+        "func": "// Extraer la Velocidad del viento del payload del mensaje MQTT\nvar anemometro = msg.payload.anemometro;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Velocidad_Viento) VALUES (\" + anemometro + \")\";\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 1620,
+        "wires": [
+            [
+                "10ce9b168e878761"
+            ]
+        ]
+    },
+    {
+        "id": "dce9b16f8665e5e8",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ebe21cd204834023",
+        "name": "Guardar_Datos_Barómetro_MySQL_PC",
+        "func": "// Extraer la Presión Atmosférica del payload del mensaje MQTT\nvar barometro = msg.payload.barometro;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Presion_Atmosferica) VALUES (\" + barometro + \")\";\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 2160,
+        "wires": [
+            [
+                "10ce9b168e878761"
+            ]
+        ]
+    },
+    {
+        "id": "3834c523ef5d42d5",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "835660364b27c2da",
+        "name": "Guardar_Datos_Higrómetro_MySQL_PC",
+        "func": "// Extraer la Humedad del payload del mensaje MQTT\nvar higrometro = msg.payload.higrometro;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Humedad) VALUES (\" + higrometro + \")\";\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 2720,
+        "wires": [
+            [
+                "10ce9b168e878761"
+            ]
+        ]
+    },
+    {
+        "id": "32aebd90179ff58e",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "7b03a9705501d91c",
+        "name": "Guardar_Datos_Veleta_MYSQL_PC",
+        "func": "\n//CSCRIPT PARA EXTRAER DATOS NUMÉRICOS\n\n// Extraer la Humedad del payload del mensaje MQTT\nvar veleta = msg.payload.veleta;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Direccion_Viento) VALUES (\" + veleta + \")\";\n\n//Consultar como se envían los datos de la veleta \n\n// Devolver el mensaje con la consulta SQL\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 3240,
+        "wires": [
+            [
+                "10ce9b168e878761"
+            ]
+        ]
+    },
+    {
+        "id": "339dcd09a6f83ff2",
+        "type": "aedes broker",
+        "z": "c4e9dec220d1fd7e",
+        "g": "4aac58d02c870c3d",
+        "name": "Broker_MQTT_Meteo_Cuerva",
+        "mqtt_port": "1883",
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 300,
+        "y": 1620,
+        "wires": [
+            [
+                "4867d148ccd02e2e"
+            ],
+            [
+                "91cfa27d4cdd07b9"
+            ]
+        ]
+    },
+    {
+        "id": "4867d148ccd02e2e",
+        "type": "debug",
+        "z": "c4e9dec220d1fd7e",
+        "g": "4aac58d02c870c3d",
+        "name": "Estado_Conn/Disconn_Clients_Broker",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "91cfa27d4cdd07b9",
+        "type": "debug",
+        "z": "c4e9dec220d1fd7e",
+        "g": "4aac58d02c870c3d",
+        "name": "Monitoreo_Llegada_Datos_Broker",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "c0d8312cc6747c1f",
+        "type": "debug",
+        "z": "c4e9dec220d1fd7e",
+        "g": "3e0e0ae9c74d66c3",
+        "name": "Monitor_Lectura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2140,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "0e9849e00d87574b",
+        "type": "debug",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b828fa1689a7f343",
+        "name": "Monitor_Lectura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2180,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "ba33bed06990681b",
+        "type": "debug",
+        "z": "c4e9dec220d1fd7e",
+        "g": "79e08852b80c9622",
+        "name": "Monitor_Lectura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2140,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "a24e355381ae0ddb",
+        "type": "debug",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b3a823449b87ab86",
+        "name": "Monitor_Lectura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2180,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "ef65c1799b583f4b",
+        "type": "debug",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ae087b6cc868d6da",
+        "name": "Monitor_Lectura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2120,
+        "y": 3080,
+        "wires": []
+    },
+    {
+        "id": "17ca37820eb7272b",
+        "type": "ui_template",
+        "z": "c4e9dec220d1fd7e",
+        "g": "24d45c3a9a0d8a7b",
+        "group": "4b8696404a84ecef",
+        "name": "CSS_Imagen_Cuerva",
+        "order": 19,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    /* Establece los estilos para el elemento <body> (la página completa) */\n    body {\n        /* Especifica la imagen de fondo que se utilizará en la página */\n        background-image: url('/IMAGEN_FONDO_METEO.png');\n\n        /* Hace que la imagen de fondo cubra toda el área del fondo, ajustándose al tamaño de la ventana */\n        background-size: cover;\n\n        /* Centra la imagen de fondo tanto en el eje horizontal como vertical */\n        background-position: center;\n\n        /* Evita que la imagen de fondo se repita si no cubre toda el área visible */\n        background-repeat: no-repeat;\n    }\n</style>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1140,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ee1a0687b717f12",
+        "type": "ui_date_picker",
+        "z": "c4e9dec220d1fd7e",
+        "g": "3e0e0ae9c74d66c3",
+        "name": "Seleccionar_fecha_Term",
+        "label": "Seleccionar fecha",
+        "group": "4b8696404a84ecef",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 1210,
+        "y": 860,
+        "wires": [
+            [
+                "d7c43c434f73237d"
+            ]
+        ]
+    },
+    {
+        "id": "d7c43c434f73237d",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "3e0e0ae9c74d66c3",
+        "name": "Petición_MYSQL_Fecha",
+        "func": "// Si msg.payload tiene valor lo usa, de lo contrario toma la fecha actual\nvar selectedDate = msg.payload ? new Date(msg.payload) : new Date();\n\n// Formatea la fecha seleccionada para obtener el inicio del día (00:00:00)\nvar startDate = selectedDate.toISOString().split('T')[0] + ' 00:00:00';\n\n// Formatea la fecha seleccionada para obtener el final del día (23:59:59)\nvar endDate = selectedDate.toISOString().split('T')[0] + ' 23:59:59';\n\n// Construye la consulta SQL para obtener la fecha y la radiación solar \n// de la tabla 'Mediciones_Sensores' dentro del rango del día seleccionado\nmsg.topic = `SELECT fecha, Temperatura\n             FROM Mediciones_Sensores \n             WHERE fecha >= '${startDate}' AND fecha <= '${endDate}'`;\n\n// Retorna el mensaje con la consulta SQL lista para ser ejecutada\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 860,
+        "wires": [
+            [
+                "767143e6bdbd1e4a"
+            ]
+        ]
+    },
+    {
+        "id": "767143e6bdbd1e4a",
+        "type": "mysql",
+        "z": "c4e9dec220d1fd7e",
+        "g": "3e0e0ae9c74d66c3",
+        "mydb": "fcf557fe10b65b24",
+        "name": "Escritura_Graf_Temp",
+        "x": 1740,
+        "y": 860,
+        "wires": [
+            [
+                "82b5141954b2e48d"
+            ]
+        ]
+    },
+    {
+        "id": "82b5141954b2e48d",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "3e0e0ae9c74d66c3",
+        "name": "Conversión",
+        "func": "// Obtener los datos del payload, que es el resultado de la consulta a la base de datos\nconst inp = msg.payload;\n\n// Inicializar la estructura de los datos para el gráfico (chartData)\nvar chardatos_Temp = [{\n    // La propiedad \"series\" define el nombre de la serie para el gráfico\n    series: [\"Temperatura\"],\n    // La propiedad \"data\" es un array de arrays (aunque no es necesario un array dentro de otro)\n    // En este caso está inicializado con un array vacío dentro\n    data: [[]],\n    // La propiedad \"labels\" contendrá las etiquetas para el eje X del gráfico (en este caso está inicializado con una cadena vacía)\n    labels: [\"\"]\n}]\n\n// Iterar sobre cada elemento en el array \"inp\" que contiene los datos de la consulta\nfor (let item of inp) {\n    // Agregar un punto de datos a la serie \"Radiacion_Solar\" en el gráfico\n    // Se empuja un objeto que contiene \"x\" (fecha) y \"y\" (valor de la radiación solar)\n    chardatos_Temp[0].data[0].push({\n        // La propiedad \"x\" representa la fecha (se supone que \"item.fecha\" es una cadena de texto con la fecha)\n        x: item.fecha,\n        // La propiedad \"y\" representa el valor de la radiación solar\n        y: item.Temperatura\n    })\n}\n\n// Asignar el gráfico procesado al payload para que pueda ser usado por el siguiente nodo\nmsg.payload = chardatos_Temp;\n\n// Retornar el mensaje con los datos del gráfico\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1950,
+        "y": 860,
+        "wires": [
+            [
+                "2246ae5bb7b05419",
+                "c0d8312cc6747c1f"
+            ]
+        ]
+    },
+    {
+        "id": "4162133d1a5aea52",
+        "type": "ui_date_picker",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b828fa1689a7f343",
+        "name": "Seleccionar_fecha_Anem",
+        "label": "Seleccionar fecha",
+        "group": "4b8696404a84ecef",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 1210,
+        "y": 1460,
+        "wires": [
+            [
+                "0f15bd152e605423"
+            ]
+        ]
+    },
+    {
+        "id": "0f15bd152e605423",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b828fa1689a7f343",
+        "name": "Petición_MYSQL_Fecha",
+        "func": "// Si msg.payload tiene valor lo usa, de lo contrario toma la fecha actual\nvar selectedDate = msg.payload ? new Date(msg.payload) : new Date();\n\n// Formatea la fecha seleccionada para obtener el inicio del día (00:00:00)\nvar startDate = selectedDate.toISOString().split('T')[0] + ' 00:00:00';\n\n// Formatea la fecha seleccionada para obtener el final del día (23:59:59)\nvar endDate = selectedDate.toISOString().split('T')[0] + ' 23:59:59';\n\n// Construye la consulta SQL para obtener la fecha y la radiación solar \n// de la tabla 'Mediciones_Sensores' dentro del rango del día seleccionado\nmsg.topic = `SELECT fecha, Velocidad_Viento \n             FROM Mediciones_Sensores \n             WHERE fecha >= '${startDate}' AND fecha <= '${endDate}'`;\n\n// Retorna el mensaje con la consulta SQL lista para ser ejecutada\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 1460,
+        "wires": [
+            [
+                "723584b742bdafb4"
+            ]
+        ]
+    },
+    {
+        "id": "723584b742bdafb4",
+        "type": "mysql",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b828fa1689a7f343",
+        "mydb": "fcf557fe10b65b24",
+        "name": "Lectura_Graf_Anem",
+        "x": 1740,
+        "y": 1460,
+        "wires": [
+            [
+                "1560417cd2d34731"
+            ]
+        ]
+    },
+    {
+        "id": "1560417cd2d34731",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b828fa1689a7f343",
+        "name": "Conversión",
+        "func": "// Obtener los datos del payload, que es el resultado de la consulta a la base de datos\nconst inp = msg.payload;\n\n// Inicializar la estructura de los datos para el gráfico (chartData)\nvar chardatos_Humedad = [{\n    // La propiedad \"series\" define el nombre de la serie para el gráfico\n    series: [\"Velocidad_Viento\"],\n    // La propiedad \"data\" es un array de arrays (aunque no es necesario un array dentro de otro)\n    // En este caso está inicializado con un array vacío dentro\n    data: [[]],\n    // La propiedad \"labels\" contendrá las etiquetas para el eje X del gráfico (en este caso está inicializado con una cadena vacía)\n    labels: [\"\"]\n}]\n\n// Iterar sobre cada elemento en el array \"inp\" que contiene los datos de la consulta\nfor (let item of inp) {\n    // Agregar un punto de datos a la serie \"Radiacion_Solar\" en el gráfico\n    // Se empuja un objeto que contiene \"x\" (fecha) y \"y\" (valor de la radiación solar)\n    chardatos_Humedad[0].data[0].push({\n        // La propiedad \"x\" representa la fecha (se supone que \"item.fecha\" es una cadena de texto con la fecha)\n        x: item.fecha,\n        // La propiedad \"y\" representa el valor de la radiación solar\n        y: item.Velocidad_Viento\n    })\n}\n\n// Asignar el gráfico procesado al payload para que pueda ser usado por el siguiente nodo\nmsg.payload = chardatos_Humedad;\n\n// Retornar el mensaje con los datos del gráfico\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1990,
+        "y": 1460,
+        "wires": [
+            [
+                "cd62453e2b92985c",
+                "0e9849e00d87574b"
+            ]
+        ]
+    },
+    {
+        "id": "95b53c4c68c06314",
+        "type": "ui_date_picker",
+        "z": "c4e9dec220d1fd7e",
+        "g": "79e08852b80c9622",
+        "name": "Seleccionar_fecha_Bar",
+        "label": "Seleccionar fecha",
+        "group": "4b8696404a84ecef",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 1230,
+        "y": 2000,
+        "wires": [
+            [
+                "559a3a53e350487d"
+            ]
+        ]
+    },
+    {
+        "id": "559a3a53e350487d",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "79e08852b80c9622",
+        "name": "Petición_MYSQL_Fecha",
+        "func": "// Si msg.payload tiene valor lo usa, de lo contrario toma la fecha actual\nvar selectedDate = msg.payload ? new Date(msg.payload) : new Date();\n\n// Formatea la fecha seleccionada para obtener el inicio del día (00:00:00)\nvar startDate = selectedDate.toISOString().split('T')[0] + ' 00:00:00';\n\n// Formatea la fecha seleccionada para obtener el final del día (23:59:59)\nvar endDate = selectedDate.toISOString().split('T')[0] + ' 23:59:59';\n\n// Construye la consulta SQL para obtener la fecha y la radiación solar \n// de la tabla 'Mediciones_Sensores' dentro del rango del día seleccionado\nmsg.topic = `SELECT fecha, Presion_Atmosferica \n             FROM Mediciones_Sensores \n             WHERE fecha >= '${startDate}' AND fecha <= '${endDate}'`;\n\n// Retorna el mensaje con la consulta SQL lista para ser ejecutada\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1510,
+        "y": 2000,
+        "wires": [
+            [
+                "b9e99aeaa94f5fd2"
+            ]
+        ]
+    },
+    {
+        "id": "b9e99aeaa94f5fd2",
+        "type": "mysql",
+        "z": "c4e9dec220d1fd7e",
+        "g": "79e08852b80c9622",
+        "mydb": "fcf557fe10b65b24",
+        "name": "Lectura_Graf_Pres",
+        "x": 1750,
+        "y": 2000,
+        "wires": [
+            [
+                "0ab62abb183d8e17"
+            ]
+        ]
+    },
+    {
+        "id": "0ab62abb183d8e17",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "79e08852b80c9622",
+        "name": "Conversión",
+        "func": "// Obtener los datos del payload, que es el resultado de la consulta a la base de datos\nconst inp = msg.payload;\n\n// Inicializar la estructura de los datos para el gráfico (chartData)\nvar chardatos_Presion = [{\n    // La propiedad \"series\" define el nombre de la serie para el gráfico\n    series: [\"Presion_Atmosferica\"],\n    // La propiedad \"data\" es un array de arrays (aunque no es necesario un array dentro de otro)\n    // En este caso está inicializado con un array vacío dentro\n    data: [[]],\n    // La propiedad \"labels\" contendrá las etiquetas para el eje X del gráfico (en este caso está inicializado con una cadena vacía)\n    labels: [\"\"]\n}]\n\n// Iterar sobre cada elemento en el array \"inp\" que contiene los datos de la consulta\nfor (let item of inp) {\n    // Agregar un punto de datos a la serie \"Radiacion_Solar\" en el gráfico\n    // Se empuja un objeto que contiene \"x\" (fecha) y \"y\" (valor de la radiación solar)\n    chardatos_Presion[0].data[0].push({\n        // La propiedad \"x\" representa la fecha (se supone que \"item.fecha\" es una cadena de texto con la fecha)\n        x: item.fecha,\n        // La propiedad \"y\" representa el valor de la radiación solar\n        y: item.Presion_Atmosferica\n    })\n}\n\n// Asignar el gráfico procesado al payload para que pueda ser usado por el siguiente nodo\nmsg.payload = chardatos_Presion;\n\n// Retornar el mensaje con los datos del gráfico\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1950,
+        "y": 2000,
+        "wires": [
+            [
+                "dca6c7e6394f6188",
+                "ba33bed06990681b"
+            ]
+        ]
+    },
+    {
+        "id": "518106778213ffea",
+        "type": "ui_date_picker",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b3a823449b87ab86",
+        "name": "Seleccionar_fecha_Higró",
+        "label": "Seleccionar fecha",
+        "group": "4b8696404a84ecef",
+        "order": 14,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 1210,
+        "y": 2520,
+        "wires": [
+            [
+                "55dd2d8917d4726d"
+            ]
+        ]
+    },
+    {
+        "id": "55dd2d8917d4726d",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b3a823449b87ab86",
+        "name": "Petición_MYSQL_Fecha",
+        "func": "// Si msg.payload tiene valor lo usa, de lo contrario toma la fecha actual\nvar selectedDate = msg.payload ? new Date(msg.payload) : new Date();\n\n// Formatea la fecha seleccionada para obtener el inicio del día (00:00:00)\nvar startDate = selectedDate.toISOString().split('T')[0] + ' 00:00:00';\n\n// Formatea la fecha seleccionada para obtener el final del día (23:59:59)\nvar endDate = selectedDate.toISOString().split('T')[0] + ' 23:59:59';\n\n// Construye la consulta SQL para obtener la fecha y la radiación solar \n// de la tabla 'Mediciones_Sensores' dentro del rango del día seleccionado\nmsg.topic = `SELECT fecha, Humedad\n             FROM Mediciones_Sensores \n             WHERE fecha >= '${startDate}' AND fecha <= '${endDate}'`;\n\n// Retorna el mensaje con la consulta SQL lista para ser ejecutada\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 2520,
+        "wires": [
+            [
+                "89bff54bdb5456f1"
+            ]
+        ]
+    },
+    {
+        "id": "89bff54bdb5456f1",
+        "type": "mysql",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b3a823449b87ab86",
+        "mydb": "fcf557fe10b65b24",
+        "name": "lectura_Graf_Humedad",
+        "x": 1750,
+        "y": 2520,
+        "wires": [
+            [
+                "e0d7f0123c1bab10"
+            ]
+        ]
+    },
+    {
+        "id": "e0d7f0123c1bab10",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b3a823449b87ab86",
+        "name": "Conversión",
+        "func": "// Obtener los datos del payload, que es el resultado de la consulta a la base de datos\nconst inp = msg.payload;\n\n// Inicializar la estructura de los datos para el gráfico (chartData)\nvar chardatos_Humedad = [{\n    // La propiedad \"series\" define el nombre de la serie para el gráfico\n    series: [\"Humedad\"],\n    // La propiedad \"data\" es un array de arrays (aunque no es necesario un array dentro de otro)\n    // En este caso está inicializado con un array vacío dentro\n    data: [[]],\n    // La propiedad \"labels\" contendrá las etiquetas para el eje X del gráfico (en este caso está inicializado con una cadena vacía)\n    labels: [\"\"]\n}]\n\n// Iterar sobre cada elemento en el array \"inp\" que contiene los datos de la consulta\nfor (let item of inp) {\n    // Agregar un punto de datos a la serie \"Radiacion_Solar\" en el gráfico\n    // Se empuja un objeto que contiene \"x\" (fecha) y \"y\" (valor de la radiación solar)\n    chardatos_Humedad[0].data[0].push({\n        // La propiedad \"x\" representa la fecha (se supone que \"item.fecha\" es una cadena de texto con la fecha)\n        x: item.fecha,\n        // La propiedad \"y\" representa el valor de la radiación solar\n        y: item.Humedad\n    })\n}\n\n// Asignar el gráfico procesado al payload para que pueda ser usado por el siguiente nodo\nmsg.payload = chardatos_Humedad;\n\n// Retornar el mensaje con los datos del gráfico\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1990,
+        "y": 2520,
+        "wires": [
+            [
+                "2baa24ee25e4a5dd",
+                "a24e355381ae0ddb"
+            ]
+        ]
+    },
+    {
+        "id": "1d84566fb3f13507",
+        "type": "ui_date_picker",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ae087b6cc868d6da",
+        "name": "Seleccionar_fecha_Veleta",
+        "label": "Seleccionar fecha",
+        "group": "4b8696404a84ecef",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 1210,
+        "y": 3040,
+        "wires": [
+            [
+                "1dd52aa2690846e6"
+            ]
+        ]
+    },
+    {
+        "id": "1dd52aa2690846e6",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ae087b6cc868d6da",
+        "name": "Petición_MYSQL_Fecha",
+        "func": "// Si msg.payload tiene valor lo usa, de lo contrario toma la fecha actual\nvar selectedDate = msg.payload ? new Date(msg.payload) : new Date();\n\n// Formatea la fecha seleccionada para obtener el inicio del día (00:00:00)\nvar startDate = selectedDate.toISOString().split('T')[0] + ' 00:00:00';\n\n// Formatea la fecha seleccionada para obtener el final del día (23:59:59)\nvar endDate = selectedDate.toISOString().split('T')[0] + ' 23:59:59';\n\n// Construye la consulta SQL para obtener la fecha y la radiación solar \n// de la tabla 'Mediciones_Sensores' dentro del rango del día seleccionado\nmsg.topic = `SELECT fecha, Direccion_Viento\n             FROM Mediciones_Sensores \n             WHERE fecha >= '${startDate}' AND fecha <= '${endDate}'`;\n\n// Retorna el mensaje con la consulta SQL lista para ser ejecutada\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 3040,
+        "wires": [
+            [
+                "97a4d0373c94f19f"
+            ]
+        ]
+    },
+    {
+        "id": "97a4d0373c94f19f",
+        "type": "mysql",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ae087b6cc868d6da",
+        "mydb": "fcf557fe10b65b24",
+        "name": "Lectura_Graf_Veleta",
+        "x": 1740,
+        "y": 3040,
+        "wires": [
+            [
+                "836d1d183dcc8b02"
+            ]
+        ]
+    },
+    {
+        "id": "836d1d183dcc8b02",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ae087b6cc868d6da",
+        "name": "Conversión",
+        "func": "// Obtener los datos del payload, que es el resultado de la consulta a la base de datos\nconst inp = msg.payload;\n\n// Inicializar la estructura de los datos para el gráfico (chartData)\nvar cahrdatos_Direcc_Viento = [{\n    // La propiedad \"series\" define el nombre de la serie para el gráfico\n    series: [\"Direccion_Viento\"],\n    // La propiedad \"data\" es un array de arrays (aunque no es necesario un array dentro de otro)\n    // En este caso está inicializado con un array vacío dentro\n    data: [[]],\n    // La propiedad \"labels\" contendrá las etiquetas para el eje X del gráfico (en este caso está inicializado con una cadena vacía)\n    labels: [\"\"]\n}]\n\n// Iterar sobre cada elemento en el array \"inp\" que contiene los datos de la consulta\nfor (let item of inp) {\n    // Agregar un punto de datos a la serie \"Radiacion_Solar\" en el gráfico\n    // Se empuja un objeto que contiene \"x\" (fecha) y \"y\" (valor de la radiación solar)\n    cahrdatos_Direcc_Viento[0].data[0].push({\n        // La propiedad \"x\" representa la fecha (se supone que \"item.fecha\" es una cadena de texto con la fecha)\n        x: item.fecha,\n        // La propiedad \"y\" representa el valor de la radiación solar\n        y: item.Direccion_Viento\n    })\n}\n\n// Asignar el gráfico procesado al payload para que pueda ser usado por el siguiente nodo\nmsg.payload = cahrdatos_Direcc_Viento;\n\n// Retornar el mensaje con los datos del gráfico\nreturn msg;\n\n\n\n\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1930,
+        "y": 3040,
+        "wires": [
+            [
+                "ef65c1799b583f4b",
+                "e512b3d5e019aa80"
+            ]
+        ]
+    },
+    {
+        "id": "34111f55b3b23ce2",
+        "type": "comment",
+        "z": "c4e9dec220d1fd7e",
+        "g": "7b03a9705501d91c",
+        "name": "GRUPO VELETA",
+        "info": "En este grupo se gestionan los datos que se obtienen desde campo\ndesde el sensor de direccion del viento .\nEl grupo aislado maneja los datos y gráficos históricos.",
+        "x": 900,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "2223abee26e11ab0",
+        "type": "comment",
+        "z": "c4e9dec220d1fd7e",
+        "g": "835660364b27c2da",
+        "name": "GRUPO HIGRÓMETRO",
+        "info": "En este grupo se gestionan los datos que se obtienen desde campo\ndesde el sensor de Humedad.\nEl grupo aislado maneja los datos y gráficos históricos.",
+        "x": 930,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "d1c9c77a47f2a317",
+        "type": "comment",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ebe21cd204834023",
+        "name": "GRUPO BARÓMETRO",
+        "info": "En este grupo se gestionan los datos que se obtienen desde campo\ndesde el sensor de Presión atmosférica.\nEl grupo aislado maneja los datos y gráficos históricos.",
+        "x": 920,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "9af9cc2d4c775d4d",
+        "type": "comment",
+        "z": "c4e9dec220d1fd7e",
+        "g": "cd7f47a242dd4dfd",
+        "name": "GRUPO ANEMÓMETRO",
+        "info": "En este grupo se gestionan los datos que se obtienen desde campo\ndesde el sensor de velocidad del viento.\nEl grupo aislado maneja los datos y gráficos históricos.",
+        "x": 930,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "44f816c28d2bcc21",
+        "type": "comment",
+        "z": "c4e9dec220d1fd7e",
+        "g": "29c7018c48c3b376",
+        "name": "GRUPO TERMÓMETRO",
+        "info": "En este grupo se gestionan los datos que se obtienen desde campo\ndesde el sensor de temperatura.\nEl grupo aislado maneja los datos y gráficos históricos.",
+        "x": 930,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "d91abad437bb85e2",
+        "type": "comment",
+        "z": "c4e9dec220d1fd7e",
+        "g": "4649e71ad4714806",
+        "name": "GRUPO PIRANÓMETRO",
+        "info": "En este grupo se gestionan los datos que se obtienen desde campo\ndesde el sensor de Radiación solar.\nEl grupo aislado maneja los datos y gráficos históricos.\n\n",
+        "x": 930,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a668086a9165be2e",
+        "type": "comment",
+        "z": "c4e9dec220d1fd7e",
+        "g": "24d45c3a9a0d8a7b",
+        "name": "GRUPO TEMPLATE",
+        "info": "Este nodo Template permite editar libremente en CSS el fondo\ndel dashboard.",
+        "x": 910,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d04afbc946bbff7e",
+        "type": "comment",
+        "z": "c4e9dec220d1fd7e",
+        "g": "83b00db232ee9656",
+        "name": "GRUPO BASE DE DATOS ",
+        "info": "En esta base de datos se guardan los datos históricos de las\nmediciones de los sensores de campo.",
+        "x": 3070,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "e84806a5ca6cd090",
+        "type": "comment",
+        "z": "c4e9dec220d1fd7e",
+        "g": "4aac58d02c870c3d",
+        "name": "GRUPO SERVIDOR BROKER",
+        "info": "El broker hacer de intermediario para el envío y manejo\nde datos desde la IOT 2050 de la Meteo hasta el servidor,\ntodo la comunicación se realiza por MQTT",
+        "x": 290,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "2246ae5bb7b05419",
+        "type": "ui_chart",
+        "z": "c4e9dec220d1fd7e",
+        "g": "3e0e0ae9c74d66c3",
+        "name": "Gráfico_Temperatura_Histórico",
+        "group": "4b8696404a84ecef",
+        "order": 6,
+        "width": "38",
+        "height": "8",
+        "label": "Temperatura",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "-20",
+        "ymax": "60",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "Gráfico_Temperatura_Histórico",
+        "x": 2190,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd62453e2b92985c",
+        "type": "ui_chart",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b828fa1689a7f343",
+        "name": "Gráfico_Anemómetro_Histórico",
+        "group": "4b8696404a84ecef",
+        "order": 9,
+        "width": "38",
+        "height": "8",
+        "label": "Velocidad del viento",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "12",
+        "removeOlder": "10",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#00ff91",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "Gráfico_Anemómetro_Histórico",
+        "x": 2230,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dca6c7e6394f6188",
+        "type": "ui_chart",
+        "z": "c4e9dec220d1fd7e",
+        "g": "79e08852b80c9622",
+        "name": "Gráfico_Barómetro_Histórico",
+        "group": "4b8696404a84ecef",
+        "order": 12,
+        "width": "38",
+        "height": "8",
+        "label": "Presión Atmosférica",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "1.5",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#b994ff",
+            "#add1ff",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "Gráfico_Barómetro_Histórico",
+        "x": 2180,
+        "y": 2000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2baa24ee25e4a5dd",
+        "type": "ui_chart",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b3a823449b87ab86",
+        "name": "Gráfico_Higrómetro_Histórico",
+        "group": "4b8696404a84ecef",
+        "order": 15,
+        "width": "38",
+        "height": "8",
+        "label": "Humedad",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#86ccfe",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "Gráfico_Higrómetro_Histórico",
+        "x": 2230,
+        "y": 2520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e512b3d5e019aa80",
+        "type": "ui_chart",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ae087b6cc868d6da",
+        "name": "Gráfico_Veleta_Histórico",
+        "group": "4b8696404a84ecef",
+        "order": 18,
+        "width": "38",
+        "height": "8",
+        "label": "Dirección del Viento",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "360",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "0",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f99a9a",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": true,
+        "className": "Grafico_Veleta_Historico",
+        "x": 2210,
+        "y": 3020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82f7696d4c34349a",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "3e0e0ae9c74d66c3",
+        "name": "Pintar_A_Bajo_Graf",
+        "func": "var limite = 2000;  // Valor en Y donde cambia el color\nvar colorPorDefecto = 'blue';  // Azul\nvar colorAlto = 'red';  // Rojo\n\n// Configurar los datos del gráfico\nmsg.payload = [\n    {\n        \"series\": [\"Dato\"],\n        \"data\": [[msg.payload]],\n        \"labels\": [\"\"]\n    }\n];\n\n// Verifica si el valor Y supera el límite\nmsg.ui_control = {\n    options: {\n        elements: {\n            line: {\n                borderColor: msg.payload[0].data[0][1] > limite ? colorAlto : colorPorDefecto\n                \n            }\n        }\n    }\n};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1980,
+        "y": 800,
+        "wires": [
+            [
+                "2246ae5bb7b05419"
+            ]
+        ]
+    },
+    {
+        "id": "0e6ce79f0df5b39d",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b828fa1689a7f343",
+        "name": "Pintar_A_Bajo_Graf",
+        "func": "var limite = 2000;  // Valor en Y donde cambia el color\nvar colorPorDefecto = 'blue';  // Azul\nvar colorAlto = 'red';  // Rojo\n\n// Configurar los datos del gráfico\nmsg.payload = [\n    {\n        \"series\": [\"Dato\"],\n        \"data\": [[msg.payload]],\n        \"labels\": [\"\"]\n    }\n];\n\n// Verifica si el valor Y supera el límite\nmsg.ui_control = {\n    options: {\n        elements: {\n            line: {\n                borderColor: msg.payload[0].data[0][1] > limite ? colorAlto : colorPorDefecto\n                \n            }\n        }\n    }\n};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1400,
+        "wires": [
+            [
+                "cd62453e2b92985c"
+            ]
+        ]
+    },
+    {
+        "id": "d99471a4797af523",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "79e08852b80c9622",
+        "name": "Pintar_A_Bajo_Graf",
+        "func": "var limite = 2000;  // Valor en Y donde cambia el color\nvar colorPorDefecto = 'blue';  // Azul\nvar colorAlto = 'red';  // Rojo\n\n// Configurar los datos del gráfico\nmsg.payload = [\n    {\n        \"series\": [\"Dato\"],\n        \"data\": [[msg.payload]],\n        \"labels\": [\"\"]\n    }\n];\n\n// Verifica si el valor Y supera el límite\nmsg.ui_control = {\n    options: {\n        elements: {\n            line: {\n                borderColor: msg.payload[0].data[0][1] > limite ? colorAlto : colorPorDefecto\n                \n            }\n        }\n    }\n};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1980,
+        "y": 1940,
+        "wires": [
+            [
+                "dca6c7e6394f6188"
+            ]
+        ]
+    },
+    {
+        "id": "065b07e9a4a1ba65",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b3a823449b87ab86",
+        "name": "Pintar_A_Bajo_Graf",
+        "func": "var limite = 2000;  // Valor en Y donde cambia el color\nvar colorPorDefecto = 'blue';  // Azul\nvar colorAlto = 'red';  // Rojo\n\n// Configurar los datos del gráfico\nmsg.payload = [\n    {\n        \"series\": [\"Dato\"],\n        \"data\": [[msg.payload]],\n        \"labels\": [\"\"]\n    }\n];\n\n// Verifica si el valor Y supera el límite\nmsg.ui_control = {\n    options: {\n        elements: {\n            line: {\n                borderColor: msg.payload[0].data[0][1] > limite ? colorAlto : colorPorDefecto\n                \n            }\n        }\n    }\n};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 2460,
+        "wires": [
+            [
+                "2baa24ee25e4a5dd"
+            ]
+        ]
+    },
+    {
+        "id": "33521958d37e1ed9",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ae087b6cc868d6da",
+        "name": "Pintar_A_Bajo_Graf",
+        "func": "var limite = 2000;  // Valor en Y donde cambia el color\nvar colorPorDefecto = 'blue';  // Azul\nvar colorAlto = 'red';  // Rojo\n\n// Configurar los datos del gráfico\nmsg.payload = [\n    {\n        \"series\": [\"Dato\"],\n        \"data\": [[msg.payload]],\n        \"labels\": [\"\"]\n    }\n];\n\n// Verifica si el valor Y supera el límite\nmsg.ui_control = {\n    options: {\n        elements: {\n            line: {\n                borderColor: msg.payload[0].data[0][1] > limite ? colorAlto : colorPorDefecto\n                \n            }\n        }\n    }\n};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1960,
+        "y": 2980,
+        "wires": [
+            [
+                "e512b3d5e019aa80"
+            ]
+        ]
+    },
+    {
+        "id": "3dc7360c9de5f05d",
+        "type": "inject",
+        "z": "c4e9dec220d1fd7e",
+        "g": "ae087b6cc868d6da",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "iso",
+        "payloadType": "date",
+        "x": 1200,
+        "y": 2980,
+        "wires": [
+            [
+                "33521958d37e1ed9",
+                "1dd52aa2690846e6"
+            ]
+        ]
+    },
+    {
+        "id": "23a6b15e8c765de7",
+        "type": "inject",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b3a823449b87ab86",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "iso",
+        "payloadType": "date",
+        "x": 1200,
+        "y": 2460,
+        "wires": [
+            [
+                "065b07e9a4a1ba65",
+                "55dd2d8917d4726d"
+            ]
+        ]
+    },
+    {
+        "id": "e5429f831fb7efc3",
+        "type": "inject",
+        "z": "c4e9dec220d1fd7e",
+        "g": "79e08852b80c9622",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "iso",
+        "payloadType": "date",
+        "x": 1220,
+        "y": 1940,
+        "wires": [
+            [
+                "d99471a4797af523",
+                "559a3a53e350487d"
+            ]
+        ]
+    },
+    {
+        "id": "51956cb0ae3de75f",
+        "type": "inject",
+        "z": "c4e9dec220d1fd7e",
+        "g": "b828fa1689a7f343",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "iso",
+        "payloadType": "date",
+        "x": 1200,
+        "y": 1400,
+        "wires": [
+            [
+                "0e6ce79f0df5b39d",
+                "0f15bd152e605423"
+            ]
+        ]
+    },
+    {
+        "id": "88f370a5479e1ff3",
+        "type": "inject",
+        "z": "c4e9dec220d1fd7e",
+        "g": "3e0e0ae9c74d66c3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "iso",
+        "payloadType": "date",
+        "x": 1200,
+        "y": 800,
+        "wires": [
+            [
+                "82f7696d4c34349a",
+                "d7c43c434f73237d"
+            ]
+        ]
+    },
+    {
+        "id": "6431ab0af375415a",
+        "type": "debug",
+        "z": "c4e9dec220d1fd7e",
+        "g": "f19c01867553bdec",
+        "name": "Monitor_Lectura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2140,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "805e713fd53143d4",
+        "type": "ui_date_picker",
+        "z": "c4e9dec220d1fd7e",
+        "g": "f19c01867553bdec",
+        "name": "Seleccionar_fecha_Pira",
+        "label": "Seleccionar fecha",
+        "group": "4b8696404a84ecef",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 1130,
+        "y": 280,
+        "wires": [
+            [
+                "e2e89dc1c6bc58af"
+            ]
+        ]
+    },
+    {
+        "id": "e2e89dc1c6bc58af",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "f19c01867553bdec",
+        "name": "Petición_MYSQL_Fecha",
+        "func": "// Si msg.payload tiene valor lo usa, de lo contrario toma la fecha actual\nvar selectedDate = msg.payload ? new Date(msg.payload) : new Date();\n\n// Formatea la fecha seleccionada para obtener el inicio del día (00:00:00)\nvar startDate = selectedDate.toISOString().split('T')[0] + ' 00:00:00';\n\n// Formatea la fecha seleccionada para obtener el final del día (23:59:59)\nvar endDate = selectedDate.toISOString().split('T')[0] + ' 23:59:59';\n\n// Construye la consulta SQL para obtener la fecha y la radiación solar \n// de la tabla 'Mediciones_Sensores' dentro del rango del día seleccionado\nmsg.topic = `SELECT fecha, Radiacion_Solar \n             FROM Mediciones_Sensores \n             WHERE fecha >= '${startDate}' AND fecha <= '${endDate}'`;\n\n// Retorna el mensaje con la consulta SQL lista para ser ejecutada\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 280,
+        "wires": [
+            [
+                "59296c49f17e542b"
+            ]
+        ]
+    },
+    {
+        "id": "ebc6fa10a9c7bc92",
+        "type": "inject",
+        "z": "c4e9dec220d1fd7e",
+        "g": "f19c01867553bdec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "iso",
+        "payloadType": "date",
+        "x": 1120,
+        "y": 220,
+        "wires": [
+            [
+                "db62ea3536a9ddd2",
+                "e2e89dc1c6bc58af"
+            ]
+        ]
+    },
+    {
+        "id": "db62ea3536a9ddd2",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "f19c01867553bdec",
+        "name": "Pintar_A_Bajo_Graf",
+        "func": "var limite = 2000;  // Valor en Y donde cambia el color\nvar colorPorDefecto = 'blue';  // Azul\nvar colorAlto = 'red';  // Rojo\n\n// Configurar los datos del gráfico\nmsg.payload = [\n    {\n        \"series\": [\"Dato\"],\n        \"data\": [[msg.payload]],\n        \"labels\": [\"\"]\n    }\n];\n\n// Verifica si el valor Y supera el límite\nmsg.ui_control = {\n    options: {\n        elements: {\n            line: {\n                borderColor: msg.payload[0].data[0][1] > limite ? colorAlto : colorPorDefecto\n                \n            }\n        }\n    }\n};\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1900,
+        "y": 220,
+        "wires": [
+            [
+                "8b885ed3bc571919"
+            ]
+        ]
+    },
+    {
+        "id": "59296c49f17e542b",
+        "type": "mysql",
+        "z": "c4e9dec220d1fd7e",
+        "g": "f19c01867553bdec",
+        "mydb": "fcf557fe10b65b24",
+        "name": "Escritura_Graf_Pira",
+        "x": 1670,
+        "y": 280,
+        "wires": [
+            [
+                "b502c4d04287d804"
+            ]
+        ]
+    },
+    {
+        "id": "b502c4d04287d804",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "f19c01867553bdec",
+        "name": "Conversión",
+        "func": "// Obtener los datos del payload, que es el resultado de la consulta a la base de datos\nconst inp = msg.payload;\n\n\n// Inicializar la estructura de los datos para el gráfico (chartData)\nvar chardatos_Rad_Solar = [{\n    // La propiedad \"series\" define el nombre de la serie para el gráfico\n    series: [\"Radiacion_Solar\"],\n    // La propiedad \"data\" es un array de arrays (aunque no es necesario un array dentro de otro)\n    // En este caso está inicializado con un array vacío dentro\n    data: [[]],\n    // La propiedad \"labels\" contendrá las etiquetas para el eje X del gráfico (en este caso está inicializado con una cadena vacía)\n    labels: [\"\"]\n}]\n\n// Iterar sobre cada elemento en el array \"inp\" que contiene los datos de la consulta\nfor (let item of inp) {\n    // Agregar un punto de datos a la serie \"Radiacion_Solar\" en el gráfico\n    // Se empuja un objeto que contiene \"x\" (fecha) y \"y\" (valor de la radiación solar)\n    chardatos_Rad_Solar[0].data[0].push({\n        // La propiedad \"x\" representa la fecha (se supone que \"item.fecha\" es una cadena de texto con la fecha)\n        x: item.fecha,\n        // La propiedad \"y\" representa el valor de la radiación solar\n        y: item.Radiacion_Solar\n    })\n}\n\n// Asignar el gráfico procesado al payload para que pueda ser usado por el siguiente nodo\nmsg.payload = chardatos_Rad_Solar;\n\n// Retornar el mensaje con los datos del gráfico\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1870,
+        "y": 280,
+        "wires": [
+            [
+                "6431ab0af375415a",
+                "8b885ed3bc571919"
+            ]
+        ]
+    },
+    {
+        "id": "8b885ed3bc571919",
+        "type": "ui_chart",
+        "z": "c4e9dec220d1fd7e",
+        "g": "f19c01867553bdec",
+        "name": "Gráfico_Piranómetro_Histórico",
+        "group": "4b8696404a84ecef",
+        "order": 3,
+        "width": "38",
+        "height": "8",
+        "label": "Radiación Solar",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "3000",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ffea00",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#1f77b4",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "Grafico_Piranometro_Historico",
+        "x": 2170,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b568e31e675b0c08",
+        "type": "ui_gauge",
+        "z": "c4e9dec220d1fd7e",
+        "g": "4649e71ad4714806",
+        "name": "Piranómetro",
+        "group": "4b8696404a84ecef",
+        "order": 1,
+        "width": "30",
+        "height": "6",
+        "gtype": "wave",
+        "title": "",
+        "label": "W/m²",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "CSS_Piranometro",
+        "x": 1190,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "77e68c17b55ca34f",
+        "type": "mqtt in",
+        "z": "c4e9dec220d1fd7e",
+        "g": "4649e71ad4714806",
+        "name": "Datos_Broker_Piranómetro",
+        "topic": "Envío_Datos_Piranómetro_PC_Cuerva",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0957e7b6e7e363b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 950,
+        "y": 420,
+        "wires": [
+            [
+                "b568e31e675b0c08",
+                "553a964eb4254de3"
+            ]
+        ]
+    },
+    {
+        "id": "553a964eb4254de3",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "4649e71ad4714806",
+        "name": "Guardar_Datos_Piranómetro_MySQL_PC",
+        "func": "// Extraer la Radición Solar del payload del mensaje MQTT\nvar piranometro = msg.payload.piranometro;\n\n// Construir la consulta SQL de inserción\nmsg.topic = \"INSERT INTO Mediciones_Sensores (Radiacion_Solar) VALUES (\" + piranometro + \")\";\n\n// Devolver el mensaje con la consulta SQL\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 440,
+        "wires": [
+            [
+                "10ce9b168e878761"
+            ]
+        ]
+    },
+    {
+        "id": "6e741053e9a32eae",
+        "type": "ui_template",
+        "z": "c4e9dec220d1fd7e",
+        "g": "24d45c3a9a0d8a7b",
+        "group": "4b8696404a84ecef",
+        "name": "Centrar_Gauges",
+        "order": 20,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .CSS_Piranometro {\n        margin-left: 400px !important;\n        /* Mueve el elemento 50px a la derecha */\n        display: block !important;\n    }\n</style>\n\n\n<style>\n    .CSS_Temperatura {\n        margin-left: 400px !important;\n        /* Mueve el elemento 50px a la derecha */\n        display: block !important;\n    }\n</style>\n\n\n<style>\n    .CSS_Anemometro {\n        margin-left: 400px !important;\n        /* Mueve el elemento 50px a la derecha */\n        display: block !important;\n    }\n</style>\n\n\n<style>\n    .CSS_Barometro {\n        margin-left: 400px !important;\n        /* Mueve el elemento 50px a la derecha */\n        display: block !important;\n    }\n</style>\n\n\n<style>\n    .CSS_Higrometro {\n        margin-left: 400px !important;\n        /* Mueve el elemento 50px a la derecha */\n        display: block !important;\n    }\n</style>\n\n\n<style>\n    .CSS_Veleta {\n        margin-left: 400px !important;\n        /* Mueve el elemento 50px a la derecha */\n        display: block !important;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1380,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e062d417f85534d0",
+        "type": "inject",
+        "z": "c4e9dec220d1fd7e",
+        "g": "e31c9cf5c8838164",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "59 23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 2760,
+        "y": 1220,
+        "wires": [
+            [
+                "8dcd25a60ef25472"
+            ]
+        ]
+    },
+    {
+        "id": "8dcd25a60ef25472",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "e31c9cf5c8838164",
+        "name": "function 1",
+        "func": "msg.topic = \"SELECT id, fecha, Temperatura, Velocidad_Viento, Presion_Atmosferica, Radiacion_Solar, Humedad, Direccion_Viento FROM mediciones_sensores WHERE DATE(fecha) = CURDATE();\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2960,
+        "y": 1220,
+        "wires": [
+            [
+                "d9c604c466db6270"
+            ]
+        ]
+    },
+    {
+        "id": "6aacad0d7ccb3545",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "e31c9cf5c8838164",
+        "name": "TABLA_HTML_MeteoCuerva*",
+        "func": "// Inicia la variable con la estructura básica del HTML y la tabla\nvar html = `<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <style>\n      table { border-collapse: collapse; width: 100%; }\n      th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }\n      th { background-color: #f2f2f2; }\n    </style>\n  </head>\n  <body>\n    <h2>Datos sensores MeteoCuerva</h2> <!-- Título dentro del cuerpo del email -->\n    <table>\n      <tr>\n        <th>id</th>\n        <th>fecha</th>\n        <th>Temperatura</th>\n        <th>Velocidad_Viento</th>\n        <th>Presion_Atmosferica</th>\n        <th>Radiacion_Solar</th>\n        <th>Humedad</th>\n        <th>Direccion_Viento</th>\n      </tr>`;\n\n// Recorre cada registro obtenido de la consulta y agrega una fila a la tabla\nmsg.payload.forEach(function(row) {\n    html += `<tr>\n      <td>${row.id}</td>\n      <td>${row.fecha}</td>\n      <td>${row.Temperatura}</td>\n      <td>${row.Velocidad_Viento}</td>\n      <td>${row.Presion_Atmosferica}</td>\n      <td>${row.Radiacion_Solar}</td>\n      <td>${row.Humedad}</td>\n      <td>${row.Direccion_Viento}</td>\n    </tr>`;\n});\n\nhtml += `</table>\n  </body>\n</html>`;\n\n// Asigna el HTML generado al payload\nmsg.payload = html;\n\n// Establece el asunto del correo\nmsg.topic = \"Datos sensores Meteo Cuerva*\";\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3530,
+        "y": 1220,
+        "wires": [
+            [
+                "de902e3b657c826d",
+                "35f24af6cd551982"
+            ]
+        ]
+    },
+    {
+        "id": "d9c604c466db6270",
+        "type": "mysql",
+        "z": "c4e9dec220d1fd7e",
+        "g": "e31c9cf5c8838164",
+        "mydb": "fcf557fe10b65b24",
+        "name": "Mediciones_Meteo_Cuerva_db",
+        "x": 3210,
+        "y": 1220,
+        "wires": [
+            [
+                "6aacad0d7ccb3545",
+                "56598a2e16cf991b"
+            ]
+        ]
+    },
+    {
+        "id": "de902e3b657c826d",
+        "type": "e-mail",
+        "z": "c4e9dec220d1fd7e",
+        "g": "e31c9cf5c8838164",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": false,
+        "name": "plecoq@cuervaenergia.com",
+        "dname": "Datos_Meteo_Cuerva",
+        "x": 4240,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "9d2b65114d9af04e",
+        "type": "comment",
+        "z": "c4e9dec220d1fd7e",
+        "g": "e31c9cf5c8838164",
+        "name": "Grupo Mensajería",
+        "info": "Este grupo envía los datos recogidos por \nlos sensores y almacenados en MYSQL a un correo \nelectrónico configurado",
+        "x": 2750,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "35f24af6cd551982",
+        "type": "debug",
+        "z": "c4e9dec220d1fd7e",
+        "g": "e31c9cf5c8838164",
+        "name": "Datos_Email_MeteoCuerva*",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3520,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "737b42e5c1d1be26",
+        "type": "xlsx-out",
+        "z": "c4e9dec220d1fd7e",
+        "g": "e31c9cf5c8838164",
+        "name": "Excel_Meteo CUERVA*",
+        "sheetName": "Mediciones",
+        "x": 3970,
+        "y": 1180,
+        "wires": [
+            [
+                "de902e3b657c826d"
+            ]
+        ]
+    },
+    {
+        "id": "6bca1c92aa8d5a42",
+        "type": "debug",
+        "z": "c4e9dec220d1fd7e",
+        "g": "e31c9cf5c8838164",
+        "name": "Datos_Email_MeteoCuerva*_XLSX",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3540,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "56598a2e16cf991b",
+        "type": "function",
+        "z": "c4e9dec220d1fd7e",
+        "g": "e31c9cf5c8838164",
+        "name": "Formateo_XLSX",
+        "func": "//msg.payload contiene los datos obtenidos de la base de datos\nlet data = msg.payload;\n\n// Transformar los datos en un array de objetos\nlet excelData = data.map(row => ({\n    Temperatura: row.Temperatura,\n    Velocidad_Viento: row.Velocidad_Viento,\n    Presion_Atmosferica: row.Presion_Atmosferica,\n    Radiacion_Solar: row.Radiacion_Solar,\n    Humedad: row.Humedad,\n    Direccion_Viento: row.Direccion_Viento\n}));\n\nmsg.payload = excelData;\n// Establece el asunto del correo\nmsg.topic = \"Datos sensores Meteo Cuerva*\";\nmsg.filename = \"Mediciones_sensores_METEOCUERVA*.xlsx\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3480,
+        "y": 1180,
+        "wires": [
+            [
+                "6bca1c92aa8d5a42",
+                "737b42e5c1d1be26"
+            ]
+        ]
+    },
+    {
+        "id": "4b8696404a84ecef",
+        "type": "ui_group",
+        "name": "Datos Sensores",
+        "tab": "3109ef92c66c4935",
+        "order": null,
+        "disp": true,
+        "width": "40",
+        "collapse": false,
+        "className": "Datos_Sensores"
+    },
+    {
+        "id": "0957e7b6e7e363b2",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fcf557fe10b65b24",
+        "type": "MySQLdatabase",
+        "name": "Mediciones_Meteo_Cuerva",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "Mediciones_Meteo_Cuerva_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "3109ef92c66c4935",
+        "type": "ui_tab",
+        "name": "METEO CUERVA*",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]

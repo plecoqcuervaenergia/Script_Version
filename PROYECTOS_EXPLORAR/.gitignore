@@ -1,0 +1,23 @@
+# Entornos virtuales de Python
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+python310_env/
+PROYECTOS_EXPLORAR/venv310/
+
+# Archivos compilados y temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.dll
+*.so
+*.dylib
+*.exe
+*.log
+*.tmp
+*.bak

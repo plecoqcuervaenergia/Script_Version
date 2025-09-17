@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animación con rango 0–2000</title>
+  <style>
+    body {
+      margin: 0;
+      position: relative;
+      font-family: sans-serif;
+    }
+
+    .line-bg {
+      stroke: #cccccc;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .bar {
+      fill: currentColor;
+    }
+
+    .icono-panel,
+    .icono-inversor,
+    .icono-edificio,
+    .icono-grid {
+      position: absolute;
+      top: 0px;
+      width: 80px;
+      height: 80px;
+      z-index: 10;
+      fill: currentColor;
+      color: #cccccc;
+    }
+
+    .icono-panel {
+      left: 1120px;
+      transform: translateX(-50%);
+    }
+
+    .icono-inversor {
+      left: -330px;
+    }
+
+    .icono-edificio {
+      left: 220px;
+      transform: translateX(-50%);
+      font-size: 60px;
+    }
+
+    .icono-grid {
+      left: 2020px;
+      transform: translateX(-50%);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <svg width="2220" height="100">
+    <!-- Primera línea (900px) -->
+    <line id="lineBg1" class="line-bg" x1="220" y1="40" x2="1120" y2="40"></line>
+    <rect id="bar1" class="bar" x="220" y="37" width="100" height="6"></rect>
+    <!-- Segunda línea (900px) -->
+    <line id="lineBg2" class="line-bg" x1="1120" y1="40" x2="2020" y2="40"></line>
+    <rect id="bar2" class="bar" x="1120" y="37" width="100" height="6"></rect>
+  </svg>
+
+  <!-- Icono de panel solar -->
+  <svg class="icono-panel" viewBox="0 0 96 64">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#4a90e2" />
+        <stop offset="100%" stop-color="#005f9e" />
+      </linearGradient>
+      <linearGradient id="shade1" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="rgba(0,0,0,0.2)" />
+        <stop offset="100%" stop-color="transparent" />
+      </linearGradient>
+    </defs>
+    <rect x="0" y="8" width="96" height="48" rx="4" ry="4" fill="#333" />
+    <g fill="url(#grad1)">
+      <rect x="4" y="12" width="28" height="40" />
+      <rect x="34" y="12" width="28" height="40" />
+      <rect x="64" y="12" width="28" height="40" />
+    </g>
+    <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+      <line x1="4" y1="24" x2="32" y2="24" />
+      <line x1="4" y1="36" x2="32" y2="36" />
+      <line x1="34" y1="24" x2="62" y2="24" />
+      <line x1="34" y1="36" x2="62" y2="36" />
+      <line x1="64" y1="24" x2="92" y2="24" />
+      <line x1="64" y1="36" x2="92" y2="36" />
+      <line x1="16" y1="12" x2="16" y2="52" />
+      <line x1="48" y1="12" x2="48" y2="52" />
+      <line x1="80" y1="12" x2="80" y2="52" />
+    </g>
+    <rect x="4" y="12" width="28" height="40" fill="url(#shade1)" />
+    <rect x="34" y="12" width="28" height="40" fill="url(#shade1)" />
+    <rect x="64" y="12" width="28" height="40" fill="url(#shade1)" />
+  </svg>
+
+  <!-- Icono de inversor -->
+  <svg class="icono-inversor" viewBox="0 0 48 48">
+    <path d="M24 4l-8 14h16l-8-14zm0 40l8-14h-16l8 14zM4 24h14l-8-16 8-16zm40 0h-14l8-16-8-16z" />
+  </svg>
+
+  <!-- Icono de edificio -->
+  <i class="fa fa-building icono-edificio"></i>
+
+  <!-- Icono de red eléctrica -->
+  <svg class="icono-grid" viewBox="0 0 64 64">
+    <defs>
+      <linearGradient id="gradGrid" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#A0A0A0" />
+        <stop offset="100%" stop-color="#606060" />
+      </linearGradient>
+    </defs>
+    <path d="M32 2 L32 12 M22 12 L42 12 M32 12 L32 22" stroke="currentColor" stroke-width="4" fill="none" />
+    <rect x="10" y="22" width="44" height="30" rx="5" ry="5" fill="url(#gradGrid)" stroke="black" stroke-width="1" />
+    <path d="M20 30 L20 44 M32 30 L32 44 M44 30 L44 44 M26 37 L38 37" stroke="#E0E0E0" stroke-width="3" fill="none" />
+    <path d="M32 52 L32 62 M22 62 L42 62" stroke="currentColor" stroke-width="4" fill="none" />
+  </svg>
+
+  <script>
+    (function(scope) {
+      // ——— HORQUILLA: 0 < v ≤ 2000 ———
+      const MIN_DURATION_MS = 1000;   // velocidad MÁXIMA (v=2000)
+      const MAX_DURATION_MS = 10000;  // velocidad MÍNIMA (v→0+)
+      const THRESHOLD = 2000;         // valor de corte
+      // ————————————————————————————
+
+      let anim1 = null, start1 = null, dur1 = MAX_DURATION_MS;
+      let anim2 = null, start2 = null, dur2 = MAX_DURATION_MS;
+
+      const bar1 = document.getElementById('bar1'),
+            line1 = document.getElementById('lineBg1'),
+            bar2 = document.getElementById('bar2'),
+            line2 = document.getElementById('lineBg2'),
+            icoPanel = document.querySelector('.icono-panel'),
+            icoEdif  = document.querySelector('.icono-edificio'),
+            icoGrid  = document.querySelector('.icono-grid');
+
+      const len1 = +bar1.getAttribute('width'),
+            x1a = +line1.getAttribute('x1'),
+            x1b = +line1.getAttribute('x2'),
+            dist1 = (x1b - x1a) - len1;
+
+      const len2 = +bar2.getAttribute('width'),
+            x2a = +line2.getAttribute('x1'),
+            x2b = +line2.getAttribute('x2'),
+            dist2 = (x2b - x2a) - len2;
+
+      function paso1(ts) {
+        if (!start1) start1 = ts;
+        const p = ((ts - start1) % dur1) / dur1;
+        bar1.setAttribute('x', (x1b - len1) - dist1 * p);
+        anim1 = requestAnimationFrame(paso1);
+      }
+
+      function paso2(ts) {
+        if (!start2) start2 = ts;
+        const p = ((ts - start2) % dur2) / dur2;
+        bar2.setAttribute('x', x2a + dist2 * p);
+        anim2 = requestAnimationFrame(paso2);
+      }
+
+      scope.$watch('msg', function(msg) {
+        if (!msg || !msg.payload || !msg.payload[0]) {
+          cancelAnimationFrame(anim1);
+          cancelAnimationFrame(anim2);
+          bar1.style.color = bar2.style.color = 'transparent';
+          icoPanel.style.color = icoEdif.style.color = icoGrid.style.color = '#cccccc';
+          return;
+        }
+
+        // Extraer última entrada real ≠ 0
+        const arr0 = msg.payload[0].data[0],
+              arr1 = msg.payload[0].data[1];
+        function getLastValue(a) {
+          for (let i = a.length - 1; i >= 0; i--) {
+            if (a[i] != null && a[i] !== 0) return a[i];
+          }
+          return 0;
+        }
+        let v1 = getLastValue(arr0),
+            v2 = getLastValue(arr1);
+
+        // Clamp 0 < v ≤ 2000
+        v1 = Math.max(0, Math.min(THRESHOLD, v1));
+        v2 = Math.max(0, Math.min(THRESHOLD, v2));
+
+        // Duración lineal entre MAX_DURATION_MS (v→0+) y MIN_DURATION_MS (v=2000)
+        const nd1 = MIN_DURATION_MS + (THRESHOLD - v1) / THRESHOLD * (MAX_DURATION_MS - MIN_DURATION_MS);
+        const nd2 = MIN_DURATION_MS + (THRESHOLD - v2) / THRESHOLD * (MAX_DURATION_MS - MIN_DURATION_MS);
+
+        const a1 = v1 > 0,
+              a2 = v2 > 0;
+
+        // Barra 1: amarillo→rojo
+        if (a1) {
+          if (!anim1 || Math.abs(nd1 - dur1) > 50) {
+            cancelAnimationFrame(anim1);
+            dur1 = nd1; start1 = null;
+            bar1.setAttribute('x', x1b - len1);
+            anim1 = requestAnimationFrame(paso1);
+          }
+        } else {
+          cancelAnimationFrame(anim1);
+          anim1 = null;
+          bar1.style.color = 'transparent';
+        }
+
+        // Barra 2: blanco→azul
+        if (a2) {
+          if (!anim2 || Math.abs(nd2 - dur2) > 50) {
+            cancelAnimationFrame(anim2);
+            dur2 = nd2; start2 = null;
+            bar2.setAttribute('x', x2a);
+            anim2 = requestAnimationFrame(paso2);
+          }
+        } else {
+          cancelAnimationFrame(anim2);
+          anim2 = null;
+          bar2.style.color = 'transparent';
+        }
+
+        // Colorear según proporción v/2000
+        const p1 = v1 / THRESHOLD,
+              p2 = v2 / THRESHOLD;
+        if (a1) bar1.style.color = `rgb(255, ${Math.round(255 - 255*p1)}, ${Math.round(150 - 150*p1)})`;
+        if (a2) bar2.style.color = `rgb(${Math.round(255*(1-p2))}, ${Math.round(255*(1-p2))}, 255)`;
+
+        // Iconos
+        icoPanel.style.color   = v1  > 0 ? '#ffff00' : '#cccccc';
+        icoEdif .style.color   = (msg.consumo||0)   > 0 ? 'orange'   : '#cccccc';
+        let gc = '#cccccc';
+        if ((msg.grid_power||0) > 0) gc = '#4dabf7';
+        else if ((msg.grid_power||0) < 0) gc = '#ff7f0e';
+        icoGrid.style.color = gc;
+      });
+    })(typeof scope !== 'undefined' ? scope : undefined);
+  </script>
+</body>
+
+</html>
